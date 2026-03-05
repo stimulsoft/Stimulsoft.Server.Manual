@@ -1,0 +1,70 @@
+{% assign current_url = page.url | remove: ".html" | remove_trailing_slash | prepend: site.baseurl %}
+{% assign crumbs = "" %}
+
+{% for l1 in site.data.sidebar %}
+  {% assign l1_url = l1.url | prepend: site.baseurl | remove_trailing_slash %}
+  {% assign l1_match = false %}
+
+  {% if l1.children %}
+    {% for l2 in l1.children %}
+      {% assign l2_url = l2.url | prepend: site.baseurl | remove_trailing_slash %}
+
+      {% if l2.children %}
+        {% for l3 in l2.children %}
+          {% assign l3_url = l3.url | prepend: site.baseurl | remove_trailing_slash %}
+
+          {% if l3.children %}
+            {% for l4 in l3.children %}
+              {% assign l4_url = l4.url | prepend: site.baseurl | remove_trailing_slash %}
+              {% if current_url == l4_url %}
+                {% assign crumb1 = l1.title | append: "||" | append: l1_url %}
+                {% assign crumb2 = l2.title | append: "||" | append: l2_url %}
+                {% assign crumb3 = l3.title | append: "||" | append: l3_url %}
+                {% assign crumb4 = l4.title | append: "||" | append: l4_url %}
+                {% assign crumbs = crumb1 | append: "::" | append: crumb2 | append: "::" | append: crumb3 | append: "::" | append: crumb4 %}
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+
+          {% if current_url == l3_url %}
+            {% assign crumb1 = l1.title | append: "||" | append: l1_url %}
+            {% assign crumb2 = l2.title | append: "||" | append: l2_url %}
+            {% assign crumb3 = l3.title | append: "||" | append: l3_url %}
+            {% assign crumbs = crumb1 | append: "::" | append: crumb2 | append: "::" | append: crumb3 %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+
+      {% if current_url == l2_url %}
+        {% assign crumb1 = l1.title | append: "||" | append: l1_url %}
+        {% assign crumb2 = l2.title | append: "||" | append: l2_url %}
+        {% assign crumbs = crumb1 | append: "::" | append: crumb2 %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+
+  {% if current_url == l1_url %}
+    {% assign crumb1 = l1.title | append: "||" | append: l1_url %}
+    {% assign crumbs = crumb1 %}
+  {% endif %}
+{% endfor %}
+
+{% if crumbs != "" %}
+  {% assign parts = crumbs | split: "::" %}
+  <nav class="breadcrumbs">
+    {% for part in parts %}
+      {% assign pieces = part | split: "||" %}
+      {% assign bc_title = pieces[0] %}
+      {% assign bc_url = pieces[1] %}
+      {% assign is_last = false %}
+      {% if forloop.last %}{% assign is_last = true %}{% endif %}
+
+      {% if is_last %}
+        <span class="bc-current">{{ bc_title }}</span>
+      {% else %}
+        <a href="{{ bc_url }}">{{ bc_title }}</a>
+        <span class="bc-sep">›</span>
+      {% endif %}
+    {% endfor %}
+  </nav>
+{% endif %}

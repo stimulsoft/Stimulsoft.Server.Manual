@@ -1,0 +1,45 @@
+{% for item in include.items %}
+  {% assign item_full_url = item.url | prepend: site.baseurl %}
+  {% assign current_url = page.url | remove: ".html" | remove_trailing_slash | prepend: site.baseurl %}
+  {% assign item_url_clean = item_full_url | remove_trailing_slash %}
+  {% assign is_active = false %}
+  {% if current_url == item_url_clean %}{% assign is_active = true %}{% endif %}
+
+  {% if item.children %}
+    {% assign has_active_child = false %}
+
+    {% for c1 in item.children %}
+      {% assign c1_url = c1.url | prepend: site.baseurl | remove_trailing_slash %}
+      {% if current_url == c1_url %}{% assign has_active_child = true %}{% endif %}
+      {% if c1.children %}
+        {% for c2 in c1.children %}
+          {% assign c2_url = c2.url | prepend: site.baseurl | remove_trailing_slash %}
+          {% if current_url == c2_url %}{% assign has_active_child = true %}{% endif %}
+          {% if c2.children %}
+            {% for c3 in c2.children %}
+              {% assign c3_url = c3.url | prepend: site.baseurl | remove_trailing_slash %}
+              {% if current_url == c3_url %}{% assign has_active_child = true %}{% endif %}
+              {% if c3.children %}
+                {% for c4 in c3.children %}
+                  {% assign c4_url = c4.url | prepend: site.baseurl | remove_trailing_slash %}
+                  {% if current_url == c4_url %}{% assign has_active_child = true %}{% endif %}
+                {% endfor %}
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+
+    <li class="has-children{% if is_active or has_active_child %} open{% endif %}">
+      <a href="{{ item_full_url }}"{% if is_active %} class="active"{% endif %}>{{ item.title }}</a>
+      <ul>
+        {% include sidebar_item.html items=item.children %}
+      </ul>
+    </li>
+  {% else %}
+    <li>
+      <a href="{{ item_full_url }}"{% if is_active %} class="active"{% endif %}>{{ item.title }}</a>
+    </li>
+  {% endif %}
+{% endfor %}
