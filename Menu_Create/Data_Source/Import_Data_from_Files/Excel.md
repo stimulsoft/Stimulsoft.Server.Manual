@@ -55,7 +55,7 @@ You should now select the Excel file and select Import Data to display the Impor
 
 > **Notice**
 >
-> **Notice:** Punctuation marks and special characters cannot be used in the column header. This is the limitation in the C# language. Therefore, at the presence of illegal characters, the header will remain unchanged.
+> * **Notice:** Punctuation marks and special characters cannot be used in the column header. This is the limitation in the C# language. Therefore, at the presence of illegal characters, the header will remain unchanged.
 
 
 * Last step - **Preview**. This step provides an opportunity to preview the future data table into its final form. If necessary, you can go back to previous steps and change settings. To complete importing data, you must click Finish:

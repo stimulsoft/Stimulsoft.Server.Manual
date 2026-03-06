@@ -35,9 +35,9 @@ The list of actions is generated when you create or edit the scheduler on the ta
 >
 > Methods for adding elements to the action parameters panel:
 >
-> Drag an element from the server elements list to the current panel.
+> * Drag an element from the server elements list to the current panel.
 >
-> Select an element in the server elements list and click the Add button on the action parameters panel.
+> * Select an element in the server elements list and click the Add button on the action parameters panel.
 
 Copy
 

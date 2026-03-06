@@ -14,7 +14,7 @@ Creating a master-detail report using the wizard includes 12 steps. Not all of t
 
 > **Notice**
 >
-> **Notice:** You should understand that the Master-Detail Report at least two sources, one of which is the master, and the second is detail. At the same time, the relation between these sources should be organized.
+> * **Notice:** You should understand that the Master-Detail Report at least two sources, one of which is the master, and the second is detail. At the same time, the relation between these sources should be organized.
 
 
 ![](../../images/img_3.png) Select data columns to be output in a report. This is a mandatory step.
@@ -29,7 +29,7 @@ Creating a master-detail report using the wizard includes 12 steps. Not all of t
 
 > **Notice**
 >
-> **Notice:** If the Master entry will not fit in the filter conditions, i.e. data is output for printing, in this case, all its subordinate entries will not be printed.
+> * **Notice:** If the Master entry will not fit in the filter conditions, i.e. data is output for printing, in this case, all its subordinate entries will not be printed.
 
 
 ![](../../images/img_7.png) The report, which has too large volume of data, can be easier to perceive, if to make grouping of data. For example, if the report contains a list of products, they can be grouped by the first letter of the product name. Parameters are determined by grouping in this step.

@@ -378,16 +378,23 @@
       max-width: 100%;
       height: auto;
       border: 1px solid var(--color-border);
-      border-radius: 8px;
       vertical-align: middle;
     }
 
-    /* Standalone image — alone in paragraph → block with margin */
-    #content p:has(> img:only-child) {
+    /* Standalone image paragraph (set by JS below) */
+    #content p.img-block {
       margin: 20px 0;
     }
-    #content p:has(> img:only-child) img {
+    #content p.img-block img {
       display: block;
+    }
+
+    /* Inline image — image alongside text → no border, no radius, aligned to text */
+    #content p:not(.img-block) img {
+      border: none;
+      border-radius: 0;
+      vertical-align: middle;
+      display: inline;
     }
 
     /* ── Code blocks ── */
@@ -506,7 +513,7 @@
     }
     .sidebar-heading {
       padding: 16px 16px 10px;
-      font-size: 0.95rem;
+      font-size: 0.9rem;
       font-weight: 600;
       color: var(--color-text);
       letter-spacing: 0.01em;
@@ -669,6 +676,17 @@
       var active = document.querySelector('#sidebar-nav a.active');
       if (active) active.scrollIntoView({ block: 'center', behavior: 'instant' });
     }
+
+    // Mark paragraphs that contain only an image (no text nodes) as block images
+    document.querySelectorAll('#content p').forEach(function(p) {
+      var hasText = Array.from(p.childNodes).some(function(n) {
+        return n.nodeType === Node.TEXT_NODE && n.textContent.trim() !== '';
+      });
+      var imgs = p.querySelectorAll('img');
+      if (imgs.length > 0 && !hasText && p.children.length === imgs.length) {
+        p.classList.add('img-block');
+      }
+    });
 
     // Copy code buttons
     document.querySelectorAll('#content pre').forEach(function(pre) {

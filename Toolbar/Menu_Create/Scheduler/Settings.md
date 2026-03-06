@@ -202,13 +202,13 @@ Sometimes you need to repeat the scheduler operations after its actions by the s
 >
 > The picture above shows an example of the enabled repeat mode: 3 repeats with an interval of half an hour after each execution of the schedule. Suppose there is a scheduler which runs daily at 10.00 AM. If the repeat mode is enabled (see the picture above), the scheduler will run:
 >
-> at 10.00 AM on a daily schedule;
+>   * at 10.00 AM on a daily schedule;
 >
-> at 10.30 AM will be the first repeat;
+>   * at 10.30 AM will be the first repeat;
 >
-> at 11.00 AM will be made to the second repeat;
+>   * at 11.00 AM will be made to the second repeat;
 >
-> at 11.30 AM will be made the third repetition.
+>   * at 11.30 AM will be made the third repetition.
 >
 >
 > The next day, the scheduler will run at 10.00 AM, and if the repeat mode is enabled, the repetitions will be performed.

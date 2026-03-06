@@ -19,4 +19,4 @@ Below is the menu **New Contact List**.
 
 ![](../../images/img_2.png) The field **Description**. You should put a brief description of the item.
 
-![](../../images/img_3.png) The field Email List. Here you need to place email addresses directly through the separator ",". In quotation marks, you can indicate information about the recipient, but in this case, the email address enclosed in <...>, like this **<Email>**.
+![](../../images/img_3.png) The field Email List. Here you need to place email addresses directly through the separator ",". In quotation marks, you can indicate information about the recipient, but in this case, the email address enclosed in &lt;...&gt;, like this **&lt;Email&gt;**.
