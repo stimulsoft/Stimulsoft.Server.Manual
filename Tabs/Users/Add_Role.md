@@ -55,108 +55,13 @@ Permissions Table
 In this table, you will find items (rows) and rights (columns) and short descriptions of permissions.
 
 
-Items / Rights
-
-**View**
-
-**Create**
-
-**Delete**
-
-**Modify**
-
-**Run**
-
-[Calendar](../../Toolbar/Menu_Create/Calendar.md)
-
-Allows viewing **Calendar**
-
-
-Allows creating **Calendar**
-
-Allows deleting **Calendar**
-
-Allows modifying **Calendar**
-
-[Contact List](../../Toolbar/Menu_Create/Contact_List.md)
-
-Allows viewing **Contact List**
-
-Allows creating **Contact List**
-
-Allows deleting **Contact List**
-
-Allows modifying **Contact List**
-
-
-[Data Sources](../../Toolbar/Menu_Create/Data_Source/index.md)
-
-
-Allows viewing **Data Sources**
-
-Allows creating **Data Sources**
-
-Allows deleting **Data Sources**
-
-Allows modifying **Data Sources**
-
-[Files](../../Toolbar/Menu_Create/File.md)
-
-Allows viewing **Files**
-
-Allows creating **Files**
-
-Allows deleting **Files**
-
-Allows modifying **Files**
-
-
-[Folders](../../Toolbar/Menu_Create/Folder.md)
-
-Allows viewing **Folders**
-
-Allows creating **Folders**
-
-Allows deleting **Folders**
-
-Allows modifying **Folders**
-
-
-Report Snapshots
-
-Allows viewing **Report Snapshots**
-
-Allows creating **Report Snapshots**
-
-Allows deleting **Report Snapshots**
-
-Allows modifying **Report Snapshots**
-
-Allows running **Report Snapshots**
-
-
-Report Templates
-
-Allows viewing **Report Template**
-
-Allows creating **Report Template**
-
-Allows deleting **Report Template**
-
-Allows modifying **Report Template**
-
-Allows running **Report Template**
-
-
-[Scheduler](../../Toolbar/Menu_Create/Scheduler/index.md)
-
-
-Allows viewing **Scheduler**
-
-Allows creating **Scheduler**
-
-Allows deleting **Scheduler**
-
-Allows modifying **Scheduler**
-
-Allows running **Scheduler**
+| Items / Rights | **View** | **Create** | **Delete** | **Modify** | **Run** |
+| --- | --- | --- | --- | --- | --- |
+| [Calendar](../../Toolbar/Menu_Create/Calendar.md) | Allows viewing **Calendar** | Allows creating **Calendar** | Allows deleting **Calendar** | Allows modifying **Calendar** |  |
+| [Contact List](../../Toolbar/Menu_Create/Contact_List.md) | Allows viewing **Contact List** | Allows creating **Contact List** | Allows deleting **Contact List** | Allows modifying **Contact List** |  |
+| [Data Sources](../../Toolbar/Menu_Create/Data_Source/index.md) | Allows viewing **Data Sources** | Allows creating **Data Sources** | Allows deleting **Data Sources** | Allows modifying **Data Sources** |  |
+| [Files](../../Toolbar/Menu_Create/File.md) | Allows viewing **Files** | Allows creating **Files** | Allows deleting **Files** | Allows modifying **Files** |  |
+| [Folders](../../Toolbar/Menu_Create/Folder.md) | Allows viewing **Folders** | Allows creating **Folders** | Allows deleting **Folders** | Allows modifying **Folders** |  |
+| Report Snapshots | Allows viewing **Report Snapshots** | Allows creating **Report Snapshots** | Allows deleting **Report Snapshots** | Allows modifying **Report Snapshots** | Allows running **Report Snapshots** |
+| Report Templates | Allows viewing **Report Template** | Allows creating **Report Template** | Allows deleting **Report Template** | Allows modifying **Report Template** | Allows running **Report Template** |
+| [Scheduler](../../Toolbar/Menu_Create/Scheduler/index.md) | Allows viewing **Scheduler** | Allows creating **Scheduler** | Allows deleting **Scheduler** | Allows modifying **Scheduler** | Allows running **Scheduler** |

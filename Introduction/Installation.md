@@ -45,35 +45,10 @@ Let's consider how to install **.NET Framework 4.5** and **Internet Information 
 Before starting the installation, you should review the system requirements.
 
 
-Criterion
-
-List
-
-Supported OS
-
-Windows 7 Service Pack 1; Windows Server 2008 R2 SP1;
-
-Windows Server 2008 Service Pack 2; Windows Vista Service Pack 2
-
-Windows Vista with 2 (SP2) (x86 and x64)
-
-Windows 7 with 1 (SP1) (x86 and x64)
-
-Windows Server 2008 R2 with 1 (SP1) (x64)
-
-Windows Server 2008 SP2 (x86 and x64)
-
-Windows 10
-
-Hardware Requirements
-
-Processor 1 GHz and higher
-
-RAM 512 Mb
-
-850 Mb free space (x86)
-
-2 Gb free space (x64)
+| Criterion | List |
+| --- | --- |
+| Supported OS | Windows 7 Service Pack 1; Windows Server 2008 R2 SP1; Windows Server 2008 Service Pack 2; Windows Vista Service Pack 2 Windows Vista with 2 (SP2) (x86 and x64) Windows 7 with 1 (SP1) (x86 and x64) Windows Server 2008 R2 with 1 (SP1) (x64) Windows Server 2008 SP2 (x86 and x64) Windows 10 |
+| Hardware Requirements | Processor 1 GHz and higher RAM 512 Mb 850 Mb free space (x86) 2 Gb free space (x64) |
 
 
 After that, you need to download the installer from the official[website](http://www.microsoft.com/en-US/download/details.aspx?id=30653) and install the product.

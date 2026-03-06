@@ -67,21 +67,11 @@ The height or rows in not exported (the "not set" mode; by default the "precise"
 If the **Tag** field is not empty, then the content of the Tag field is exported. The Text field is not exported. The following expression can be used to change MS-Word commands:
 
 
-Tags
-
-Description
-
-#PageNumber#
-
-The number of the current page (PAGE)
-
-#TotalPageCount#
-
-Total number of pages in the document (NUMPAGES)
-
-#PageRef Bookmark#
-
-The number of pages on what the bookmark is placed (PAGEREF)
+| Tags | Description |
+| --- | --- |
+| #PageNumber# | The number of the current page (PAGE) |
+| #TotalPageCount# | Total number of pages in the document (NUMPAGES) |
+| #PageRef Bookmark# | The number of pages on what the bookmark is placed (PAGEREF) |
 
 For example, the following expression can be written in the **Tag** field:
 
@@ -95,17 +85,10 @@ When exporting, **#PageNumber#** and **#TotalPageCount#** will be substituted on
 The following string-commands can be written in the **Tag** field:
 
 
-Commands
-
-Description
-
-rtfparagraph
-
-The TextBox, RichTextBox and Image content is output as simple text, in the table break;
-
-rtfnewpage
-
-The page break is put before the text box.
+| Commands | Description |
+| --- | --- |
+| rtfparagraph | The TextBox, RichTextBox and Image content is output as simple text, in the table break; |
+| rtfnewpage | The page break is put before the text box. |
 
 Also it is possible to export a separate sheets of a template to separate sections of the document with the headers/footers. To do this, use the ExcelSheet property. in this case all pages of a report with the same value of the ExcelSheet property are combined in groups, then each group is exported as a separate section of the document with its headers/footers. By default, this property is not filled, and the report is exported as a single partition.
 
