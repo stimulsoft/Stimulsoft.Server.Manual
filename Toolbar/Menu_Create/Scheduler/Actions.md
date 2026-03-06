@@ -37,9 +37,9 @@ The list of actions is generated when you create or edit the scheduler on the ta
 >
 > * Drag an element from the server elements list to the current panel.
 >
-> * Select an element in the server elements list and click the Add button on the action parameters panel.
+> * Select an element in the server elements list and click the **Add** button on the action parameters panel.
 
-Copy
+**Copy**
 
 Copying elements can be done using the scheduler. And, at the same time, you can copy multiple items, but to one destination. You cannot specify multiple destinations for copying. In addition, you can copy items to the list of contacts. In this case, a copy will be sent to the e-mail addresses from your contact list. You can also copy the item to an item. In this case, you must consider the following restrictions:
 
@@ -63,7 +63,7 @@ Below is the action menu **Copy**.
 >
 > If you specify the [contact list](../Contact_List.md) as the destination, it will be necessary to determine how to attach items to e-mail. Items can be directly attached as an attachment to the letter, or links to these items will be attached.
 
-Delete
+**Delete**
 
 The item can be removed by a certain schedule. To do this, add the **Delete** action in the scheduler and specify the items that must be removed when the scheduler triggers.
 
@@ -73,7 +73,7 @@ The item can be removed by a certain schedule. To do this, add the **Delete** ac
 
 ![](../../../images/img_1.png) The list of items that will be removed when the scheduler is triggered.
 
-Run Report
+**Run Report**
 
 The action **Run Report** is used to start the rendering of a report at a specific time, or to convert the report to any of the available file formats. After rendering, the report can be saved into the item tree, cloud storage, emailed, etc. Below is a menu of the action run a report.
 
@@ -104,17 +104,17 @@ The action **Run Report** is used to start the rendering of a report at a specif
 
 > **Information**
 >
-> For example, every hour a report named Report is converted to a PDF document. If the Overwrite If Existing parameter is disabled, then after four launches, there will be four elements named Report in a certain directory.
+> For example, every hour a report named **Report** is converted to a **PDF** document. If the **Overwrite If Existing** parameter is disabled, then after four launches, there will be four elements named **Report** in a certain directory.
 >
 >
-> If the Overwrite If Existing parameter is enabled, then after four launches, there will be one element Report in the same directory. It is also worth noting that this element will have 4 [versions](../../Versions.md).
+> If the **Overwrite If Existing** parameter is enabled, then after four launches, there will be one element **Report** in the same directory. It is also worth noting that this element will have 4 [versions](../../Versions.md).
 
 
-Run Scheduler
+**Run Scheduler**
 
 The action **Run Scheduler** provides the ability to run another scheduler. In other words, one scheduler can run the other, and that one is already carrying out any action. For this action, it is necessary to consider the following limitations:
 
-* The slave scheduler is the one that will run another scheduler must be of the type Once;
+* The slave scheduler is the one that will run another scheduler must be of the type **Once**;
 
 * One level structure. You cannot run a scheduler that will run another scheduler that will run the third scheduler. In other words, it is impossible to build a multilevel hierarchy of action.
 
@@ -127,7 +127,7 @@ Below is a menu of the action **Run Scheduler**.
 
 ![](../../../images/img_1.png) The slave scheduler. It will run when the **Run Scheduler** action of the main scheduler is executed.
 
-Send Email
+**Send Email**
 
 One of the actions that can be performed by a scheduler is sending emails. To do this, use the **Send Email** action. Below is a menu of this action.
 

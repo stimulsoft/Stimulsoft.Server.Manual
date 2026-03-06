@@ -6,7 +6,7 @@ A list of supported file formats is represented in the table below. All exports 
 
 ![](../../images/cross12.png)
 
-| № | Export Name |
+| **№** | **Export Name** |
 | --- | --- |
 | [Formats with Fixed Page Layout](Formats_with_Fixed_Page_Layout/index.md) |  |
 | 1 | [PDF](Formats_with_Fixed_Page_Layout/PDF/index.md) (Portable Document Format) |

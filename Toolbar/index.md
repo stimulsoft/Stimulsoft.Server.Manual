@@ -1,6 +1,6 @@
 ## Toolbar
 
-The toolbar contains the basic commands of the report server and its elements. At the same time, depending on the selected element, the list of commands may be different. The picture below shows the toolbar, with the commands for the **Report** and Dashboards item.
+The toolbar contains the basic commands of the report server and its elements. At the same time, depending on the selected element, the list of commands may be different. The picture below shows the toolbar, with the commands for the **Report** and **Dashboards** item.
 
 
 ![](../images/toolbar_dbs_reports.png)
@@ -23,7 +23,7 @@ The toolbar contains the basic commands of the report server and its elements. A
 ![](../images/attachment.png)
 
 
-![](../images/img_5.png) The View button. When you select this command, the report is rendered and loaded into the viewer.
+![](../images/img_5.png) The **View** button. When you select this command, the report is rendered and loaded into the viewer.
 
 ![](../images/img_6.png) The **Run** command. With this command, you can export the report without loading it in the report viewer.
 

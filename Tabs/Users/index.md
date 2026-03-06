@@ -5,7 +5,7 @@ All tools to control workspaces, accounts, and a system of the report server are
 
 ![](../../images/users.png)
 
-Toolbar
+**Toolbar**
 
 On the **Users tab**, you can control workspaces, roles, and accounts of other users.
 

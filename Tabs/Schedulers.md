@@ -1,6 +1,6 @@
 ## Schedulers
 
-The Schedulers tab will display schedulers Common and Schedulers folders:
+The **Schedulers** tab will display schedulers **Common** and **Schedulers** folders:
 
 
 ![](../images/shedulers.png)

@@ -20,24 +20,24 @@ As you can see in the picture above, the deleted items are displayed, keeping it
 >
 > It should be noted that when a folder is deleted (or restored), all items and subfolders within it will also be deleted (or restored).
 
-Recovering items
+**Recovering items**
 
-Any item deleted to the Recycle Bin can be restored. To do this:
+Any item deleted to the **Recycle Bin** can be restored. To do this:
 
 * Enable Recycle Bin mode;
 
-* Select the item and select the Recover command on the server toolbar.
+* Select the item and select the **Recover** command on the server toolbar.
 
 
 ![](../images/recover.png)
 
 
-The item will be restored to the folder from which it was deleted. It is also possible to restore several items at once if you select them simultaneously (using the Ctrl or Shift buttons). It is important to understand that:
+The item will be restored to the folder from which it was deleted. It is also possible to restore several items at once if you select them simultaneously (using the **Ctrl** or **Shift** buttons). It is important to understand that:
 * Restoring a deleted folder entails restoring all the items contained in it;
 * When restoring an item from a deleted folder, the folder will be restored automatically. The remaining items from this folder (or folders, if the nesting level is greater than 1) will not be restored.
 
 
-Emptying the recycle bin
+**Emptying the recycle bin**
 
 There are no special commands to empty the recycle bin. You can remove items from the recycle bin:
 

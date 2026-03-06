@@ -1,9 +1,9 @@
 ## Calendar
 
-In addition to the direct scheduler settings, you can create a launch schedule, designate weekends, holidays and other exception dates using the Calendar element. To create a calendar, select the Calendar command in the Create menu on the server toolbar.
+In addition to the direct scheduler settings, you can create a launch schedule, designate weekends, holidays and other exception dates using the **Calendar** element. To create a calendar, select the **Calendar** command in the **Create** menu on the server toolbar.
 
 
-The calendar is configured in the New Calendar menu when creating it, or in the Edit Calendar window when editing it.
+The calendar is configured in the **New Calendar** menu when creating it, or in the **Edit Calendar** window when editing it.
 
 
 ![](../../images/new_calendar.png)
@@ -21,7 +21,7 @@ The calendar is configured in the New Calendar menu when creating it, or in the 
 
 ![](../../images/img_6.png) On the **New Calendar** panel you can define settings of an item schedule. Depending on the Item type, other parameters may vary. Once the parameters are defined, the element, press the button Add to the element with the current settings written in the list of calendar items.
 
-Types of calendars
+**Types of calendars**
 
 Depending on the selected type, different parameters can be shown.
 

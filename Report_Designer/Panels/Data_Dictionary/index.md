@@ -7,7 +7,7 @@ The panel **Dictionary** displays attached data, available data sources, system 
 ![](../../../images/topics/Report_Designer.Panels.Data_Dictionary_1.png)
 
 
-The panel Dictionary consists of the Dictionary ToolBar, Data Tree, and Dictionary Setting Panel.
+**The panel** **Dictionary** **consists of** the **Dictionary ToolBar**, **Data Tree**, and **Dictionary Setting Panel****.**
 
 * The basic elements to control data dictionary can be found on the control panel.
 
@@ -21,7 +21,7 @@ The panel Dictionary consists of the Dictionary ToolBar, Data Tree, and Dictiona
 
 ![](../../../images/img_3.png) Using the button **Delete** one can delete any item in the data dictionary.
 
-* The Data Tree represents a list of all the data dictionary, which are displayed in a tree.
+* The **Data Tree** **represents a list of all the data dictionary, which are displayed in a tree.**
 
 
 ![](../../../images/topics/Report_Designer.Panels.Data_Dictionary_3.png)

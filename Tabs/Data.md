@@ -1,6 +1,6 @@
 ## Data
 
-On the Data tab, all data sources, files (Excel, JSON, CSV, XML, DBF), which contain information such as data, Common and Data folders, will be displayed:
+On the **Data** tab, all data sources, files (Excel, JSON, CSV, XML, DBF), which contain information such as data, **Common** and **Data** folders, will be displayed:
 
 
 ![](../images/data.png)

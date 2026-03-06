@@ -67,7 +67,7 @@ The height or rows in not exported (the "not set" mode; by default the "precise"
 If the **Tag** field is not empty, then the content of the Tag field is exported. The Text field is not exported. The following expression can be used to change MS-Word commands:
 
 
-| Tags | Description |
+| **Tags** | **Description** |
 | --- | --- |
 | #PageNumber# | The number of the current page (PAGE) |
 | #TotalPageCount# | Total number of pages in the document (NUMPAGES) |
@@ -85,7 +85,7 @@ When exporting, **#PageNumber#** and **#TotalPageCount#** will be substituted on
 The following string-commands can be written in the **Tag** field:
 
 
-| Commands | Description |
+| **Commands** | **Description** |
 | --- | --- |
 | rtfparagraph | The TextBox, RichTextBox and Image content is output as simple text, in the table break; |
 | rtfnewpage | The page break is put before the text box. |

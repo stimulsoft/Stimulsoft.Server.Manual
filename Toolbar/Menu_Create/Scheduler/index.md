@@ -19,9 +19,9 @@ Also, you can edit a scheduler, for this, you should:
 
 The scheduler is configured in its editor.
 
-Scheduler Editor
+**Scheduler Editor**
 
-The scheduler editor consists of the following tabs - Type, Settings, and Actions.
+The scheduler editor consists of the following tabs - **Type**, **Settings**, and **Actions**.
 
 
 ![](../../../images/new_sheduler.png)
@@ -36,8 +36,8 @@ As can be seen from the picture, the scheduler consists of the following tabs:
 * In the [Actions](Actions.md) tab, you can specify the list of what should be done with the scheduler.
 
 
-Scheduler Types
-On the Type tab, you can set up when the scheduler should run, when the scheduler actions will be executed. Frequency can be set as follows:
+**Scheduler Types**
+On the **Type** tab, you can set up when the scheduler should run, when the scheduler actions will be executed. Frequency can be set as follows:
 
 * [Hourly](Settings.md#Frequency). The scheduler will perform some action every hour, at a certain minute of every hour (minute configurable).
 

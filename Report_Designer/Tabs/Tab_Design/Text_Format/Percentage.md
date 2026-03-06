@@ -7,7 +7,7 @@ This format is used to show percent values. When formatting, the value is multip
 ![](../../../../images/topics/Report_Designer.Tabs.Tab_Design.Text_Format.Percentage_1.png)
 
 
-![](../../../../images/img_1.png) Use Group Separator
+![](../../../../images/img_1.png) **Use Group Separator**
 
 When the Group Separator is used then currency values will be separated into number positions.
 

@@ -33,4 +33,4 @@ As can be seen from the picture, this field indicates the status of the license 
 * **Expired Date**. The date when the subscription expires.
 
 
-There are also buttons Refresh License and Deactivate. When clicked, they will respectively update the license validity period or deactivate the license.
+There are also buttons **Refresh License** and **Deactivate**. When clicked, they will respectively update the license validity period or deactivate the license.

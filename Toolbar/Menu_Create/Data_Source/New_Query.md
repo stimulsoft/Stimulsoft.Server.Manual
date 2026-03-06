@@ -3,9 +3,9 @@
 The second way to obtain data from the storage is a method of retrieving data from the query to the repository. **Queries** are script-like texts in one of the dialects of SQL that is used to extract data from tables and to make them available to the report server. Queries get the data from database tables and, on their basis, create temporary tables. The data in the temporary table will be filtered, grouped, sorted, and arranged according to the query parameters. Then, the temporary table is passed to the report server. Applying requests provides an opportunity to avoid duplication of data in the tables, minimizes the amount of data traffic between the database and the client-side, and also provides maximum flexibility for searching and displaying data in a database. Below is the **New Query** dialog.
 
 
-New Query
+**New Query**
 
-Select the data connection and click the New Query button on the server toolbar to create a data query. After you clicked the New Query button, the New Query menu will be called.
+Select the data connection and click the **New Query** button on the server toolbar to create a data query. After you clicked the **New Query** button, the **New Query** menu will be called.
 
 
 ![](../../../images/new_query.png)
@@ -17,21 +17,21 @@ Select the data connection and click the New Query button on the server toolbar 
 
 ![](../../../images/img_3.png) Using the Refresh Frequency parameter, you can set the time interval, after which the connection to the data storage will be reconnected, and the necessary data will be updated. The following options are available:
 
-* Once - data is obtained once when creating a data source;
+* **Once** - data is obtained once when creating a data source;
 
-* Each 10 Minutes - in this case, data will be updated every 10 minutes;
+* **Each 10 Minutes** - in this case, data will be updated every 10 minutes;
 
-* Each 30 Minutes - the data will be updated every 30 minutes;
+* **Each 30 Minutes** - the data will be updated every 30 minutes;
 
-* Each Hour - select this option to update hourly;
+* **Each Hour** - select this option to update hourly;
 
-* Each 4 Hour - data will be updated after every 4 hours;
+* **Each 4 Hour** - data will be updated after every 4 hours;
 
-* Each Half Day - data will be updated every 12 hours;
+* **Each Half Day** - data will be updated every 12 hours;
 
-* Each Day - data will be updated once a day;
+* **Each Day** - data will be updated once a day;
 
-* Always - this option means that every time you build a report (when accessing a data source), data will be updated.
+* **Always** - this option means that every time you build a report (when accessing a data source), data will be updated.
 
 
 ![](../../../images/img_4.png) This field specifies the type - query or stored procedure.
@@ -60,9 +60,9 @@ Select the data connection and click the New Query button on the server toolbar 
 
 ![](../../../images/img_8.png) On the **Columns** panel, you can find the following tabs.
 
-Data Columns
+**Data Columns**
 
-Sometimes it is necessary to add a data column to the data source. To create a new data column, you must click Add Column.
+Sometimes it is necessary to add a data column to the data source. To create a new data column, you must click **Add Column**.
 
 
 ![](../../../images/topics/Toolbar.Menu_Create.Data_Source.New_Query_1.png)
@@ -83,7 +83,7 @@ Also, you can change the settings of the created column.
 
 ![](../../../images/img_3.png) The field **Type** provides the ability to select the type of the column.
 
-Parameters
+**Parameters**
 
 When creating a query, it is possible to use the **Parameter** object. This object is designed to send additional conditions for selecting data into a query. For example, if you need a query to use a value entered by the user each time the query is executed, you can create a query using parameters. The Parameter object can only be used with SQL data sources. These data sources typically have the Text Query field. To insert a parameter in the query, you must click the **New Parameter** button. The picture below shows the toolbar, on which the **New Parameter** button can be found.
 

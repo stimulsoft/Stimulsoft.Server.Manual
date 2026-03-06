@@ -8,7 +8,7 @@ The display panel includes commands to control modes of displaying server items:
 
 ![](../images/img_1.png) The full path to the current directory, the folder in which the user is located.
 
-![](../images/img_2.png) The button to enable the List mode. The items will be displayed a list of items with information about their type and date of creation.
+![](../images/img_2.png) The button to enable the **List** mode. The items will be displayed a list of items with information about their type and date of creation.
 
 
 ![](../images/list.png)

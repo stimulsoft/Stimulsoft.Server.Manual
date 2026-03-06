@@ -15,11 +15,11 @@ The **Role** is a category of users with specific rights and restrictions in the
 
 To create a new role, you should:
 
-* Go to the Users tab;
+* Go to the **Users** tab;
 
-* Click the Add Role button on the toolbar of the server.
+* Click the **Add Role** button on the toolbar of the server.
 
-Role Menu
+**Role Menu**
 
 When you create a new role, you can inherit **Permissions** from one of the existing roles selecting the parental role from the list.
 
@@ -50,12 +50,12 @@ In this case, the created role will be marked with checkboxes of the rights (per
 >
 > You should know that if the users of a certain role cannot view any item, then the rest of the actions performed on this item are not allowed too. For example, the role is not authorized to view the Scheduler, but the role has the right to create and run the Scheduler. In this case, members of this role CANNOT create or run the Scheduler.
 
-Permissions Table
+**Permissions Table**
 
 In this table, you will find items (rows) and rights (columns) and short descriptions of permissions.
 
 
-| Items / Rights | **View** | **Create** | **Delete** | **Modify** | **Run** |
+| **Items / Rights** | **View** | **Create** | **Delete** | **Modify** | **Run** |
 | --- | --- | --- | --- | --- | --- |
 | [Calendar](../../Toolbar/Menu_Create/Calendar.md) | Allows viewing **Calendar** | Allows creating **Calendar** | Allows deleting **Calendar** | Allows modifying **Calendar** |  |
 | [Contact List](../../Toolbar/Menu_Create/Contact_List.md) | Allows viewing **Contact List** | Allows creating **Contact List** | Allows deleting **Contact List** | Allows modifying **Contact List** |  |

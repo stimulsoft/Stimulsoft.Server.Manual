@@ -18,7 +18,7 @@ SSO uses the widely adopted OAuth 2.0 protocol, which is supported by most authe
 
 To activate one (or more) of the listed authentication providers, it is sufficient to set the Client ID and Client Secretvalues in the options. These can be obtained from the provider’s own console. This data will be used in requests to the selected provider’s server, which will verify it and, upon successful authorization, return a unique user token. The token will be linked to the Server user account and used for subsequent quick logins to the system.
 
-ASP.NET
+**ASP.NET**
 
 File:
 
@@ -30,7 +30,7 @@ Section:
 Accounts
 
 
-| Name | Description |
+| **Name** | **Description** |
 | --- | --- |
 | AllowOAuthRegistration | Allows new user registration through OAuth authentication. |
 | DefaultUserRoleKey | Default role key assigned to new users during OAuth registration. |
@@ -47,12 +47,12 @@ Accounts
 | OktaClientSecret | Okta OAuth Client Secret for SSO authentication. |
 | OktaDomain | Okta Domain for SSO authentication (e.g., your-domain.okta.com). |
 
-Docker
+**Docker**
 
 Accounts
 
 
-| Name | Description |
+| **Name** | **Description** |
 | --- | --- |
 | Accounts__AllowOAuthRegistration | Allows new user registration through OAuth authentication. |
 | Accounts__DefaultUserRoleKey | Default role key assigned to new users during OAuth registration. |

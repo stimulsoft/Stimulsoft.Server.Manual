@@ -16,11 +16,11 @@ The information below shows the compatibility of Adobe Acrobat versions.
 * If the "UseUnicode" option in export parameters is enabled, then it is necessary to embed fonts (the "Embedded Fonts" option), otherwise the will be output incorrectly.
 
 
-Adobe Acrobat 7
+**Adobe Acrobat 7**
 
 * It is necessary to embed fonts to the PDF file. Otherwise, when editing, any font will be replaced on the default font (usually on Tahoma).
 
 
-Adobe Acrobat 7 Reader
+**Adobe Acrobat 7 Reader**
 
 * There are some problems with 7.0.5 - 7.0.9 versions. In these versions the field is not included into the editing mode, if there are non Latin characters present in the text field (different from Latin-1).

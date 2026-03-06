@@ -1,6 +1,6 @@
 ## Report
 
-You can add the report to the list of items. Select the New Report panel command in the Create menu. In the menu that pops up, you can attach various server elements to the new report or upload files from the local storage.
+You can add the report to the list of items. Select the **New Report** panel command in the **Create** menu. In the menu that pops up, you can attach various server elements to the new report or upload files from the local storage.
 
 
 ![](../../images/new_report.png)
@@ -17,4 +17,4 @@ You can add the report to the list of items. Select the New Report panel command
 
 > **Information**
 >
-> You should know that all elements and files attached to the report will be added to its resources. This does not apply to [Data Sources](Data_Source/index.md) and [Data Files](File.md). Based on any attached data source or data file, data sources in the dictionary will be created. Also, you can use some types of files added to resources in the development of reports. For example, an attached Text File, a file added to report resources, can be a source of text when working with text components of a report, including a Rich Text component.
+> You should know that all elements and files attached to the report will be added to its resources. This does not apply to [Data Sources](Data_Source/index.md) and [Data Files](File.md). Based on any attached data source or data file, data sources in the dictionary will be created. Also, you can use some types of files added to resources in the development of reports. For example, an attached **Text File**, a file added to report resources, can be a source of text when working with text components of a report, including a **Rich Text** component.

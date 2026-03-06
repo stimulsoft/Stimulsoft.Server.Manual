@@ -13,9 +13,9 @@ To generate a local .pfx certificate in .NET, run the following command:
 
 This command specifies the certificate’s output path and password. Note that such a certificate is suitable for development and testing purposes only. For production environments, a certificate from a trusted certification authority should be used.
 
-Connecting the Certificate
+**Connecting the Certificate**
 
-Navigate to the folder with your Docker container and create a subfolder called stimulsoft-server. Then, copy the generated certificate into that folder.
+Navigate to the folder with your **Docker** container and create a subfolder called **stimulsoft-server**. Then, copy the generated certificate into that folder.
 
 
 Next, edit the docker-compose.yml file by adding parameters to enable HTTPS. You will need to define the HTTPS port, internal URLs (for production, it is recommended to use real domain names or IP addresses instead of `*`), and the path to the certificate along with its password:
@@ -59,7 +59,7 @@ Launch the container using the following command:
 Now, Stimulsoft Server will be available via HTTPS at port 8081 using the address: http://localhost:8081. The server will still be accessible via HTTP at: http://localhost:8080.
 
 
-Docker-compose.yml File
+**Docker-compose.yml File**
 
 Below is an example of the contents of a docker-compose.yml file:
 

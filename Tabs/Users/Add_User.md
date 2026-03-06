@@ -5,11 +5,11 @@ You can add other user accounts to the workspace. Before you add a new user, you
 
 To create a new user, you should:
 
-* Go to the Users tab;
+* Go to the **Users** tab;
 
-* Click the Add User button on the toolbar of the server.
+* Click the **Add User** button on the toolbar of the server.
 
-User Menu
+**User Menu**
 
 In this menu, you can specify all user information and manage the user account.
 
@@ -33,7 +33,7 @@ In this menu, you can specify all user information and manage the user account.
 
 ![](../../images/img_8.png) In the picture field, you can upload an image that will be the user's avatar.
 
-Root Folder
+**Root Folder**
 
 When you create or edit a user account, you can specify the root folder for it. This folder will be the beginning of the hierarchy of server items for the current user account. Below is a diagram of components for the root administrator:
 
@@ -41,7 +41,7 @@ When you create or edit a user account, you can specify the root folder for it. 
 ![](../../images/root_folder.png)
 
 
-For example, for a certain user account, we specify Folder4 as the root. Then when logging into the server workspace, Folder4 will be the root directory for this user account, and the hierarchy of server elements will be as follows.
+For example, for a certain user account, we specify **Folder4** as the root. Then when logging into the server workspace, **Folder4** will be the root directory for this user account, and the hierarchy of server elements will be as follows.
 
 
 ![](../../images/root_folder_1.png)

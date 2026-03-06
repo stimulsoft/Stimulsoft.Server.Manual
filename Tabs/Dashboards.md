@@ -1,6 +1,6 @@
 ## Dashboards
 
-On the Dashboards tab, report templates, folders of the Common type and folders of the Dashboards type will be displayed:
+On the **Dashboards** tab, report templates, folders of the **Common** type and folders of the **Dashboards** type will be displayed:
 
 
 ![](../images/dashboards.png)

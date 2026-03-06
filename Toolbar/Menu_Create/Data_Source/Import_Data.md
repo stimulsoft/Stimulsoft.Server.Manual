@@ -10,15 +10,15 @@ After creating a [connection to the data storage](Connection.md), you need to ge
 
 * CSV, DBF.
 
-Import Data
+**Import Data**
 
-You can get data from the storage using the Import Data command. Select the data connection and click the Import Data button on the server toolbar.
+You can get data from the storage using the **Import Data** command. Select the data connection and click the **Import Data** button on the server toolbar.
 
 
 ![](../../../images/import_button.png)
 
 
-As you can see in the picture, in the item list of the server, the **MS SQL** data source is selected. When you choose the Import Data command, **Stimulsoft Server** will check the data storage for the presence of tables, views, stored procedures, etc. The result will be displayed as the **Import Data**:
+As you can see in the picture, in the item list of the server, the **MS SQL** data source is selected. When you choose the **Import Data** command, **Stimulsoft Server** will check the data storage for the presence of tables, views, stored procedures, etc. The result will be displayed as the **Import Data**:
 
 
 ![](../../../images/select_tables.png)
@@ -43,7 +43,7 @@ Once the necessary tables, views, stored procedures, and other elements of the d
 
 Now the data tables can be attached to the report. All attached tables will be displayed in the data dictionary of a report. It is also possible to attach a data source to the report. In this case, the data dictionary will have all the attached tables of the data source.
 
-Editing data tables
+**Editing data tables**
 
 You can modify data tables. For example, change the type and number of data columns. To do this, select a data table and click **Edit**.
 
@@ -96,40 +96,40 @@ You can modify data tables. For example, change the type and number of data colu
 
 Also, when editing a SQL data source, you can use [parameters in the query](New_Query.md#Parameters).
 
-Import Data from Files
+**Import Data from Files**
 
 The command **Import Data** provides the ability to retrieve data from files (XML, CSV, JSON, Excel, DBF) and convert them into tables. This command can be found on the **Toolbar** of the file from which it is possible to import.
 
 
 ![](../../../images/import_from_excel.png)
 
-Sample Import Data from File
+**Sample Import Data from File**
 
 Let’s look at how to retrieve data from an XML file. Data can also be retrieved in a similar way from Excel (XLS, XLSX), JSON, CSV, and DBF files.
 
 
-Step 1: First, you need to upload the XML and XSD files to the server workspace. To do this, drag and drop the XML and XSD files from any location into the list of elements, or create a [File](../File.md) element and upload the XML and XSD files to it.
+**Step 1**: First, you need to upload the **XML** and **XSD** files to the server workspace. To do this, drag and drop the **XML** and **XSD** files from any location into the list of elements, or create a [File](../File.md) element and upload the **XML** and **XSD** files to it.
 
 
 ![](../../../images/adding_xml_data.png)
 
 
-Step 2: The XSD file must be linked to the XML file. To do this, drag the XSD file onto the XML file, hover your cursor over the XSD file, hold down the left mouse button, then drag and drop it onto the XML file. Alternatively, you can link it using the XML file's Edit form. Select the XML file from the element list and click the Edit button on the toolbar. In the edit form, attach the XSD file.
+**Step 2**: The **XSD** file must be linked to the **XML** file. To do this, drag the **XSD** file onto the **XML** file, hover your cursor over the **XSD** file, hold down the left mouse button, then drag and drop it onto the **XML** file. Alternatively, you can link it using the **XML** file's Edit form. Select the **XML** file from the element list and click the **Edit** button on the toolbar. In the edit form, attach the **XSD** file.
 
 
-Step 3: Select the XML file from the element list and click the Import Data button on the toolbar. The report server will extract the data from the file, convert it into tables, and display the result in the Import Data window.
+**Step 3**: Select the **XML** file from the element list and click the **Import Data** button on the toolbar. The report server will extract the data from the file, convert it into tables, and display the result in the **Import Data** window.
 
 
 ![](../../../images/select_table_from_file.png)
 
 
-Step 4: In this window, you can select data tables. In the example above, the selected tables are **Categories**, **Products**, **GlobalGrowth**.
+**Step 4**: In this window, you can select data tables. In the example above, the selected tables are **Categories**, **Products**, **GlobalGrowth**.
 
 
-Step 5: You need to click the Ok button.
+**Step 5**: You need to click the **Ok** button.
 
 
-After you click the Ok button, the selected tables will be displayed in the item list. Now, based on these tables, you can generate reports and dashboards.
+After you click the **Ok** button, the selected tables will be displayed in the item list. Now, based on these tables, you can generate reports and dashboards.
 
 
 ![](../../../images/display_tables_from_file.png)

@@ -8,11 +8,11 @@ On the **System** tab, you can edit the Email Stimulsoft Server templates.
 
 The templates are configured in the Email editor. To call the editor, you should:
 
-* Go to the System tab;
+* Go to the **System** tab;
 
-* Click the Email Templates button on the server toolbar.
+* Click the **Email Templates** button on the server toolbar.
 
-Email templates
+**Email templates**
 
 This panel displays a list of actions, under which the user will be notified:
 
@@ -26,7 +26,7 @@ This panel displays a list of actions, under which the user will be notified:
 
 * After changing the password to an account, the user will receive an email according to the **User Reset Password Complete** template. The email address is as specified during the registration process.
 
-Templates Editor
+**Templates Editor**
 
 You can edit a letter template. Moreover, editing can be done both in visual mode and in HTML.
 

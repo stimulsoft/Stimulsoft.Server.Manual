@@ -1,12 +1,12 @@
 ## Server in Docker
 
-This chapter covers launching Stimulsoft Server in a Docker container. The product is built on the .NET 8 platform, which ensures cross-platform compatibility and allows it to run on various operating systems. The primary requirement is that Docker must be installed and functioning correctly on the system in use. We also recommend reviewing the following chapters:
+This chapter covers launching **Stimulsoft Server** in a Docker container. The product is built on the .NET 8 platform, which ensures cross-platform compatibility and allows it to run on various operating systems. The primary requirement is that **Docker** must be installed and functioning correctly on the system in use. We also recommend reviewing the following chapters:
 
 * [Using the HTTPS protocol](Https.md);
 
 * [Key options for working with Stimulsoft Server in a Docker container](Options.md).
 
-System Requirements
+**System Requirements**
 
 The minimum system requirements for Stimulsoft Server include:
 
@@ -20,12 +20,12 @@ The minimum system requirements for Stimulsoft Server include:
 
 * At least 500 MB of free disk space.
 
-Deployment Using docker-compose
+**Deployment Using docker-compose**
 
 In this case, create a docker-compose.yml file. Below is an example configuration file:
 
 
-docker-compose.yml
+**docker-compose.yml**
 
 
 `services:`
@@ -70,7 +70,7 @@ docker-compose.yml
 Then, run the docker-compose.yml file:
 
 
-terminal
+**terminal**
 
 
 `docker compose up`

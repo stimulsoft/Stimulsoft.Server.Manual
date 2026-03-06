@@ -1,9 +1,9 @@
 ## Folder
 
-Folders in the list of elements are necessary for organizing and storing other server elements and folders in them. Also, using folders, you can create hierarchies in the list of Stimulsoft Server elements. In addition, a folder can be the beginning of the list of elements for certain users, i.e. be the [root folder for a certain user](../../Tabs/Users/Add_User.md#RootFolder).
+Folders in the list of elements are necessary for organizing and storing other server elements and folders in them. Also, using folders, you can create hierarchies in the list of **Stimulsoft Server** elements. In addition, a folder can be the beginning of the list of elements for certain users, i.e. be the [root folder for a certain user](../../Tabs/Users/Add_User.md#RootFolder).
 
 
-To create a folder, select the Folder command in the Create menu on the server toolbar.
+To create a folder, select the **Folder** command in the **Create** menu on the server toolbar.
 
 
 ![](../../images/new_folder.png)

@@ -15,8 +15,8 @@ To find out where the item is used, you should do the following:
 
 As can be seen from the picture above, the **Using** menu shows the following information:
 
-* The name of the item about which information is requested. In this case, it is Calendar.
+* The name of the item about which information is requested. In this case, it is **Calendar**.
 
 * Date and time of attaching to another item.
 
-* The list of items where the selected item is used. In this case, these is  Hourly Scheduler.
+* The list of items where the selected item is used. In this case, these is  **Hourly Scheduler**.

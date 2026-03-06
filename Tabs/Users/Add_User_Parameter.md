@@ -1,6 +1,6 @@
 ## Add User Parameter
 
-User Parameter is a local variable that is automatically added to the report template when the user opens it.
+**User Parameter** is a local variable that is automatically added to the report template when the user opens it.
 
 
 > **Information**
@@ -11,13 +11,13 @@ User Parameter is a local variable that is automatically added to the report tem
 
 To create a user parameter, you should:
 
-* Go to the Users tab
+* Go to the **Users** tab
 
 * Select the appropriate context: workspace, role, or specific user
 
-* Click the Add User Parameter button on the server toolbar
+* Click the **Add User Parameter** button on the server toolbar
 
-Creating a User Parameter
+**Creating a User Parameter**
 
 
 ![](../../images/new_user_parameter.png)

@@ -18,7 +18,7 @@ This menu contains commands for working with the report template:
 
 ![](../../images/img_2.png) Defining units in the report. For example, if you select centimeters then all the calculations in the report will be made in centimeters.
 
-* Protect Report
+* **Protect Report**
 
 
 The report template can be password protected. To do this, select the Security item of the report, specify the password and click the Ok button:

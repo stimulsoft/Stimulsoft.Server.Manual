@@ -1,6 +1,6 @@
 ## Login Dialog
 
-When you run Stimulsoft Server, the first menu displayed is user authentication. Here you must specify the username and password of an account to get to the workspace. Below is the login dialog:
+When you run **Stimulsoft Server**, the first menu displayed is user authentication. Here you must specify the username and password of an account to get to the workspace. Below is the login dialog:
 
 
 ![](../images/log_in_window.png)
@@ -18,7 +18,7 @@ When you run Stimulsoft Server, the first menu displayed is user authentication.
 
 ![](../images/img_6.png) This button redirects you to the registration form of a new account with a new workspace.
 
-Sign Up
+**Sign Up**
 
 If you want to register a new account and workspace, go to the Registration menu and fill in the user profile.
 
@@ -40,7 +40,7 @@ If you want to register a new account and workspace, go to the Registration menu
 
 ![](../images/img_7.png) Click this menu item if you do not need registration or already have the account.
 
-Forgot Password
+**Forgot Password**
 
 Sometimes you need to log in to your account but forgot your password. To recover your password, use the following menu.
 

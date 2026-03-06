@@ -3,11 +3,11 @@
 Sometimes, when editing items, especially when multiple users can modify the same items, some issues may occur. As a consequence, it is necessary to cancel the last, previous, and other changes, go back to the previous version of this item. It should be known that for each item change, a copy of this item state is created. And this state does not overwrite its previous state. Therefore, you can always refer to any copy of an item. This can be accomplished in the menu **Versions** of a selected item. This menu contains commands, as well as all versions' history of the item.
 
 
-To call the Versions menu, you should:
+To call the **Versions** menu, you should:
 
 * Select an item in the list of server items;
 
-* Click the Versions button in the ...More menu on the server toolbar.
+* Click the **Versions** button in the ...**More** menu on the server toolbar.
 
 
 ![](../images/versions.png)

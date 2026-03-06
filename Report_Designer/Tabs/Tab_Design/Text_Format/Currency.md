@@ -11,7 +11,7 @@ It is used to output values as currency. The format **Currency** can be used to 
 
 When the Group Separator is used then currency values will be separated into number positions.
 
-![](../../../../images/img_2.png) Use **Local setting**
+![](../../../../images/img_2.png) **Use** **Local setting**
 
 When using the Local settings, currency values are formatted according to the current OS installations.
 
