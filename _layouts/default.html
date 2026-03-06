@@ -73,7 +73,7 @@
       display: block;
     }
 
-    /* Header search */
+    /* Header search (desktop — inline in header) */
     #header-search {
       width: 100%;
       max-width: 1100px;
@@ -171,11 +171,6 @@
       font-size: 13px;
       color: var(--color-text-muted);
       text-align: center;
-    }
-
-    /* Header actions wrapper (contains nav + mobile buttons) */
-    #header-actions {
-      display: contents; /* on desktop: children participate in grid directly */
     }
 
     /* Header nav links */
@@ -525,7 +520,7 @@
     }
     #menu-toggle:hover { background: var(--color-hover-bg); color: var(--color-text); }
 
-    /* ── Mobile search toggle (icon only) ── */
+    /* ── Mobile search toggle (icon, hidden on desktop) ── */
     #search-toggle {
       display: none;
       align-items: center;
@@ -540,7 +535,7 @@
     }
     #search-toggle:hover { background: var(--color-hover-bg); color: var(--color-text); }
 
-    /* ── Mobile search close button (hidden everywhere except search-open on mobile) ── */
+    /* ── Mobile search close button ── */
     #search-close {
       display: none;
       align-items: center;
@@ -574,12 +569,12 @@
       #header-search { display: none; }
       #search-toggle { display: flex; }
       #menu-toggle { display: flex; }
-      #header-actions { display: flex; align-items: center; gap: 4px; }
-      #header-inner { grid-template-columns: auto 1fr auto; }
+      #header-inner { grid-template-columns: auto 1fr; }
+      #header-actions { display: flex; align-items: center; gap: 4px; justify-self: end; }
       #page { flex-direction: column; }
 
-      /* Search-open mode: full-width search bar */
-      #site-header.search-open #header-inner { grid-template-columns: 1fr auto; }
+      /* Search-open mode: full-width search bar in header */
+      #site-header.search-open #header-inner { grid-template-columns: 1fr auto; gap: 8px; }
       #site-header.search-open #logo { display: none; }
       #site-header.search-open #header-actions { display: none; }
       #site-header.search-open #header-search { display: block; max-width: none; }
@@ -625,11 +620,13 @@
         <img src="https://www.stimulsoft.com/en/documentation/online/programming-manual/logo.svg" alt="Stimulsoft">
       </a>
 
+      <!-- Desktop: inline search in center column -->
       <div id="header-search">
         <input id="search-input" type="search" placeholder="Search documentation..." autocomplete="off" spellcheck="false">
         <div id="search-results"></div>
       </div>
 
+      <!-- Desktop: nav links (right column) / Mobile: search+menu buttons -->
       <div id="header-actions">
         <button id="search-toggle" aria-label="Open search">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="6"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
@@ -742,11 +739,9 @@
 
     searchClose.addEventListener('click', function() {
       siteHeader.classList.remove('search-open');
-      var inp = document.getElementById('search-input');
-      inp.value = '';
-      var res = document.getElementById('search-results');
-      res.innerHTML = '';
-      res.classList.remove('visible');
+      searchInput.value = '';
+      searchResults.innerHTML = '';
+      searchResults.classList.remove('visible');
     });
   </script>
   <script>
