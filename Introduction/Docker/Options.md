@@ -5,19 +5,15 @@ All necessary configurations can be specified in the docker-compose.yml file usi
 
 **docker-compose.yml**
 
-`...`
-
-`Environment:`
-
-`ASPNETCORE_HTTP_PORTS: 8080`
-
-`Urls: "http://*:8080"`
-
-`Storage__DatabaseType: "MySql"`
-
-`Storage__MySqlConnectionString: "Server=mysql; port=3306; Database=server; UserId=root; Pwd=root;"`
-
-`...`
+```yaml
+...
+Environment:
+    ASPNETCORE_HTTP_PORTS: 8080
+    Urls: "http://*:8080"
+    Storage__DatabaseType: "MySql"
+    Storage__MySqlConnectionString: "Server=mysql; port=3306; Database=server; UserId=root; Pwd=root;"
+...
+```
 
 **Core Settings**
 
@@ -115,10 +111,9 @@ Additionally, it is recommended to mount a folder with server working files and 
 
 **docker-compose.yml**
 
-`...`
-
-`volumes:`
-
-`- ./stimulsoft-server:/var/lib/stimulsoft-server`
-
-`...`
+```yaml
+...
+volumes:
+    - ./stimulsoft-server:/var/lib/stimulsoft-server
+...
+```

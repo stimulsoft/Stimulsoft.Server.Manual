@@ -27,45 +27,29 @@ In this case, create a docker-compose.yml file. Below is an example configuratio
 
 **docker-compose.yml**
 
+```yaml
 
-`services:`
-
-`server:`
-
-`image: stimulsoft/server:latest`
-
-`ports:`
-
-`- 8080:8080`
-
-`environment:`
-
-`ASPNETCORE_HTTP_PORTS: 8080`
-
-`ASPNETCORE_ENVIRONMENT: "Development"`
-
-`Storage__DatabaseType: "MySql"`
-
-`Storage__MySqlConnectionString: "Server=mysql; port=3306; Database=server; UserId=root; Pwd=root;"`
-
-
-`mysql:`
-
-`image: mysql:8.0`
-
-`ports:`
-
-`- 3306:3306`
-
-`volumes:`
-
-`- './mysql:/var/lib/mysql'`
-
-`environment:`
-
-`MYSQL_ROOT_PASSWORD: "root"`
-
-`MYSQL_DATABASE: "server"`
+services:
+    server:
+        image: stimulsoft/server:latest
+        ports:
+            - 8080:8080
+        environment:
+            ASPNETCORE_HTTP_PORTS: 8080
+            ASPNETCORE_ENVIRONMENT: "Development"
+            Storage__DatabaseType: "MySql"
+            Storage__MySqlConnectionString: "Server=mysql; port=3306; Database=server; UserId=root; Pwd=root;"
+ 
+    mysql:
+        image: mysql:8.0
+        ports:
+            - 3306:3306
+        volumes:
+            - './mysql:/var/lib/mysql'
+        environment:
+            MYSQL_ROOT_PASSWORD: "root"
+            MYSQL_DATABASE: "server"
+```
 
 Then, run the docker-compose.yml file:
 

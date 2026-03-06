@@ -23,30 +23,26 @@ Next, edit the docker-compose.yml file by adding parameters to enable HTTPS. You
 
 **docker-compose.yml**
 
-`...`
-
-`ASPNETCORE_HTTPS_PORTS: 8081`
-
-`Urls: "https://*:8081;http://*:8080"`
-
-`ASPNETCORE_Kestrel__Certificates__Default__Path: "/var/lib/stimulsoft-server/aspnetapp.pfx"`
-
-`ASPNETCORE_Kestrel__Certificates__Default__Password: 123456`
-
-`...`
+```yaml
+...
+    ASPNETCORE_HTTPS_PORTS: 8081
+    Urls: "https://*:8081;http://*:8080"
+    ASPNETCORE_Kestrel__Certificates__Default__Path: "/var/lib/stimulsoft-server/aspnetapp.pfx"
+    ASPNETCORE_Kestrel__Certificates__Default__Password: 123456
+...
+```
 
 If the directory with the server files hasn't yet been mounted, this can be done using the volumes section in docker-compose.yml:
 
 
 **docker-compose.yml**
 
-`...`
-
-`volumes:`
-
-`- ./stimulsoft-server:/var/lib/stimulsoft-server`
-
-`...`
+```yaml
+...
+    volumes:
+        - ./stimulsoft-server:/var/lib/stimulsoft-server
+...
+```
 
 Launch the container using the following command:
 
@@ -66,54 +62,32 @@ Below is an example of the contents of a docker-compose.yml file:
 
 **docker-compose.yml**
 
+```yaml
 
-`services:`
-
-`server:`
-
-`image: stimulsoft/server:dev`
-
-`ports:`
-
-`- 8080:8080`
-
-`- 8081:8081`
-
-`volumes:`
-
-`- ./stimulsoft-server:/var/lib/stimulsoft-server`
-
-`environment:`
-
-`ASPNETCORE_HTTP_PORTS: 8080`
-
-`ASPNETCORE_HTTPS_PORTS: 8081`
-
-`Urls: "https://*:8081;http://*:8080"`
-
-`ASPNETCORE_Kestrel__Certificates__Default__Path: "/var/lib/stimulsoft-server/aspnetapp.pfx"`
-
-`ASPNETCORE_Kestrel__Certificates__Default__Password: 123456`
-
-`Storage__DatabaseType: "MySql"`
-
-`Storage__MySqlConnectionString: "Server=mysql; port=3306; Database=server; UserId=root; Pwd=root;"`
-
-
-`mysql:`
-
-`image: mysql:8.0`
-
-`ports:`
-
-`- 3306:3306`
-
-`volumes:`
-
-`- './mysql:/var/lib/mysql'`
-
-`environment:`
-
-`MYSQL_ROOT_PASSWORD: "root"`
-
-`MYSQL_DATABASE: "server"`
+services:
+    server:
+        image: stimulsoft/server:dev
+        ports:
+            - 8080:8080
+            - 8081:8081
+        volumes:
+            - ./stimulsoft-server:/var/lib/stimulsoft-server
+        environment:
+            ASPNETCORE_HTTP_PORTS: 8080
+            ASPNETCORE_HTTPS_PORTS: 8081
+            Urls: "https://*:8081;http://*:8080"
+            ASPNETCORE_Kestrel__Certificates__Default__Path: "/var/lib/stimulsoft-server/aspnetapp.pfx"
+            ASPNETCORE_Kestrel__Certificates__Default__Password: 123456
+            Storage__DatabaseType: "MySql"
+            Storage__MySqlConnectionString: "Server=mysql; port=3306; Database=server; UserId=root; Pwd=root;"
+  
+    mysql:
+        image: mysql:8.0
+        ports:
+            - 3306:3306
+        volumes:
+            - './mysql:/var/lib/mysql'
+        environment:
+            MYSQL_ROOT_PASSWORD: "root"
+            MYSQL_DATABASE: "server"
+```
