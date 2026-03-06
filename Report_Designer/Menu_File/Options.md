@@ -16,9 +16,9 @@ In the **Options** menu you can find advanced settings of the report designer. T
 
 ![](../../images/img_1.png) The commands to manage the grid:
 
-  * The **Align to Grid** parameter provides an opportunity to align components by the grid.
+* The **Align to Grid** parameter provides an opportunity to align components by the grid.
 
-  * The **Show Grid** parameter provides the ability to enable or disable the grid in the report designer.
+* The **Show Grid** parameter provides the ability to enable or disable the grid in the report designer.
 
 
 ![](../../images/img_2.png) The grid drawing method. **Lines** or **Dots**.

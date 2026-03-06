@@ -33,11 +33,11 @@ Depending on the selected type, different parameters can be shown.
 
 * The type **Relative day** of the year. In this case, the calendar will not be "tied" to a specific date. The schedule parameters are:
 
-  * Priority: First, Second, Third, Fourth, Last.
+* Priority: First, Second, Third, Fourth, Last.
 
-  * The day of the week.
+* The day of the week.
 
-  * The month of the year.
+* The month of the year.
 
 
 * The **Holidays** type. This type of calendar provides an opportunity to create a schedule considering country holidays. For this type, you should choose a country. After this, the list of holidays, which may be present in the schedule, will be displayed on the panel of new items. If necessary, you can add one holiday or all at once to the items of the calendar.
@@ -45,11 +45,11 @@ Depending on the selected type, different parameters can be shown.
 
 * The type **Easter**. Schedule for this type will be calculated off-day of Easter, which is the start date, and it measured the number of days to offset. You should know that if this year Easter has passed, the reference point is Easter next year. Consider the examples of indications of some values:
 
-  * The minimum value that can be specified is -365. The calendar date will be a day before Easter - 365 days.
+* The minimum value that can be specified is -365. The calendar date will be a day before Easter - 365 days.
 
-  * The maximum value that can be specified is 365. The calendar date will be the day after the Easter day +365 days.
+* The maximum value that can be specified is 365. The calendar date will be the day after the Easter day +365 days.
 
-  * If the number of days is not specified or is 0, then, in this case, the date of the calendar will be Easter (if Easter has passed this year, it will be a day of Easter next year, if the day of Easter had not yet arrived - in the current year).
+* If the number of days is not specified or is 0, then, in this case, the date of the calendar will be Easter (if Easter has passed this year, it will be a day of Easter next year, if the day of Easter had not yet arrived - in the current year).
 
 
 > **Information**

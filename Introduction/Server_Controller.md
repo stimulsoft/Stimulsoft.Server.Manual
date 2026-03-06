@@ -94,43 +94,43 @@ This tab is where you configure the settings.
 
 In the Navigation section, you can configure the display of:In the Navigation section, you can configure the display of:
 
-  * Show New. Displays the option to create new elements
+* Show New. Displays the option to create new elements
 
-  * Show All Elements. Displays the "All Elements" item
+* Show All Elements. Displays the "All Elements" item
 
-  * Show Reports. Displays the "Reports" item
+* Show Reports. Displays the "Reports" item
 
-  * Show Dashboards. Displays the "Dashboards" item
+* Show Dashboards. Displays the "Dashboards" item
 
-  * Show Data. Displays the "Data" item
+* Show Data. Displays the "Data" item
 
-  * Show Schedulers. Displays the "Schedulers" item
+* Show Schedulers. Displays the "Schedulers" item
 
-  * Show Users. Displays the "Users" item
+* Show Users. Displays the "Users" item
 
-  * Show System. Displays the "System" item
+* Show System. Displays the "System" item
 
-  * Show About. Displays the "About" item
+* Show About. Displays the "About" item
 
 In the Main section, you can configure the display of:
 
-  * Show More. Displays the More button
+* Show More. Displays the More button
 
-  * Show Versions. Displays the Versions button
+* Show Versions. Displays the Versions button
 
-  * Show Using. Displays Using
+* Show Using. Displays Using
 
-  * Show Access Key. Displays the Access Key button
+* Show Access Key. Displays the Access Key button
 
-  * Show Upload. Displays the Upload button
+* Show Upload. Displays the Upload button
 
-  * Show Download. Displays the Download button
+* Show Download. Displays the Download button
 
 In the Main for Users Only section, you can configure the visibility of the Main section only for regular users (without administrative rights).
 
 In the Login section, you can configure:
 
-  * Show Sign Up. Displays the Sign Up button
+* Show Sign Up. Displays the Sign Up button
 
 The tab Check
 

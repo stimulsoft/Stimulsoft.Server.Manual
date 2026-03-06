@@ -3,9 +3,9 @@
 
 Consider obtaining data from the Excel file. First you need to load the Excel file into the item tree:
 
-  * The Excel file can be simply dragged & dropped) from any place into the item tree;
+* The Excel file can be simply dragged & dropped) from any place into the item tree;
 
-  * Create the File item and load the Excel file into it.
+* Create the File item and load the Excel file into it.
 
 
 ![](../../../images/topics/Menu_Create.Data_Source.Import_Data_from_Files.Excel_1.png)

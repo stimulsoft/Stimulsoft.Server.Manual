@@ -33,9 +33,9 @@ In the next step, you need to create a series of charts and specify their values
 
 ![](../../images/img_6.png) In this panel you can set chart arguments and values. This panel has two tabs:
 
-  * The tab **Data Columns** ​you must specify the data columns for arguments and values. For example, the column of arguments contains entries A, B, C. The values column ​​will contain entries: 23, 43, 56. In this case, the argument A will match the value 23, the argument B will match the value 43, and the argument C - the value 56.
+* The tab **Data Columns** ​you must specify the data columns for arguments and values. For example, the column of arguments contains entries A, B, C. The values column ​​will contain entries: 23, 43, 56. In this case, the argument A will match the value 23, the argument B will match the value 43, and the argument C - the value 56.
 
-  * Besides data columns you can manually set the arguments and values. You can do this in the tab **List of Values**.
+* Besides data columns you can manually set the arguments and values. You can do this in the tab **List of Values**.
 
 
 ![](../../images/topics/Report_Designer.Charts_Editor.Wizard_4.png)

@@ -8,9 +8,9 @@ You should call the **File** menu to add the required file from the storage to t
 
 The item can be attached in the following ways:
 
-  * From any storage (cloud, local drive, tree of items), you can add files by merely dragging them (Drag & Drop);
+* From any storage (cloud, local drive, tree of items), you can add files by merely dragging them (Drag & Drop);
 
-  * The Control button allows adding a file from local user storage;
+* The Control button allows adding a file from local user storage;
 
 
 > **Information**

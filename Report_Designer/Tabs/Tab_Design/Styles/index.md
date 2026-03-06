@@ -11,13 +11,13 @@ Group controls the styles and conditions, which are used for the automatic regis
 
 ![](../../../../images/img_2.png) Opens a window of the Style Editor. How it works:
 
-  * Select the component prototype from which you will copy the style;
+* Select the component prototype from which you will copy the style;
 
-  * Click the button **Copy Style**;
+* Click the button **Copy Style**;
 
-  * Hover the cursor over components to which you want to apply the style. Press the mouse button and the style will be copied.
+* Hover the cursor over components to which you want to apply the style. Press the mouse button and the style will be copied.
 
-  * In order to exit the copy mode you should click on the button **Copy Style** again or press **Esc**.
+* In order to exit the copy mode you should click on the button **Copy Style** again or press **Esc**.
 
 
 ![](../../../../images/img_3.png) Calls a form to edit styles.

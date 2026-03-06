@@ -2,13 +2,13 @@
 
 After creating a [connection to the data storage](Connection.md), you need to get data from it (as tables, views, stored procedures, etc.). Data can be obtained from any [created sources](#ImportData), as well as from [data files](#SampleImportDataFromFiles). Files from which data import is possible are:
 
-  * XML files with attached XSD files.
+* XML files with attached XSD files.
 
-  * JSON files.
+* JSON files.
 
-  * Excel files (xls, xlsx).
+* Excel files (xls, xlsx).
 
-  * CSV, DBF.
+* CSV, DBF.
 
 Import Data
 
@@ -26,13 +26,13 @@ As you can see in the picture, in the item list of the server, the **MS SQL** da
 
 In this window, the data to be added to the data source should be checked. As can be seen from the picture above:
 
-  * Selected **data tables** Categories, Products, and Suppliers. If there are multiple items, but not all, chosen in the category, this category will be marked with 
+* Selected **data tables** Categories, Products, and Suppliers. If there are multiple items, but not all, chosen in the category, this category will be marked with 
 ![](../../../images/topics/Toolbar.Menu_Create.Data_Source.Import_Data_1.png)
 .
 
-  * Selected **Views**. Checking this category (in this example, in the category of views) entails the installation of flags all sub-items.
+* Selected **Views**. Checking this category (in this example, in the category of views) entails the installation of flags all sub-items.
 
-  * No stored procedures are checked.
+* No stored procedures are checked.
 
 
 Once the necessary tables, views, stored procedures, and other elements of the data storage are selected, press the button **Ok**. All data from the storage will be converted into a data table and displayed in the list of the server:
@@ -57,21 +57,21 @@ You can modify data tables. For example, change the type and number of data colu
 
 ![](../../../images/img_3.png) Using the **Refresh Frequency** parameter, you can set the length of time after which reconnection to the data storage will be done. The following options are available:
 
-  * **Once** - retrieving data is carried out once when you create a data source;
+* **Once** - retrieving data is carried out once when you create a data source;
 
-  * **Every 10 Minutes** - in this case, data will be carried out every 10 minutes;
+* **Every 10 Minutes** - in this case, data will be carried out every 10 minutes;
 
-  * **Every 30 Minutes** - every half hour, the data will be updated;
+* **Every 30 Minutes** - every half hour, the data will be updated;
 
-  * **Every Hour** - updates go every hour;
+* **Every Hour** - updates go every hour;
 
-  * **Every 4 Hour** - retrieving data will be every 4 hours;
+* **Every 4 Hour** - retrieving data will be every 4 hours;
 
-  * **Every Half Day** - data will be updated every 12 hours;
+* **Every Half Day** - data will be updated every 12 hours;
 
-  * **Every Day** - once a day the data will be updated;
+* **Every Day** - once a day the data will be updated;
 
-  * **Always** - this option means that whenever you build a report, the data will be updated.
+* **Always** - this option means that whenever you build a report, the data will be updated.
 
 
 ![](../../../images/img_4.png) Query Type: Query of Stored Procedure.
@@ -80,13 +80,13 @@ You can modify data tables. For example, change the type and number of data colu
 
 ![](../../../images/img_6.png) The control panel contains the following buttons:
 
-  * **Add Column**. With this button, you can add a data column to the data source. It should be considered that this column will contain a description. It does not contain actual data.
+* **Add Column**. With this button, you can add a data column to the data source. It should be considered that this column will contain a description. It does not contain actual data.
 
-  * The **Add Parameter** command. Using this command, you can add an option to the category of Parameters. In this case, this parameter must be specified manually in the query.
+* The **Add Parameter** command. Using this command, you can add an option to the category of Parameters. In this case, this parameter must be specified manually in the query.
 
-  * **Delete Column**. Clicking this button will delete the selected columns from the data source.
+* **Delete Column**. Clicking this button will delete the selected columns from the data source.
 
-  * The command **Retrieve Columns**. Once the query is created, press this button to get a column with the data from the data storage.
+* The command **Retrieve Columns**. Once the query is created, press this button to get a column with the data from the data storage.
 
 
 ![](../../../images/img_7.png) This panel displays a data column in the data source.

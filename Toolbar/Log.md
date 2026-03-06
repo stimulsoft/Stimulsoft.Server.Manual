@@ -8,8 +8,8 @@ Each time when you edit and save an item, a copy of that item with the new chang
 
 As can be seen in the picture above, the history displays:
 
-  * The date of the latest change or action with the item;
+* The date of the latest change or action with the item;
 
-  * The user who made those changes;
+* The user who made those changes;
 
-  * The action that was performed on this item.
+* The action that was performed on this item.

@@ -42,9 +42,9 @@ On this tab, you should specify the report from the report server, i.e. specify 
 
 The relation between the master and sub-report is done by passing parameters from one to another. For example, the parameters may be used in filtering data:
 
-  * If the product should be filtered by category,  then it will pass the category **ID**.
+* If the product should be filtered by category,  then it will pass the category **ID**.
 
-  * It is necessary to specify in the attached report (in band, cross-table, tables, etc.), a filter expression by **CategoryID**.
+* It is necessary to specify in the attached report (in band, cross-table, tables, etc.), a filter expression by **CategoryID**.
 
 
 The picture below shows the editor **Sub-Report** on the tab **Parameters**.

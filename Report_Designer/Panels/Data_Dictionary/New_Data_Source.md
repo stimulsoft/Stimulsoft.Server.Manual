@@ -47,9 +47,9 @@ On the left image the star is not checked, so the connection is not selected, an
 
 ![](../../../images/img_8.png) The **Skip Schema Wizard** parameter. When you are creating a data source you can retrieve data from the storage in the following ways:
 
-  * Get the data schema. In this case, you will see a hierarchical list of data in the form of tables, views, stored procedures, etc. The user should select the sources with flags. Thus, if there is huge amount of data in the store, it is preferable to use the second method described below;
+* Get the data schema. In this case, you will see a hierarchical list of data in the form of tables, views, stored procedures, etc. The user should select the sources with flags. Thus, if there is huge amount of data in the store, it is preferable to use the second method described below;
 
-  * Generate a request for retrieving data.
+* Generate a request for retrieving data.
 
 Determine the method of obtaining the data is possible using the **Skip Schema Wizard** parameter. If you need to get data schema, you should uncheck this option of the parameter. If you need to go to the creation of a query you should check this option of the parameter. You should remember that you can go to the creation of the query by clicking the **New Query** button from the form of retrieving the data schema.
 

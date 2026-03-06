@@ -10,15 +10,15 @@ System Requirements
 
 The minimum system requirements for Stimulsoft Server include:
 
-  * Docker container support;
+* Docker container support;
 
-  * One of the following databases: MySQL, PostgreSQL, or MS SQL;
+* One of the following databases: MySQL, PostgreSQL, or MS SQL;
 
-  * Dual-core processor with a clock speed of at least 2.31 GHz;
+* Dual-core processor with a clock speed of at least 2.31 GHz;
 
-  * 2 GB of RAM;
+* 2 GB of RAM;
 
-  * At least 500 MB of free disk space.
+* At least 500 MB of free disk space.
 
 Deployment Using docker-compose
 

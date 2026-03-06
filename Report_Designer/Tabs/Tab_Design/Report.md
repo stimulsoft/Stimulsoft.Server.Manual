@@ -21,9 +21,9 @@ A group to control the report template.
 
 ![](../../../images/img_1.png) Parameters which affect on report rendering
 
-  * Convert **Nulls**. If the flag is checked, all **Null** values will be converted to the default values for the type. For example, you must find the arithmetic average in the prices of the product. If **Null** is not converted, the result is not correct, i.e. these values will not be considered. Therefore, you should enable this option, and then all **Null** will be converted to 0. In this case, the result of calculating the mean value will be true.
+* Convert **Nulls**. If the flag is checked, all **Null** values will be converted to the default values for the type. For example, you must find the arithmetic average in the prices of the product. If **Null** is not converted, the result is not correct, i.e. these values will not be considered. Therefore, you should enable this option, and then all **Null** will be converted to 0. In this case, the result of calculating the mean value will be true.
 
-  * **Number of Passes**. In most cases, one pass in the report rendering is sufficient, but sometimes there are cases when you need double pass. Consider an example. Suppose, on the last page of the report you should output some information. Before rendering of the full report, in fact we know that the account will be the last. Therefore, in this case, it is better to use a double pass when rendering a report, i.e. in the first pass the number of pages in the report will be determined and during the second pass the information on the last page will be added.
+* **Number of Passes**. In most cases, one pass in the report rendering is sufficient, but sometimes there are cases when you need double pass. Consider an example. Suppose, on the last page of the report you should output some information. Before rendering of the full report, in fact we know that the account will be the last. Therefore, in this case, it is better to use a double pass when rendering a report, i.e. in the first pass the number of pages in the report will be determined and during the second pass the information on the last page will be added.
 
 
 ![](../../../images/img_2.png) Defining units in the report. For example, if you select centimeters then all the calculations in the report will be made in centimeters.

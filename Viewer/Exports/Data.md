@@ -20,9 +20,9 @@ This is a group of file formats which are used to store table data. Export optio
 >
 > Information:Depending on the file type, parameters, and their number may vary. For example, when you select a format DIF or Sylk, the following options will be available:
 >
->   * The option **Data Only** enables/disables the mode of exporting data only. If this option is enabled, information will be exported from the Data bands (the component table, Hierarchical band). Only these bands are processed, the rest are ignored. If this option is disabled, the entire report will be exported;
+> * The option **Data Only** enables/disables the mode of exporting data only. If this option is enabled, information will be exported from the Data bands (the component table, Hierarchical band). Only these bands are processed, the rest are ignored. If this option is disabled, the entire report will be exported;
 >
->   * The option **Use Default System Encoding** allows you to use the system encoding by default. Different encoding can be applied depending on the installed system. If this option is disabled, you must set the encoding by the standard.
+> * The option **Use Default System Encoding** allows you to use the system encoding by default. Different encoding can be applied depending on the installed system. If this option is disabled, you must set the encoding by the standard.
 
 
 ![](../../images/img_5.png) The parameter **Encoding** is used to define file encoding.
@@ -31,11 +31,11 @@ This is a group of file formats which are used to store table data. Export optio
 
 ![](../../images/img_7.png) The parameter **Bands Filter** is used to apply a filtering condition in the export. The following options are available:
 
-  * **Data Only** - in this case only Data bands will be processed (the Table component, Hierarchical band);
+* **Data Only** - in this case only Data bands will be processed (the Table component, Hierarchical band);
 
-  * **Data and Headers/Footers** - Data bands will be processed (the Table component, Hierarchical band), and their headers/footers, if any;
+* **Data and Headers/Footers** - Data bands will be processed (the Table component, Hierarchical band), and their headers/footers, if any;
 
-  * **All Bands** - all bands of the report will be processed.
+* **All Bands** - all bands of the report will be processed.
 
 
 ![](../../images/img_8.png) The checkbox **Skip Column Headers** enables/disables the column headers. If the option is enabled, then column headers will not be displayed. If this option is disabled, then column headers (if present in the report) will be displayed.

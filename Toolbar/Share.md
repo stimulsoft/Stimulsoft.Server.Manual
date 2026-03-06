@@ -5,11 +5,11 @@ In Stimulsoft Server, you can provide remote access to view a report or dashboar
 
 This chapter will cover the following:
 
-  * [Share menu](#ShareMenu);
+* [Share menu](#ShareMenu);
 
-  * [Embedding the access code to an item in the HTML page](#EmbedCode);
+* [Embedding the access code to an item in the HTML page](#EmbedCode);
 
-  * [Parameters in URL](#ParametersInURL).
+* [Parameters in URL](#ParametersInURL).
 
 
 To open the Share menu, you should:
@@ -44,19 +44,19 @@ You can specify share settings of the report or dashboard in this menu.
 
 ![](../images/img_6.png) The link to access an item can be provided in the following ways:
 
-  * **Link to Share**. Get only a link to this item.
+* **Link to Share**. Get only a link to this item.
 
-  * **Embed Code**. Get the code for the HTML page with the link to this item.
+* **Embed Code**. Get the code for the HTML page with the link to this item.
 
-  * **QR Code**. Display the QR code. When reading this code, you will automatically get a link to access the item.
+* **QR Code**. Display the QR code. When reading this code, you will automatically get a link to access the item.
 
 Embedding the access code to an item in the HTML page
 
 The item to which it is possible to adjust the level of access can also be embedded into the HTML page. This requires the following conditions:
 
-  * The report server must be deployed on any web server.
+* The report server must be deployed on any web server.
 
-  * Access level of the item must Public Access.
+* Access level of the item must Public Access.
 
 
 Step 1: You should select an element in the list of Stimulsoft Server elements. Let's say, a report.
@@ -109,13 +109,13 @@ In the first and the last text component, you can find references to a variable 
 As can be seen from the picture above, the default values were passed to the report. At the same time, UnitPrice did not keep any value and, therefore, it is not present in the rendered report. Let's pass parameters via URL.
 
 
-  * The access link to an item -  [http://localhost:40010/s/5fc3c](<%LINK_CAPTION%>).
+* The access link to an item -  [http://localhost:40010/s/5fc3c](<%LINK_CAPTION%>).
 
-  * For the parameter Name the value will be Coffee;
+* For the parameter Name the value will be Coffee;
 
-  * For parameter UnitPrice - 15;
+* For parameter UnitPrice - 15;
 
-  * For the parameter CategoryID - 3.
+* For the parameter CategoryID - 3.
 
 
 Then the URL with parameters will look like this [http://localhost:40010/s/5fc3c?Name=Coffee&UnitPrice=15&CategoryID=3](<%LINK_CAPTION%>). Below is a report with the passed parameters.

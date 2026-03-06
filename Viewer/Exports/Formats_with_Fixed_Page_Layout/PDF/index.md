@@ -25,11 +25,11 @@ To reduce the size of the PDF file uses a different compression methods. To comp
 
 ![](../../../../images/img_5.png) **Image Resolution Mode**. Depending on the values of this parameter, another resolution will be applied to the images:
 
-  * The **Exactly** value. All images after conversion will have a resolution that is set in the Resolution parameter of an image;
+* The **Exactly** value. All images after conversion will have a resolution that is set in the Resolution parameter of an image;
 
-  * The **No** More Than value. If the original resolution of an image is smaller than the specified in the Resolution parameter, the resolution of the image, after the conversion of the initial report, will correspond to the original one. If the original resolution is greater than the specified image Resolution, the image resolution will match the value of the Resolution parameter.
+* The **No** More Than value. If the original resolution of an image is smaller than the specified in the Resolution parameter, the resolution of the image, after the conversion of the initial report, will correspond to the original one. If the original resolution is greater than the specified image Resolution, the image resolution will match the value of the Resolution parameter.
 
-  * The **Auto** value. The image, after the report rendering, will have the original resolution.
+* The **Auto** value. The image, after the report rendering, will have the original resolution.
 
 
 ![](../../../../images/img_6.png) The **Image Compression Method** allows defining the mode of image compression in the PDF file. The following modes are available:

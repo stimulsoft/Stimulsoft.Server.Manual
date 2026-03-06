@@ -21,11 +21,11 @@ Export groups to graphic formats. All graphic formats can be divided in to types
 
 ![](../../images/img_7.png) The option **Image Type** provides the ability to define the color scheme of the image.
 
-  * Color - an image after export will fully comply with the image in the report;
+* Color - an image after export will fully comply with the image in the report;
 
-  * Gray - an image after export will be gray.
+* Gray - an image after export will be gray.
 
-  * Monochrome - images will be strictly black and white. At the same time, it should be taken into consideration that monochrome images have three modes None, Ordered and FloydSt.
+* Monochrome - images will be strictly black and white. At the same time, it should be taken into consideration that monochrome images have three modes None, Ordered and FloydSt.
 
 
 ![](../../images/img_8.png) The option **Monochrome Dithering** Type allows you to determine the type monochrome color mixing: None - no dithering, Ordered, FloydSt. - with dithering.

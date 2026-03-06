@@ -33,15 +33,15 @@ When you create a new role, you can inherit **Permissions** from one of the exis
 
 ![](../../images/img_3.png) The field **Permission**. Consists of columns (rights) and rows (list of items). Also, the rows are split into categories. Each column defines a certain right.
 
-  * The right **View** provides the ability to view items in the current workspace.
+* The right **View** provides the ability to view items in the current workspace.
 
-  * The right **Create** provides the ability to create items in the current workspace.
+* The right **Create** provides the ability to create items in the current workspace.
 
-  * The right **Delete** provides the ability to delete items in the current workspace.
+* The right **Delete** provides the ability to delete items in the current workspace.
 
-  * The right **Modify** provides the ability to edit items in the current workspace.
+* The right **Modify** provides the ability to edit items in the current workspace.
 
-  * The right **Run** provides the ability to run the items in the current workspace.
+* The right **Run** provides the ability to run the items in the current workspace.
 
 
 In this case, the created role will be marked with checkboxes of the rights (permissions), which has a parental role. For example, if the parental role has only the ability to view reports (no other permissions), that only this permission will be given to the created role. At the same time, you can modify the role by enabling permissions or disabling them. Consider another example - the inheritance of permissions. Using the inheritance of permissions, you can create role duplicates of pre-installed roles with some modifications. By default, users as Administrators have all the rights. You want to create a role with all the features but without the permission to run Schedulers. The easiest way to do this is to create a role based on the Administrator's rights and put the restriction to run (uncheck the checkbox in the column **Run** -&gt; row **Schedulers**).

@@ -29,6 +29,6 @@ To create a description of the data source and retrieve the data itself from sto
 
 Once the connection is created, you should retrieve data from the data source. You can do this in the following ways:
 
-  * Select the [Import Data](Import_Data.md) command;
+* Select the [Import Data](Import_Data.md) command;
 
-  * Select the [New Query](New_Query.md) command.
+* Select the [New Query](New_Query.md) command.

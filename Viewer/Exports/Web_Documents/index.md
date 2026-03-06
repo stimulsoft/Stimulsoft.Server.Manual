@@ -20,11 +20,11 @@ There are two formats [HTML](HTML.md) (HyperText Markup Language), [HTML5](HTML5
 >
 > If **Html5** is selected the following additional options are available:
 >
->   * **Continuous Page**, which provides the ability to set the location of pages in the report as a vertical strip;
+> * **Continuous Page**, which provides the ability to set the location of pages in the report as a vertical strip;
 >
->   * The **Image Resolution** is used to change DPI (image property PPI (Pixels Per Inch)). The greater the number of pixels per inch is, the greater is the quality of the image. It should be noted that the value of this parameter affects the size of the finished file. The higher the value is, the greater is the size of the finished file;
+> * The **Image Resolution** is used to change DPI (image property PPI (Pixels Per Inch)). The greater the number of pixels per inch is, the greater is the quality of the image. It should be noted that the value of this parameter affects the size of the finished file. The higher the value is, the greater is the size of the finished file;
 >
->   * The **Image Quality** allows changing the image quality. Keep in mind that if you change this option the size of the finished file will increase. The higher the quality is, the larger is the size of the finished file.
+> * The **Image Quality** allows changing the image quality. Keep in mind that if you change this option the size of the finished file will increase. The higher the quality is, the larger is the size of the finished file.
 
 
 ![](../../../images/img_5.png) The option **Scale** provides the ability to determine the size (scale) of report pages and items of the report after the export.

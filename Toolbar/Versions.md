@@ -5,9 +5,9 @@ Sometimes, when editing items, especially when multiple users can modify the sam
 
 To call the Versions menu, you should:
 
-  * Select an item in the list of server items;
+* Select an item in the list of server items;
 
-  * Click the Versions button in the ...More menu on the server toolbar.
+* Click the Versions button in the ...More menu on the server toolbar.
 
 
 ![](../images/versions.png)

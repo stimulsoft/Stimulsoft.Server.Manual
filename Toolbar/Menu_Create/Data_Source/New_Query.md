@@ -17,43 +17,43 @@ Select the data connection and click the New Query button on the server toolbar 
 
 ![](../../../images/img_3.png) Using the Refresh Frequency parameter, you can set the time interval, after which the connection to the data storage will be reconnected, and the necessary data will be updated. The following options are available:
 
-  * Once - data is obtained once when creating a data source;
+* Once - data is obtained once when creating a data source;
 
-  * Each 10 Minutes - in this case, data will be updated every 10 minutes;
+* Each 10 Minutes - in this case, data will be updated every 10 minutes;
 
-  * Each 30 Minutes - the data will be updated every 30 minutes;
+* Each 30 Minutes - the data will be updated every 30 minutes;
 
-  * Each Hour - select this option to update hourly;
+* Each Hour - select this option to update hourly;
 
-  * Each 4 Hour - data will be updated after every 4 hours;
+* Each 4 Hour - data will be updated after every 4 hours;
 
-  * Each Half Day - data will be updated every 12 hours;
+* Each Half Day - data will be updated every 12 hours;
 
-  * Each Day - data will be updated once a day;
+* Each Day - data will be updated once a day;
 
-  * Always - this option means that every time you build a report (when accessing a data source), data will be updated.
+* Always - this option means that every time you build a report (when accessing a data source), data will be updated.
 
 
 ![](../../../images/img_4.png) This field specifies the type - query or stored procedure.
 
 ![](../../../images/img_5.png) The panel **Query** contains a text field for typing a query and controls.
 
-  * The **Clear field** command, i.e., the query text will be removed;
+* The **Clear field** command, i.e., the query text will be removed;
 
-  * The **Check query** command. When you call this command, the report server will generate a test query execution. The result will be shown to the user as a message.
+* The **Check query** command. When you call this command, the report server will generate a test query execution. The result will be shown to the user as a message.
 
-  * When you press this button, then in the View Query window, data columns specified in the query will be displayed.
+* When you press this button, then in the View Query window, data columns specified in the query will be displayed.
 
 
 ![](../../../images/img_6.png) The control panel that contains the following buttons:
 
-  * The command **Add Column** creates a new column. Keep in mind that this will be the description of the data columns, and it will not contain real data.
+* The command **Add Column** creates a new column. Keep in mind that this will be the description of the data columns, and it will not contain real data.
 
-  * The command **Add Parameter**. Using this command, you can add an option to the category of Parameters. In this case, this parameter must be specified manually in the query.
+* The command **Add Parameter**. Using this command, you can add an option to the category of Parameters. In this case, this parameter must be specified manually in the query.
 
-  * The command **Delete** deletes the selected column or the parameter.
+* The command **Delete** deletes the selected column or the parameter.
 
-  * The command **Retrieve Columns**. Once the query is created, press this button to get a column with the data from the data storage.
+* The command **Retrieve Columns**. Once the query is created, press this button to get a column with the data from the data storage.
 
 
 ![](../../../images/img_7.png) This panel displays the data columns in this data source.

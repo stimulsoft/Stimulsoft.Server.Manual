@@ -31,8 +31,8 @@ This group contains the commands to setup border components.
 
 ![](../../../images/img_3.png) In this field you can set shadow options.
 
-  * The **Drop Shadow** parameter shows/hides the shadow of the border.
+* The **Drop Shadow** parameter shows/hides the shadow of the border.
 
-  * Here you can change the size of the shadow.
+* Here you can change the size of the shadow.
 
-  * Here you can change the shadow color.
+* Here you can change the shadow color.

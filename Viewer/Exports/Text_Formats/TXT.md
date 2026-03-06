@@ -23,11 +23,11 @@
 
 ![](../../../images/img_8.png) The option **Border Type** is used to enable a certain type of borders of components. The options are:
 
-  * Simple - drawing the borders of components with characters +, -, |.
+* Simple - drawing the borders of components with characters +, -, |.
 
-  * Unicode-Single - drawing the borders of components with box-drawing characters.
+* Unicode-Single - drawing the borders of components with box-drawing characters.
 
-  * Unicode-Double - drawing the borders of components with double box-drawing characters.
+* Unicode-Double - drawing the borders of components with double box-drawing characters.
 
 
 ![](../../../images/img_9.png) The option **Zoom X** provides the ability to set the report zoom horizontally.

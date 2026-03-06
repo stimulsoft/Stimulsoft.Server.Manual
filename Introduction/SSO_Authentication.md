@@ -5,15 +5,15 @@ The SSO (Single Sign-On) technology allows users to securely authenticate across
 
 SSO uses the widely adopted OAuth 2.0 protocol, which is supported by most authentication providers. The following providers are currently supported:
 
-  * Google
+* Google
 
-  * GitHub
+* GitHub
 
-  * Facebook
+* Facebook
 
-  * Microsoft / Azure AD
+* Microsoft / Azure AD
 
-  * Okta
+* Okta
 
 
 To activate one (or more) of the listed authentication providers, it is sufficient to set the Client ID and Client Secretvalues in the options. These can be obtained from the provider’s own console. This data will be used in requests to the selected provider’s server, which will verify it and, upon successful authorization, return a unique user token. The token will be linked to the Server user account and used for subsequent quick logins to the system.

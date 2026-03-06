@@ -43,9 +43,9 @@ Copy
 
 Copying elements can be done using the scheduler. And, at the same time, you can copy multiple items, but to one destination. You cannot specify multiple destinations for copying. In addition, you can copy items to the list of contacts. In this case, a copy will be sent to the e-mail addresses from your contact list. You can also copy the item to an item. In this case, you must consider the following restrictions:
 
-  * Similar types of objects in the fields **Source** and **Destination**. It is impossible to copy **Report** to **File**, or vice versa.
+* Similar types of objects in the fields **Source** and **Destination**. It is impossible to copy **Report** to **File**, or vice versa.
 
-  * It is allowed to use only one item as the destination.
+* It is allowed to use only one item as the destination.
 
 
 Below is the action menu **Copy**.
@@ -114,9 +114,9 @@ Run Scheduler
 
 The action **Run Scheduler** provides the ability to run another scheduler. In other words, one scheduler can run the other, and that one is already carrying out any action. For this action, it is necessary to consider the following limitations:
 
-  * The slave scheduler is the one that will run another scheduler must be of the type Once;
+* The slave scheduler is the one that will run another scheduler must be of the type Once;
 
-  * One level structure. You cannot run a scheduler that will run another scheduler that will run the third scheduler. In other words, it is impossible to build a multilevel hierarchy of action.
+* One level structure. You cannot run a scheduler that will run another scheduler that will run the third scheduler. In other words, it is impossible to build a multilevel hierarchy of action.
 
 
 Below is a menu of the action **Run Scheduler**.

@@ -5,9 +5,9 @@ Items in the report server can be used by other elements or can be attached to t
 
 To find out where the item is used, you should do the following:
 
-  * Select item;
+* Select item;
 
-  * Click the Using button in the ...More menu on the server toolbar.
+* Click the Using button in the ...More menu on the server toolbar.
 
 
 ![](../images/using.png)
@@ -15,8 +15,8 @@ To find out where the item is used, you should do the following:
 
 As can be seen from the picture above, the **Using** menu shows the following information:
 
-  * The name of the item about which information is requested. In this case, it is Calendar.
+* The name of the item about which information is requested. In this case, it is Calendar.
 
-  * Date and time of attaching to another item.
+* Date and time of attaching to another item.
 
-  * The list of items where the selected item is used. In this case, these is  Hourly Scheduler.
+* The list of items where the selected item is used. In this case, these is  Hourly Scheduler.

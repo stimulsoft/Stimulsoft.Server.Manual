@@ -14,15 +14,15 @@
 
 The main tasks that can be solved using the report server:
 
-    * Converting data from the database into multi-page reports with graphic elements;
+  * Converting data from the database into multi-page reports with graphic elements;
 
-    * Building and editing reports using the built-in designer;
+  * Building and editing reports using the built-in designer;
 
-    * Storing reports in the workspace of the server;
+  * Storing reports in the workspace of the server;
 
-    * Processing data using the powerful built-in scheduler;
+  * Processing data using the powerful built-in scheduler;
 
-    * Notification of users about server events related to data processing, etc.
+  * Notification of users about server events related to data processing, etc.
 
 ## Introducing
 

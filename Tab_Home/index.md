@@ -22,13 +22,13 @@ In this window, you need to define the Move to Recycle Bin parameter, and confir
 
 ![](../images/img_4.png) The **Sort** button. The following sorting options are available:
 
-    * By name;
+  * By name;
 
-    * By type;
+  * By type;
 
-    * By the date of creation;
+  * By the date of creation;
 
-    * By the date of changes.
+  * By the date of changes.
 
 
 ![](../images/img_5.png) The button is used to display or hide the recycle bin.

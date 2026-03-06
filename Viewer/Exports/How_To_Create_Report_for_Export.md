@@ -3,9 +3,9 @@
 
 Many exports have the table mode. In this mode the whole report is converted into one table. Creating correct templates from the source code allows making the table look much better, decrease the size of the file, increase the speed of working with export. Therefore, when using the table mode of export it is important to follow some recommendations:
 
-  * use the "Align to Grid" button of the designer. This will decrease the number of rows and columns in the output file; also this allows  avoiding very small gaps between components (some formats "do not like" table with very small columns);
+* use the "Align to Grid" button of the designer. This will decrease the number of rows and columns in the output file; also this allows  avoiding very small gaps between components (some formats "do not like" table with very small columns);
 
-  * put components on the data band at the same level (see the picture below); this will decrease the number of rows and columns in the output file;
+* put components on the data band at the same level (see the picture below); this will decrease the number of rows and columns in the output file;
 
 
 For example: put three components in the designer. They should be placed without gaps. See the picture below:

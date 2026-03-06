@@ -2,9 +2,9 @@
 
 When you delete items, you can move them to the trash or completely remove them from the server.
 
-  * If the **Move to Recycle Bin** is enabled, the item will be moved to the basket.
+* If the **Move to Recycle Bin** is enabled, the item will be moved to the basket.
 
-  * If the **Move to Recycle Bin** is disabled, the item will be removed from the server.
+* If the **Move to Recycle Bin** is disabled, the item will be removed from the server.
 
 
 To view the contents of the basket, you should click the button **Recycle Bin**. After that, the items in the basket will be displayed in the tree (marked as deleted items):
@@ -24,9 +24,9 @@ Recovering items
 
 Any item deleted to the Recycle Bin can be restored. To do this:
 
-  * Enable Recycle Bin mode;
+* Enable Recycle Bin mode;
 
-  * Select the item and select the Recover command on the server toolbar.
+* Select the item and select the Recover command on the server toolbar.
 
 
 ![](../images/recover.png)
@@ -41,6 +41,6 @@ Emptying the recycle bin
 
 There are no special commands to empty the recycle bin. You can remove items from the recycle bin:
 
-  * Select the necessary elements using the **Ctrl** or **Shift** buttons, and click **Delete** on the **Home** tab;
+* Select the necessary elements using the **Ctrl** or **Shift** buttons, and click **Delete** on the **Home** tab;
 
-  * Restore the files and delete them again without putting them into the recycle bin by unchecking the **Move to Recycle Bin** flag.
+* Restore the files and delete them again without putting them into the recycle bin by unchecking the **Move to Recycle Bin** flag.

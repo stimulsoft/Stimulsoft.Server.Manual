@@ -13,20 +13,20 @@ In the **File** menu the key commands for working with reports in Report Designe
 
 ![](../../images/img_3.png) The **Open** command provides the ability to load the report into the report designer:
 
-  * The report can be opened from the server space;
+* The report can be opened from the server space;
 
-  * The report can be opened from the local storage;
+* The report can be opened from the local storage;
 
-  * There is also a tab with a list of reports that have been previously uploaded to the report designer.
+* There is also a tab with a list of reports that have been previously uploaded to the report designer.
 
 
 ![](../../images/img_4.png) The **Save** command provides the ability to save changes to the current report.
 
 ![](../../images/img_5.png) The **Save As** command provides the ability to save changes to the current report and specify the folder to save this report:
 
-  * The report can be saved in the server space;
+* The report can be saved in the server space;
 
-  * The report can be saved by means of a browser in the local storage.
+* The report can be saved by means of a browser in the local storage.
 
 
 ![](../../images/img_6.png) The [Options](Options.md) menu command defines the configuration of the report designer.

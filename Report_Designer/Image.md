@@ -9,9 +9,9 @@ Sometimes you need to add an image to the report. It can be photos of goods, wor
 
 ![](../images/img_1.png) The panel displays the uploaded image.
 
-  * The button **Open**. Pressing this button will call the dialog box where you can select an image to upload.
+* The button **Open**. Pressing this button will call the dialog box where you can select an image to upload.
 
-  * The button **Delete**. Deletes an image.
+* The button **Delete**. Deletes an image.
 
 
 ![](../images/img_2.png) The **Image** **Gallery** is a list of images from the data dictionary items: data sources, variables, resources.

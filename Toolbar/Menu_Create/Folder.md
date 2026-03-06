@@ -15,10 +15,10 @@ To create a folder, select the Folder command in the Create menu on the server t
 
 ![](../../images/img_3.png) This field specifies the type of a folder. Depending on the type of the folder, it will appear on a particular tab:
 
-  * The **Common** type. In this case, the folder will be displayed on any tab, except for [Users](../../Tabs/Users/index.md) and [System](../../Tabs/System.md) tabs.
+* The **Common** type. In this case, the folder will be displayed on any tab, except for [Users](../../Tabs/Users/index.md) and [System](../../Tabs/System.md) tabs.
 
-  * The **Reports** type. In this case, the folder will only be displayed on [All Elements](../../Tabs/All_Elements.md) and [Reports](../../Tabs/Reports.md) tabs.
+* The **Reports** type. In this case, the folder will only be displayed on [All Elements](../../Tabs/All_Elements.md) and [Reports](../../Tabs/Reports.md) tabs.
 
-  * The **Data** type. In this case, the folder will only be displayed on [All Elements](../../Tabs/All_Elements.md) and [Data](../../Tabs/Data.md) tabs.
+* The **Data** type. In this case, the folder will only be displayed on [All Elements](../../Tabs/All_Elements.md) and [Data](../../Tabs/Data.md) tabs.
 
-  * The **Scheduler** type. In this case, the folder will only be displayed on [All Elements](../../Tabs/All_Elements.md) and [Schedulers](../../Tabs/Schedulers.md) tabs.
+* The **Scheduler** type. In this case, the folder will only be displayed on [All Elements](../../Tabs/All_Elements.md) and [Schedulers](../../Tabs/Schedulers.md) tabs.

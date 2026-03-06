@@ -13,18 +13,18 @@ On the tab **Page** you can find tools to control the parameters of pages in the
 
 ![](../../../images/img_3.png) The button Margins. Opens a drop-down menu with preset options:
 
-  * Normal
+* Normal
 
-  * Narrow
+* Narrow
 
-  * Wide
+* Wide
 
 
 ![](../../../images/img_4.png) The button **Orientation**. When you press this button, it will display a drop down menu where you can set the page orientation.
 
-  * Portrait - page height is larger than the width;
+* Portrait - page height is larger than the width;
 
-  * Landscape - page height less than width.
+* Landscape - page height less than width.
 
 
 ![](../../../images/img_5.png) The button **Size**. With this menu, you can change the page size (A3, A4, etc.).
