@@ -1,0 +1,110 @@
+- title: Introduction
+  url: "/Introduction/"
+  children:
+    - title: System Requirements
+      url: "/Introduction/System_Requirements"
+    - title: Installation
+      url: "/Introduction/Installation"
+    - title: Login Dialog
+      url: "/Introduction/Sign_In"
+    - title: SSO Authentication
+      url: "/Introduction/SSO_Authentication"
+    - title: Structure
+      url: "/Introduction/Structure"
+    - title: Server Controller
+      url: "/Introduction/Server_Controller"
+    - title: Server Docker
+      url: "/Introduction/Docker/"
+      children:
+        - title: Main options
+          url: "/Introduction/Docker/Options"
+        - title: Using HTTPS
+          url: "/Introduction/Docker/Https"
+- title: Menu Account
+  url: "/Menu_Account/"
+  children:
+    - title: Subscriptions
+      url: "/Menu_Account/Subscriptions"
+    - title: Profile
+      url: "/Menu_Account/Profile"
+- title: Toolbar
+  url: "/Toolbar/"
+  children:
+    - title: Menu Create
+      url: "/Toolbar/Menu_Create/"
+      children:
+        - title: Dashboard
+          url: "/Toolbar/Menu_Create/Dashboard"
+        - title: Report
+          url: "/Toolbar/Menu_Create/Report"
+        - title: Data Source
+          url: "/Toolbar/Menu_Create/Data_Source/"
+          children:
+            - title: Connection
+              url: "/Toolbar/Menu_Create/Data_Source/Connection"
+            - title: Import Data
+              url: "/Toolbar/Menu_Create/Data_Source/Import_Data"
+            - title: New Query
+              url: "/Toolbar/Menu_Create/Data_Source/New_Query"
+        - title: Scheduler
+          url: "/Toolbar/Menu_Create/Scheduler/"
+          children:
+            - title: Settings
+              url: "/Toolbar/Menu_Create/Scheduler/Settings"
+            - title: Actions
+              url: "/Toolbar/Menu_Create/Scheduler/Actions"
+        - title: Folder
+          url: "/Toolbar/Menu_Create/Folder"
+        - title: Calendar
+          url: "/Toolbar/Menu_Create/Calendar"
+        - title: File
+          url: "/Toolbar/Menu_Create/File"
+        - title: File Storage
+          url: "/Toolbar/Menu_Create/File_Storage"
+        - title: Contact List
+          url: "/Toolbar/Menu_Create/Contact_List"
+        - title: Result Name
+          url: "/Toolbar/Menu_Create/Result_Name"
+        - title: Mailing
+          url: "/Toolbar/Menu_Create/Mailing"
+        - title: Link
+          url: "/Toolbar/Menu_Create/Link"
+    - title: Sharing Settings
+      url: "/Toolbar/Share"
+    - title: Using
+      url: "/Toolbar/Using"
+    - title: Versions
+      url: "/Toolbar/Versions"
+- title: Display panel
+  url: "/Display_Panel/"
+  children:
+    - title: Recycle Bin
+      url: "/Display_Panel/Recycle_Bin"
+- title: Tabs
+  url: "/Tabs/"
+  children:
+    - title: New
+      url: "/Tabs/New"
+    - title: All Elements
+      url: "/Tabs/All_Elements"
+    - title: Reports
+      url: "/Tabs/Reports"
+    - title: Dashboards
+      url: "/Tabs/Dashboards"
+    - title: Data
+      url: "/Tabs/Data"
+    - title: Schedulers
+      url: "/Tabs/Schedulers"
+    - title: Users Tab
+      url: "/Tabs/Users/"
+      children:
+        - title: Add Role
+          url: "/Tabs/Users/Add_Role"
+        - title: Add User
+          url: "/Tabs/Users/Add_User"
+        - title: Add User Parameter
+          url: "/Tabs/Users/Add_User_Parameter"
+    - title: System Tab
+      url: "/Tabs/System"
+    - title: About
+      url: "/Tabs/About"

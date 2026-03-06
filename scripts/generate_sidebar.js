@@ -9,7 +9,17 @@ const INDEX = path.join(ROOT, "index.md");
 const OUTPUT = path.join(ROOT, "_data", "sidebar.yml");
 
 const ITEM_RE = /^( *)- \[([^\]]+)\]\(([^)]+)\)/;
-const EXCLUDE_PATHS = ["Out_Of_Date/"];
+
+function loadExcludeTitles() {
+  const configPath = path.join(ROOT, "_config.yml");
+  if (!fs.existsSync(configPath)) return [];
+  const text = fs.readFileSync(configPath, "utf-8");
+  const m = text.match(/^exclude_from_menu:\s*\[([^\]]*)\]/m);
+  if (!m || !m[1].trim()) return [];
+  return m[1].split(",").map(s => s.trim().replace(/^"|"$/g, "")).filter(Boolean);
+}
+
+const EXCLUDE_TITLES = loadExcludeTitles();
 
 function toUrl(filePath) {
   let url = "/" + filePath.replace(/\\/g, "/");
@@ -39,8 +49,8 @@ function parseSidebar(text) {
       else excludeUntilIndent = -1;
     }
 
-    // Check if this item should be excluded
-    if (EXCLUDE_PATHS.some(p => m[3].startsWith(p))) {
+    // Check if this item should be excluded by title
+    if (EXCLUDE_TITLES.length > 0 && EXCLUDE_TITLES.includes(m[2])) {
       excludeUntilIndent = indent;
       continue;
     }

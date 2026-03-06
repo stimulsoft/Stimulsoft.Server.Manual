@@ -3,6 +3,7 @@ description:
 baseurl: "/Stimulsoft.Server.Manual"
 url: "https://stimulsoft.github.io"
 sidebar_title: "Stimulsoft Server User Manual"
+exclude_from_menu: ["Out_Of_Date", "Extra Text"]
 
 plugins:
   - jekyll-relative-links

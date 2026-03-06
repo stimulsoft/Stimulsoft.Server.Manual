@@ -850,6 +850,15 @@
     });
   </script>
   <script>
+    // Redirect root page to first sidebar item
+    {% assign page_url_clean = page.url | remove: 'index.html' | remove: 'index' %}
+    {% if page_url_clean == '/' %}
+    (function() {
+      var first = document.querySelector('#sidebar-nav a');
+      if (first) window.location.replace(first.href);
+    })();
+    {% endif %}
+
     var STORAGE_KEY = 'sidebar_open';
     var SCROLL_KEY = 'sidebar_scroll';
     var nav = document.getElementById('sidebar-nav');
