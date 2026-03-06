@@ -456,6 +456,43 @@
 
     .copy-btn.copied { color: #16a34a; border-color: #bbf7d0; opacity: 1; }
 
+    /* ── Copy as Markdown button ── */
+    #page-actions {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 8px;
+    }
+
+    #copy-md-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 12px;
+      background: transparent;
+      border: 1px solid var(--color-border);
+      border-radius: 6px;
+      color: var(--color-text-muted);
+      font-size: 13px;
+      font-family: inherit;
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s, border-color 0.15s;
+      line-height: 1.4;
+    }
+
+    #copy-md-btn:hover {
+      background: var(--color-hover-bg);
+      color: var(--color-text);
+    }
+
+    #copy-md-btn.copied {
+      color: #16a34a;
+      border-color: #bbf7d0;
+    }
+
+    #copy-md-btn svg {
+      flex-shrink: 0;
+    }
+
     /* ── Tables ── */
     #content table {
       border-collapse: collapse;
@@ -668,6 +705,15 @@
     <div id="main">
       <article id="content">
         {% include breadcrumbs.html %}
+        <div id="page-actions">
+          <button id="copy-md-btn" title="Copy page as Markdown">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            Copy as Markdown
+          </button>
+        </div>
         {{ content }}
       </article>
     </div>
@@ -865,6 +911,57 @@
       });
       pre.insertBefore(btn, pre.firstChild);
     });
+
+    // Copy as Markdown button
+    (function() {
+      var btn = document.getElementById('copy-md-btn');
+      if (!btn) return;
+
+      btn.addEventListener('click', async function() {
+        var siteBaseurl = '{{ site.baseurl }}';
+        var path = location.pathname;
+
+        // Strip baseurl prefix
+        if (siteBaseurl && path.startsWith(siteBaseurl)) {
+          path = path.slice(siteBaseurl.length) || '/';
+        }
+
+        // Map current URL path to .md file
+        if (path === '/' || path === '') {
+          path = '/index.md';
+        } else if (path.endsWith('/')) {
+          path = path + 'index.md';
+        } else if (path.endsWith('.html')) {
+          path = path.replace(/\.html$/, '.md');
+        } else if (!path.endsWith('.md')) {
+          path = path + '.md';
+        }
+
+        var mdUrl = siteBaseurl + path;
+
+        try {
+          var resp = await fetch(mdUrl);
+          var text;
+          if (resp.ok) {
+            text = await resp.text();
+          } else {
+            text = document.getElementById('content').innerText;
+          }
+          await navigator.clipboard.writeText(text);
+        } catch(e) {
+          try {
+            await navigator.clipboard.writeText(document.getElementById('content').innerText);
+          } catch(e2) { return; }
+        }
+
+        btn.textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(function() {
+          btn.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy as Markdown';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    })();
 
     // Single delegated handler for all sidebar clicks
     nav.addEventListener('click', function(e) {
