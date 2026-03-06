@@ -303,7 +303,7 @@
 
     #content {
       width: 100%;
-      padding: 48px 56px 80px;
+      padding: 24px 56px 80px;
     }
 
     /* ── Breadcrumbs ── */
@@ -312,7 +312,6 @@
       align-items: center;
       flex-wrap: wrap;
       gap: 4px;
-      margin-bottom: 20px;
       font-size: 13px;
     }
 
@@ -345,6 +344,12 @@
       padding-top: 36px;
       border-top: 1px solid var(--color-border);
       color: var(--color-text);
+    }
+
+    #content h2:first-of-type {
+      margin-top: 0;
+      padding-top: 0;
+      border-top: none;
     }
 
     #content h3 {
@@ -457,10 +462,21 @@
     .copy-btn.copied { color: #16a34a; border-color: #bbf7d0; opacity: 1; }
 
     /* ── Copy as Markdown button ── */
-    #page-actions {
+    #content-header {
       display: flex;
-      justify-content: flex-end;
-      margin-bottom: 8px;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 12px;
+    }
+
+    #content-header-crumbs {
+      flex: 1;
+      min-width: 0;
+    }
+
+    /* breadcrumbs inside the header row — remove its own bottom margin */
+    #content-header .breadcrumbs {
+      margin-bottom: 0;
     }
 
     #copy-md-btn {
@@ -477,6 +493,8 @@
       cursor: pointer;
       transition: background 0.15s, color 0.15s, border-color 0.15s;
       line-height: 1.4;
+      white-space: nowrap;
+      flex-shrink: 0;
     }
 
     #copy-md-btn:hover {
@@ -491,6 +509,10 @@
 
     #copy-md-btn svg {
       flex-shrink: 0;
+    }
+
+    @media (max-width: 768px) {
+      .copy-md-label { display: none; }
     }
 
     /* ── Tables ── */
@@ -704,14 +726,14 @@
 
     <div id="main">
       <article id="content">
-        {% include breadcrumbs.html %}
-        <div id="page-actions">
+        <div id="content-header">
+          <div id="content-header-crumbs">{% include breadcrumbs.html %}</div>
           <button id="copy-md-btn" title="Copy page as Markdown">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
               <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
             </svg>
-            Copy as Markdown
+            <span class="copy-md-label">Copy as Markdown</span>
           </button>
         </div>
         {{ content }}
@@ -957,7 +979,7 @@
         btn.textContent = 'Copied!';
         btn.classList.add('copied');
         setTimeout(function() {
-          btn.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy as Markdown';
+          btn.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><span class="copy-md-label"> Copy as Markdown</span>';
           btn.classList.remove('copied');
         }, 2000);
       });
