@@ -5,10 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}</title>
   <link rel="icon" href="{{ site.baseurl }}/favicon.ico" type="image/x-icon">
+  <script>
+    (function() {
+      var saved = localStorage.getItem('theme');
+      var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+      /* hljs sheets are toggled after DOM loads via applyHljsTheme */
+    })();
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+  <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+  <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css" disabled>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -27,6 +36,40 @@
       --color-hover-bg: #f3f4f6;
       --color-code-bg: #f6f8fa;
       --color-active-text: #1a6fb5;
+      --color-text-secondary: #374151;
+      --color-blockquote-text: #1e40af;
+      --color-mark-bg: #fef08a;
+      --color-row-hover: #fafafa;
+      --color-scrollbar: #d1d5db;
+      --color-copy-btn-bg: #ffffff;
+      --color-bc-sep: #d1d5db;
+      --color-placeholder: #9ca3af;
+      --color-shadow: rgba(0,0,0,0.1);
+      --color-overlay: rgba(0,0,0,0.4);
+    }
+
+    [data-theme="dark"] {
+      --color-bg: #0d1117;
+      --color-sidebar-bg: #0d1117;
+      --color-border: #30363d;
+      --color-text: #e6edf3;
+      --color-text-muted: #8b949e;
+      --color-text-sidebar: #c9d1d9;
+      --color-accent: #58a6ff;
+      --color-accent-bg: #1a2332;
+      --color-hover-bg: #161b22;
+      --color-code-bg: #161b22;
+      --color-active-text: #79c0ff;
+      --color-text-secondary: #c9d1d9;
+      --color-blockquote-text: #79c0ff;
+      --color-mark-bg: #4a3f00;
+      --color-row-hover: #161b22;
+      --color-scrollbar: #484f58;
+      --color-copy-btn-bg: #21262d;
+      --color-bc-sep: #484f58;
+      --color-placeholder: #6e7681;
+      --color-shadow: rgba(0,0,0,0.4);
+      --color-overlay: rgba(0,0,0,0.6);
     }
 
     html { scroll-behavior: smooth; }
@@ -101,7 +144,7 @@
       background: var(--color-bg);
     }
 
-    #search-input::placeholder { color: #9ca3af; }
+    #search-input::placeholder { color: var(--color-placeholder); }
 
     #header-search::before {
       content: "";
@@ -126,7 +169,7 @@
       background: var(--color-bg);
       border: 1px solid var(--color-border);
       border-radius: 8px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      box-shadow: 0 8px 24px var(--color-shadow);
       max-height: 60vh;
       overflow-y: auto;
       z-index: 100;
@@ -162,7 +205,7 @@
     }
 
     .search-result-excerpt mark {
-      background: #fef08a;
+      background: var(--color-mark-bg);
       color: var(--color-text);
       border-radius: 2px;
     }
@@ -225,13 +268,13 @@
       overflow-y: auto;
       padding: 16px 8px 24px;
       scrollbar-width: thin;
-      scrollbar-color: #d1d5db transparent;
+      scrollbar-color: var(--color-scrollbar) transparent;
       scrollbar-gutter: stable;
     }
 
     #sidebar-nav::-webkit-scrollbar { width: 4px; }
     #sidebar-nav::-webkit-scrollbar-track { background: transparent; }
-    #sidebar-nav::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 2px; }
+    #sidebar-nav::-webkit-scrollbar-thumb { background: var(--color-scrollbar); border-radius: 2px; }
 
     #sidebar-nav ul { list-style: none; }
     #sidebar-nav li { margin: 1px 0; }
@@ -323,7 +366,7 @@
 
     .breadcrumbs a:hover { color: var(--color-accent); }
 
-    .bc-sep { color: #d1d5db; font-size: 12px; }
+    .bc-sep { color: var(--color-bc-sep); font-size: 12px; }
 
     .bc-current { color: var(--color-text); font-weight: 500; }
 
@@ -370,9 +413,9 @@
     #content h1 + ul,
     #content h1 + ol { color: var(--color-text-muted); }
 
-    #content p { margin-bottom: 16px; color: #374151; }
+    #content p { margin-bottom: 16px; color: var(--color-text-secondary); }
 
-    #content ul, #content ol { margin: 0 0 16px 20px; color: #374151; }
+    #content ul, #content ol { margin: 0 0 16px 20px; color: var(--color-text-secondary); }
 
     #content li { margin-bottom: 6px; }
     #content li > p { margin-bottom: 4px; }
@@ -444,7 +487,7 @@
       top: 10px;
       right: 10px;
       padding: 4px 10px;
-      background: #ffffff;
+      background: var(--color-copy-btn-bg);
       border: 1px solid var(--color-border);
       border-radius: 5px;
       color: var(--color-text-muted);
@@ -539,11 +582,11 @@
     #content td {
       padding: 10px 14px;
       border-bottom: 1px solid var(--color-border);
-      color: #374151;
+      color: var(--color-text-secondary);
     }
 
     #content tr:last-child td { border-bottom: none; }
-    #content tr:hover td { background: #fafafa; }
+    #content tr:hover td { background: var(--color-row-hover); }
 
     #content blockquote {
       border-left: 3px solid var(--color-accent);
@@ -551,7 +594,7 @@
       padding: 12px 16px;
       border-radius: 0 6px 6px 0;
       margin: 20px 0;
-      color: #1e40af;
+      color: var(--color-blockquote-text);
     }
 
     #content blockquote p { color: inherit; margin: 0; }
@@ -618,7 +661,7 @@
       display: none;
       position: fixed;
       inset: 0;
-      background: rgba(0,0,0,0.4);
+      background: var(--color-overlay);
       z-index: 40;
     }
     #sidebar-overlay.visible { display: block; }
@@ -657,6 +700,40 @@
       #sidebar-nav { max-height: none; height: 100%; }
       #content { padding: 24px 20px 48px; }
     }
+    /* ── Theme toggle button ── */
+    #theme-toggle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: none;
+      border: none;
+      padding: 4px;
+      cursor: pointer;
+      color: var(--color-text-muted);
+      transition: color 0.15s;
+      margin-left: 8px;
+    }
+    #theme-toggle:hover { color: var(--color-text); }
+
+    /* Show sun in dark mode, moon in light mode */
+    [data-theme="light"] #theme-toggle .icon-sun,
+    :root:not([data-theme]) #theme-toggle .icon-sun { display: none; }
+    [data-theme="light"] #theme-toggle .icon-moon,
+    :root:not([data-theme]) #theme-toggle .icon-moon { display: block; }
+    [data-theme="dark"] #theme-toggle .icon-sun { display: block; }
+    [data-theme="dark"] #theme-toggle .icon-moon { display: none; }
+
+    /* ── Logo theme switching ── */
+    .logo-light { display: block; }
+    .logo-dark { display: none !important; }
+    [data-theme="dark"] .logo-light { display: none !important; }
+    [data-theme="dark"] .logo-dark { display: block !important; }
+
+    /* ── Dark mode adjustments ── */
+    [data-theme="dark"] #content img:not(.logo-dark) { border-color: var(--color-border); }
+    [data-theme="dark"] #search-input:focus { box-shadow: 0 0 0 3px rgba(88,166,255,0.15); }
+    [data-theme="dark"] #sidebar { box-shadow: none; }
+
     .sidebar-heading {
       padding: 16px 16px 10px;
       font-size: 0.9rem;
@@ -677,7 +754,8 @@
   <header id="site-header">
     <div id="header-inner">
       <a id="logo" href="{{ site.baseurl }}/">
-        <img src="https://www.stimulsoft.com/en/documentation/online/programming-manual/logo.svg" alt="Stimulsoft">
+        <img class="logo-light" src="https://www.stimulsoft.com/en/documentation/online/programming-manual/logo.svg" alt="Stimulsoft">
+        <img class="logo-dark" src="{{ site.baseurl }}/logo-dark.svg" alt="Stimulsoft">
       </a>
 
       <!-- Desktop: inline search in center column -->
@@ -696,6 +774,10 @@
           <a href="https://www.youtube.com/user/StimulsoftVideos" target="_blank" rel="noopener">Video</a>
           <a href="https://github.com/stimulsoft" target="_blank" rel="noopener">Samples</a>
           <a href="https://www.stimulsoft.com/en/support" target="_blank" rel="noopener">Support</a>
+          <button id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+            <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </button>
         </nav>
 
         <button id="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="sidebar">
@@ -794,6 +876,40 @@
     searchInput.addEventListener('keydown', function(e) {
       if (e.key === 'Escape') { searchResults.classList.remove('visible'); this.blur(); }
     });
+  </script>
+  <script>
+    // ── Theme toggle ──
+    (function() {
+      function applyHljsTheme(theme) {
+        var light = document.getElementById('hljs-light');
+        var dark = document.getElementById('hljs-dark');
+        if (light && dark) {
+          light.disabled = (theme === 'dark');
+          dark.disabled = (theme !== 'dark');
+        }
+      }
+
+      var themeToggle = document.getElementById('theme-toggle');
+      // Apply hljs theme on initial load
+      applyHljsTheme(document.documentElement.getAttribute('data-theme') || 'light');
+
+      themeToggle.addEventListener('click', function() {
+        var current = document.documentElement.getAttribute('data-theme') || 'light';
+        var next = current === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+        applyHljsTheme(next);
+      });
+
+      // Listen for OS theme changes (only if user hasn't set manual preference)
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+        if (!localStorage.getItem('theme')) {
+          var theme = e.matches ? 'dark' : 'light';
+          document.documentElement.setAttribute('data-theme', theme);
+          applyHljsTheme(theme);
+        }
+      });
+    })();
   </script>
   <script>
     // ── Mobile search toggle ──
