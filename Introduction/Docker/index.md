@@ -56,7 +56,9 @@ Then, run the docker-compose.yml file:
 
 **terminal**
 
+```
 
-`docker compose up`
+docker compose up
+```
 
 After that, open a browser and navigate to: http://localhost:8080.

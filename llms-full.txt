@@ -34,7 +34,6 @@ The main tasks that can be solved using the report server:
 
 ## Introducing
 
-
 [System Requirements](System_Requirements.md)
 
 [Installation](Installation.md)
@@ -42,7 +41,6 @@ The main tasks that can be solved using the report server:
 [Structure](Structure.md)
 
 ## Getting Started
-
 
 [Sign Up](Sign_In.md)
 
@@ -52,7 +50,6 @@ The main tasks that can be solved using the report server:
 
 ## Scheduler
 
-
 [Type](../Toolbar/Menu_Create/Scheduler/index.md)
 
 [Settings](../Toolbar/Menu_Create/Scheduler/Settings.md)
@@ -61,7 +58,6 @@ The main tasks that can be solved using the report server:
 
 ## Basic Items
 
-
 [Report](../Toolbar/Menu_Create/Report.md)
 
 [Dashboard](../Toolbar/Menu_Create/Dashboard.md)
@@ -69,7 +65,6 @@ The main tasks that can be solved using the report server:
 [Data Source](../Toolbar/Menu_Create/Data_Source/index.md)
 
 ## Other Items
-
 
 [Folder](../Toolbar/Menu_Create/Folder.md)
 
@@ -85,7 +80,6 @@ The main tasks that can be solved using the report server:
 
 ## Workspace
 
-
 [Users Tab](../Tabs/Users/index.md)
 
 [New Role](../Tabs/Users/Add_Role.md)
@@ -93,7 +87,6 @@ The main tasks that can be solved using the report server:
 [New User](../Tabs/Users/Add_User.md)
 
 ## Additional Options
-
 
 [Share](../Toolbar/Share.md)
 
@@ -103,7 +96,6 @@ The main tasks that can be solved using the report server:
 
 ## Another Features
 
-
 [Designer](https://www.stimulsoft.com/ru/documentation/online/user-manual/index.html?reports_designer.htm)
 
 [Viewer](https://www.stimulsoft.com/ru/documentation/online/user-manual/index.html?viewer.htm)
@@ -111,7 +103,6 @@ The main tasks that can be solved using the report server:
 [Export](https://www.stimulsoft.com/ru/documentation/online/user-manual/index.html?exports.htm)
 
 ## Information for Creators
-
 
 [Report Internals](https://www.stimulsoft.com/ru/documentation/online/user-manual/index.html?report_internals.htm)
 
@@ -605,8 +596,10 @@ Then, run the docker-compose.yml file:
 
 **terminal**
 
+```
 
-`docker compose up`
+docker compose up
+```
 
 After that, open a browser and navigate to: http://localhost:8080.
 
@@ -748,8 +741,10 @@ To generate a local .pfx certificate in .NET, run the following command:
 
 **terminal**
 
+```
 
-`dotnet dev-certs https -ep d:/aspnetapp.pfx -p 123456`
+dotnet dev-certs https -ep d:/aspnetapp.pfx -p 123456
+```
 
 This command specifies the certificate’s output path and password. Note that such a certificate is suitable for development and testing purposes only. For production environments, a certificate from a trusted certification authority should be used.
 
@@ -789,8 +784,10 @@ Launch the container using the following command:
 
 **terminal**
 
+```
 
-`docker-compose up`
+docker-compose up
+```
 
 Now, Stimulsoft Server will be available via HTTPS at port 8081 using the address: http://localhost:8081. The server will still be accessible via HTTP at: http://localhost:8080.
 
@@ -2967,6 +2964,7 @@ A list of supported file formats is represented in the table below. All exports 
 
 ![](../../images/cross12.png)
 
+
 | **№** | **Export Name** |
 | --- | --- |
 | [Formats with Fixed Page Layout](Formats_with_Fixed_Page_Layout/index.md) |  |
@@ -3001,9 +2999,12 @@ These chapters describe export settings which are not unique and are met in a fe
 
 ![](../../images/cross12.png)
 
+
 Image quality is the compression degree of JPEG.  If the compression is low then an image is of good quality and has big file size. If the compression is high then an image is of bad quality and has small file size. In Stimulsoft Reports an image quality can vary from 0.0 (the lowest quality) to 1.0 (highest quality). If an image quality is 1.0 it does not mean that the image is saved without compression. The JPEG algorithm always compresses an image. The 1.0 quality means that an image quality will be the same as the quality of an original document but the file size will be smaller than the original. The 0.0 quality means that the image has slightest similarity to the original document. In practice, the 0.9 quality has not great distinction from the 1.0 quality but the image with lower than the 0.1 quality looks bad. By default, in Stimulsoft Reports the image quality is 0.75.
 
+
 ![](../../images/cross12.png)
+
 
 Raster images such as scanned photos consist of small cells called pixels. Image resolution depends on the pixel size and is measured in pixels per inch, ppi, and sometimes in dots per inch, dpi. The higher resolution the more pixels the image contains and, accordingly, the more size of the image. In Stimulsoft Reports it is possible to set any image resolution. But when increasing the resolution in 2 times the image size will increase in 4 times. Also it is not good to set the image resolution more than maximal resolution of an output device. For example, devices may have the following resolution:
 
@@ -3018,27 +3019,39 @@ high-end printers - 1200dpi and higher.
 
 By default the resolution is 100dpi.
 
+
 ![](../../images/cross12.png)
+
 
 Sometimes repetitive image can be met in a report, for example, company logos on the header of each page. If do not process such duplicates then a report after export will have big size. Some formats allows exporting only one image and then refer to it from different parts of a document. In Stimulsoft Reports, there is a special class that calculates check sums and searches and processes duplicates. Image processing may slow down the process of exporting, so it is possible to disable this feature. Each export has its own property to enable or disable image comparison. By default this property is always enabled.
 
+
 ![](../../images/cross12.png)
+
 
 Arabs do not use Arabic digits. They use Hindi digits and Arabic digits are auxiliary (the same as Roman digits for us). But, in any case, all digits are written from left to right. This property indicates whether it is necessary to convert Roman digits (ASCII 0030h-0039h) to Arabic digits (Unicode 0660h-0669h or 06F0h-06F9h, depending on the ArabicDigitsType property). In each types of export the digits conversion can be set by their own property.
 
+
 ![](../../images/cross12.png)
+
 
 Arabic digits have two variants of drawing: Standard and Eastern. The property allows selecting the type of Arabic digits that will be used in export: Standard or Eastern; by default the Standard type is used. In each export the type of Arabic digits is enabled or disabled by its own property.
 
+
 ![](../../images/cross12.png)
+
 
 **Stimulsoft Reports.Server** allows creating segmented pages. These are pages which horizontal and/or vertical size are increased in some times. Some applications, such as MS Excel, allows working with pages of any size, because breaking into small segments can is processed with the spreadsheet itself. Other applications, such as MS Word, cannot break pages into small segments. For such applications segmented pages are broken into separate pages on the stage of selected export; if property, for example, for Word2007, **StiOptions.Export.Word2007.DivideSegmentPages** , is set to false then pages are passed "as is" without breaking into segments. Each type of export has its own property for breaking segmented pages.
 
+
 ![](../../images/cross12.png)
+
 
 Many exports uses the table mode of export. In this mode data is converted into one table. If, in the initial report, there is an empty space on the bottom of a page then the table is broken. The following property allows removing empty space at the bottom of a page and resulting table is not broken. If it is necessary to save the initial view of a document then it is necessary to set this property to false. In each type of exports their own property is used.
 
+
 ![](../../images/cross12.png)
+
 
 When exporting to Excel then all report is converted in one table. Headers and footers of a page break this table. This property leaves only the first header and the last header of a page. All other headers and footers are removed. If it is necessary to save the initial view of a document then it is necessary to set this property to false. For each type of exports their own property is used.
 
@@ -3187,6 +3200,7 @@ The **PDF** document can be encrypted to protect the content from illegal access
 
 ![](../../../../images/cross12.png)
 
+
 According to the PDF specification, it is possible to set the access and two passwords: the public password and the owner's password. If there are no passwords and everything is allowed to do with the document, then the document is not encrypted. If even one password is set or access is not allowed, then the document is encrypted.
 
 
@@ -3203,7 +3217,9 @@ print document.
 
 The owner password provides access to the document, including password changing and access permission. If the owner's password is set, and the public password is not set, then, when opening a document, the password is not requested.
 
+
 ![](../../../../images/cross12.png)
+
 
 The PDF Reference defines both 40-bit, 128-bit, 256-bit encryption. By default 128-bit key is used.
 
@@ -3356,6 +3372,7 @@ Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Viewer/Exports/Web
 
 ![](../../../images/cross12.png)
 
+
 There are three mode of export to HTML:
 
 Div - in this mode all objects of a report are converted to the div block element; the report is converted precisely, except for vertical text alignment;
@@ -3364,11 +3381,15 @@ Span is the same as the Div mode but the span element is used;
 
 Table - in this mode all objects of a report are converted to the table block element; in this mode the vertical text alignment is correct but, if the WordWrap is disabled then the problem may occur with long lines of text.
 
+
 ![](../../../images/cross12.png)
+
 
 Also it is possible to specify how to export images of a document. Images with transparency can be saved to the PNG format. It is important to remember that some browsers (for example Internet Explorer 6) do not support images with transparency.
 
+
 ![](../../../images/cross12.png)
+
 
 The following minimal web-browsers versions are required for correct HTML export:
 
@@ -3378,7 +3399,9 @@ FireFox 1.5 and higher;
 
 Opera 7.5 and higher.
 
+
 ![](../../../images/cross12.png)
+
 
 When exporting reports to the **HTML** format, it is necessary to take the following features of this format into consideration:
 
@@ -3492,6 +3515,7 @@ Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Viewer/Exports/Tex
 
 ![](../../../images/cross12.png)
 
+
 The border in the text mode can be drawn using simple symbols or using pseudographics. Using the **BorderType** property it is possible to choose the mode of border drawing. It may have the following modes:
 
 Simple - drawing a border using simple symbols such as  "+", "-", and "|";
@@ -3500,7 +3524,9 @@ UnicodeSingle - drawing a border using the symbols of  pseudographics; symbols o
 
 UnicodeDouble - drawing a border using  the symbols of  pseudographics; symbols of double border are used.
 
+
 ![](../../../images/cross12.png)
+
 
 When exporting to the text format, all coordinates and sizes of objects are recalculated to get the text appearance the same as it is in a report. You can control the conversion, by changing the zoom coefficients of **ZoomX** and **ZoomY**. The width of the columns of the output text is proportional to the width of the initial report. If you want to change the column width, it is possible to use the following methods:
 
@@ -3508,7 +3534,9 @@ change the width of a column: it is necessary to specify the column width in cha
 
 column width can be set globally via the **ColumnWidths** static property; in this case, the width of the columns is indicated starting from the left column, through the separator (a semicolon), for example, "10, 12, 45, 10, 10, 5, 20, 50 "; zero width of columns is ignored.
 
+
 ![](../../../images/cross12.png)
+
 
 The old/new export mode is set using the **UseOldExportMode** property. The new mode is created on the base of the **StiMatrix**: if the Word Wrap is enabled and a text cannot be placed in a cell then the cell height is increased automatically. By default the new mode is enabled.
 
@@ -3548,6 +3576,7 @@ Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Viewer/Exports/Tex
 
 ![](../../../images/cross12.png)
 
+
 The export to the **RTF** format has 2 basic modes:
 
 **Frames** - in this mode all objects of a report are converted to the frame rtf-objects; the report is converted precisely, but it is difficult to edit such a document.
@@ -3561,7 +3590,9 @@ Also there are 2 modes of operation, which are obsolete and retained for compati
 
 **TabbedText** - the same as the export the Text format, the position of a text is set using blank spaces and tabulations.
 
+
 ![](../../../images/cross12.png)
+
 
 In this mode the whole report is converted into a single table. When exporting the report is converted into a single table. The document is easily editable but some objects can be changed.
 
@@ -3609,11 +3640,15 @@ The following string-commands can be written in the **Tag** field:
 
 Also it is possible to export a separate sheets of a template to separate sections of the document with the headers/footers. To do this, use the ExcelSheet property. in this case all pages of a report with the same value of the ExcelSheet property are combined in groups, then each group is exported as a separate section of the document with its headers/footers. By default, this property is not filled, and the report is exported as a single partition.
 
+
 ![](../../../images/cross12.png)
+
 
 MS-Word: if to set top and bottom margin of one of cells in the table row, the same margin will be set in all cells of the row. Therefore, if to set the top and bottom margins of the text box, then, after exporting, the same margin will be set for the row of the table and the text will be moved. In OpenOffice this works without problems.
 
+
 ![](../../../images/cross12.png)
+
 
 The RTF format is based on the RTF specification version 1.4 from 9/1995. The RTF files can be opened in Microsoft Word starting with the 97 (Office 97) version. In Microsoft Word 95 the RTF will have the following limitation:
 
@@ -3669,6 +3704,7 @@ Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Viewer/Exports/Tex
 
 ![](../../../images/cross12.png)
 
+
 Depending on the value of the **Use Page Headers and Footers** property a report is exported in the following way:
 
 the value is false - a report is exported "as is" and looks as in preview;
@@ -3682,7 +3718,9 @@ PageHeaders and PageFooters are exported as MS-Word objects. So they are cut fro
 
 Row height is not exported (the "not set" mode; by default - the "precise" mode).
 
+
 ![](../../../images/cross12.png)
+
 
 If the **Tag** is not empty then the content of the Tag property is exported. The Text field is not exported. Also the string may contain the following expressions, which are changed on MS-Word commands:
 
@@ -3786,6 +3824,7 @@ Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Viewer/Exports/Spr
 
 ![](../../../images/cross12.png)
 
+
 By default a report is exported as one table to one sheet of Excel. Maximal number of rows on a sheet is unlimited. It depends on the Excel version and is set using the **MaximumSheetHeight** static property (by default 65534, for Excel XP and Excel 2003). If the number of rows is more than default then odd rows will be carried on the next sheet.
 
 
@@ -3794,7 +3833,9 @@ Also it is possible to export each page of a report on a single sheet of Excel. 
 
 Besides the forced Excel sheets creation they can be created using the **ExcelSheet** page property to what any value can be assigned. If some sheets has the same **ExcelSheet** value then they are joined and exported as one sheet. In this case the name of a sheet is a name of a value.
 
+
 ![](../../../images/cross12.png)
+
 
 The **XLS** format is based on the BIFF8 specification. Full support of this format is realized starting with the Excel 9.0 (Excel 2000).
 
@@ -3914,6 +3955,7 @@ This is a group of file formats which are used to store table data. Export optio
 
 ![](../../images/cross12.png)
 
+
 **CSV** (Comma Separated Values) is a text format that is used to represent table data. Each string of the file is one row of the table. The values of each column are separated by the delimiter that depends on regional settings. The values that contain reserved characters (such as a comma or a new string) are framed with the double quotes ( ") symbol; if double quotes are found in the value they are represented as two double quotes in the file.
 
 
@@ -3944,7 +3986,9 @@ The "**Column**" element indicates that additional field is added to exported da
 
 `Column: "SortField" "{Products.Categories.CategoryName}"`
 
+
 ![](../../images/cross12.png)
+
 
 **DBF** (DataBase File) is the format to store data and it is used as the standard way to store and pass information. The DBF file consist of a header section for describing the structure of the data in the file. There are several variations on the .dbf file structure.
 
@@ -4006,7 +4050,9 @@ The "**Column**" element indicates that the additional field is added to the exp
 
 `Column: "SortField" "{Products.Categories.CategoryName}"`
 
+
 ![](../../images/cross12.png)
+
 
 **XML** (eXtensible Markup Language) is a text format that is used to store structured data (in exchange for existed files of data bases), for exchange of information between programs and also to create on its base the special markup languages (for example, XHTML), sometimes called dictionaries. XML is the hierarchical structure that is used to store any data. Visually this structure can be represented as the tree. XML supports Unicode and other encoding.
 
@@ -4052,11 +4098,15 @@ The "**Column**" element indicates that additional field is added to the exporte
 
 `Column: "SortField" "{Products.Categories.CategoryName}"`
 
+
 ![](../../images/cross12.png)
+
 
 **DIF** (Data Interchange Format) is a text format that is used to exchange sheets between spreadsheets processors  (Microsoft Excel, OpenOffice.org Calc, Gnumeric, StarCalc, Lotus 1-2-3, FileMaker, dBase, Framework, Multiplan, etc). The only limitation of this format is that the DIF format may contain only one sheet in one book.
 
+
 ![](../../images/cross12.png)
+
 
 **SYLK** (Symbolic Link) format- this text format is used to exchange data between applications, specifically spreadsheets. Files of **SYLK** have «.slk» extension. Microsoft does not publish a SYLK specification, therefore work with this format in different applications can be different.
 
@@ -4107,36 +4157,51 @@ Export groups to graphic formats. All graphic formats can be divided in to types
 
 ![](../../images/cross12.png)
 
+
 **BMP (Bitmap)** is an image file format used to store bitmap digital images. Initially the format could store only DDB (Device Dependent Bitmap) but today the BMP format stores device-independent rasters (DIB - Device Independent Bitmap). Color depth in this format varies from 1 to 48 bits per pixel. The maximal image size is 65535×65535 pixels. An image can be compressed but often is stored in uncompressed and has big size of the file. Many programs work with the BMP format because its support is integrated into Windows and OS/2.
 
+
 ![](../../images/cross12.png)
+
 
 **GIF (Graphics Interchange Format)** is a format to store graphic images. The GIF format can store compressed images, supports up to 8 bits per pixel, allowing a single image to reference a palette of up to 256 distinct colors. The GIF format was introduced by CompuServe in 1987 and has since come into widespread usage on the World Wide Web. In 1989 the format was modified (GIF89a), and transparency and animation was added. GIF uses LZW-compression. It allows reducing the file size without degrading the visual quality (logos, schemes). GIF is widely used in World Wide Web.
 
+
 ![](../../images/cross12.png)
+
 
 **PNG (Portable Network Graphics)** - is a bitmapped image format that employs lossless data compression. PNG was created to improve and replace more simple GIF format, and to replace more complicated TIFF format. In compare with the GIF format, the PNG format supports RGB images without color losses, supports alpha channels, and uses DEFLATE  (open algorithm of compression), that provides higher compression of multicolored files. The PNG format is usually used in World Wide Web and for graphic editing.
 
+
 ![](../../images/cross12.png)
+
 
 **TIFF (Tagged Image File Format)** is a file format for storing images. Originally, the TIFF format was created by the Aldus company in cooperation with Microsoft for using with PostScript. TIFF became popular for storing high-color-depth images, and is used for scanning, fax, to identify text, polygraphy and widely used in graphic applications. This format is flexible. It allows saving photos in different color spaces, and to use different algorithms of file compression, and to store a few images in one file.
 
+
 ![](../../images/cross12.png)
+
 
 **JPEG (Joint Photographic Experts Group)** is a format to store images. This format was created by C-Cube Microsystems as effective method to store high-color-depth images. For example, scanned photos with smooth variations of tone and color. Algorithm of compression with losing information is used in the JPEG format. This means that some visual quality is lost in the process and cannot be restored. It is necessary to get the highest coefficient of compression. Unpacked JPEG images are rarely have the same quality as original image but differences are insignificant. Compression ratio is usually set in conventional units, for example from 1 to 100. 100 is the best quality and 1 is the worst quality. The better quality the bigger file size.
 
+
 ![](../../images/cross12.png)
+
 
 **PCX** is a format to store images. This format was used in the ZSoft PC Paintbrush graphic editor (one of the most popular programs) for MS-DOS, text processors and Microsoft Word and Ventura Publisher. This is not so popular format analogue of BMP but is supported with such graphics editors as Adobe Photoshop, Corel Draw and others. The algorithm of compression is very quick but is not effective for compression of photos and other detailed computer graphics. Today this format is not displaced with formats which supports better compression. These formats are GIF, JPEG, and PNG.
 
+
 ![](../../images/cross12.png)
+
 
 **WMF (Windows MetaFile)** is a universal graphics file format on Microsoft Windows systems. This format was created by Microsoft and is an integral part of Windows because this file stores a list of function calls that have to be issued to the Windows graphics layer GDI in order to display an image on screen.
 
 
 WMF is a 16-bit format. This format was introduced in Windows 3.0. A 32-bit version is called Enhanced Metafile EMF (Enhanced Metafile). The EMF format supports many new commands, supports work with the GDI+ library, and also is used as a graphic language for drivers of printers.
 
+
 ![](../../images/cross12.png)
+
 
 **SVG (Scalable Vector Graphics)** is an XML-based file format for describing two-dimensional vector graphics, both static and dynamic. The SVG specification is an open standard. SVG supports scripting and animation. The vector image is composed of a fixed set of shapes.
 
@@ -4160,11 +4225,15 @@ Bitmap Formats
 
 SVG Format
 
+
 ![](../../images/cross12.png)
+
 
 In addition to the **SVG** file format, there is a **compressed SVG** (with file extension SVGZ), which applies industry-standard, nonproprietary "gzip" compression (an open-source variant of Zip compression) to SVG files. Compressed SVG files are typically 50 to 80 percent smaller than SVG files. SVG files are compact and can be used to provide high-quality graphics on the Web.
 
+
 ![](../../images/cross12.png)
+
 
 Dither is an intentionally applied form of noise, when processing digit signals. It is used in most often surfaces in the fields of digital audio and video. The following image shows (from left to right) original image and the result of export to monochrome image. There are three modes of DitheringType: Ordered, FloydSteinberg, None.
 
@@ -4355,6 +4424,7 @@ A report can be created blank or you can create it using one of the wizards for 
 
 ![](../../images/cross12.png)
 
+
 When you create a report using the **Standard Report** wizard, the report will contain one **Data Band** or one **Data Table**:
 
 
@@ -4377,7 +4447,9 @@ When you create a report using the **Standard Report** wizard, the report will c
 
 ![](../../images/img_8.png) In this step, you can choose the style of the report and apply it to it.
 
+
 ![](../../images/cross12.png)
+
 
 Creating a master-detail report using the wizard includes 8 steps. Not all of them are mandatory.
 
@@ -5273,6 +5345,7 @@ The report designer supports many keyboard shortcuts. Using them can speed up th
 
 
 ![](../images/cross12.png)
+
 
 | **Buttons** | **Description** |
 | --- | --- |

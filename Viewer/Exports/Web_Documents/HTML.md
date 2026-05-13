@@ -6,6 +6,7 @@
 
 ![](../../../images/cross12.png)
 
+
 There are three mode of export to HTML:
 
 Div - in this mode all objects of a report are converted to the div block element; the report is converted precisely, except for vertical text alignment;
@@ -14,11 +15,15 @@ Span is the same as the Div mode but the span element is used;
 
 Table - in this mode all objects of a report are converted to the table block element; in this mode the vertical text alignment is correct but, if the WordWrap is disabled then the problem may occur with long lines of text.
 
+
 ![](../../../images/cross12.png)
+
 
 Also it is possible to specify how to export images of a document. Images with transparency can be saved to the PNG format. It is important to remember that some browsers (for example Internet Explorer 6) do not support images with transparency.
 
+
 ![](../../../images/cross12.png)
+
 
 The following minimal web-browsers versions are required for correct HTML export:
 
@@ -28,7 +33,9 @@ FireFox 1.5 and higher;
 
 Opera 7.5 and higher.
 
+
 ![](../../../images/cross12.png)
+
 
 When exporting reports to the **HTML** format, it is necessary to take the following features of this format into consideration:
 

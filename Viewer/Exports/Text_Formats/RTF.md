@@ -31,6 +31,7 @@
 
 ![](../../../images/cross12.png)
 
+
 The export to the **RTF** format has 2 basic modes:
 
 **Frames** - in this mode all objects of a report are converted to the frame rtf-objects; the report is converted precisely, but it is difficult to edit such a document.
@@ -44,7 +45,9 @@ Also there are 2 modes of operation, which are obsolete and retained for compati
 
 **TabbedText** - the same as the export the Text format, the position of a text is set using blank spaces and tabulations.
 
+
 ![](../../../images/cross12.png)
+
 
 In this mode the whole report is converted into a single table. When exporting the report is converted into a single table. The document is easily editable but some objects can be changed.
 
@@ -92,11 +95,15 @@ The following string-commands can be written in the **Tag** field:
 
 Also it is possible to export a separate sheets of a template to separate sections of the document with the headers/footers. To do this, use the ExcelSheet property. in this case all pages of a report with the same value of the ExcelSheet property are combined in groups, then each group is exported as a separate section of the document with its headers/footers. By default, this property is not filled, and the report is exported as a single partition.
 
+
 ![](../../../images/cross12.png)
+
 
 MS-Word: if to set top and bottom margin of one of cells in the table row, the same margin will be set in all cells of the row. Therefore, if to set the top and bottom margins of the text box, then, after exporting, the same margin will be set for the row of the table and the text will be moved. In OpenOffice this works without problems.
 
+
 ![](../../../images/cross12.png)
+
 
 The RTF format is based on the RTF specification version 1.4 from 9/1995. The RTF files can be opened in Microsoft Word starting with the 97 (Office 97) version. In Microsoft Word 95 the RTF will have the following limitation:
 

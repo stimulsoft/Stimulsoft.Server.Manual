@@ -15,6 +15,7 @@ A report can be created blank or you can create it using one of the wizards for 
 
 ![](../../images/cross12.png)
 
+
 When you create a report using the **Standard Report** wizard, the report will contain one **Data Band** or one **Data Table**:
 
 
@@ -37,7 +38,9 @@ When you create a report using the **Standard Report** wizard, the report will c
 
 ![](../../images/img_8.png) In this step, you can choose the style of the report and apply it to it.
 
+
 ![](../../images/cross12.png)
+
 
 Creating a master-detail report using the wizard includes 8 steps. Not all of them are mandatory.
 

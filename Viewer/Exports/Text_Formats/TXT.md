@@ -39,6 +39,7 @@
 
 ![](../../../images/cross12.png)
 
+
 The border in the text mode can be drawn using simple symbols or using pseudographics. Using the **BorderType** property it is possible to choose the mode of border drawing. It may have the following modes:
 
 Simple - drawing a border using simple symbols such as  "+", "-", and "|";
@@ -47,7 +48,9 @@ UnicodeSingle - drawing a border using the symbols of  pseudographics; symbols o
 
 UnicodeDouble - drawing a border using  the symbols of  pseudographics; symbols of double border are used.
 
+
 ![](../../../images/cross12.png)
+
 
 When exporting to the text format, all coordinates and sizes of objects are recalculated to get the text appearance the same as it is in a report. You can control the conversion, by changing the zoom coefficients of **ZoomX** and **ZoomY**. The width of the columns of the output text is proportional to the width of the initial report. If you want to change the column width, it is possible to use the following methods:
 
@@ -55,6 +58,8 @@ change the width of a column: it is necessary to specify the column width in cha
 
 column width can be set globally via the **ColumnWidths** static property; in this case, the width of the columns is indicated starting from the left column, through the separator (a semicolon), for example, "10, 12, 45, 10, 10, 5, 20, 50 "; zero width of columns is ignored.
 
+
 ![](../../../images/cross12.png)
+
 
 The old/new export mode is set using the **UseOldExportMode** property. The new mode is created on the base of the **StiMatrix**: if the Word Wrap is enabled and a text cannot be placed in a cell then the cell height is increased automatically. By default the new mode is enabled.

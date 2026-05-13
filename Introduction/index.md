@@ -26,7 +26,6 @@ The main tasks that can be solved using the report server:
 
 ## Introducing
 
-
 [System Requirements](System_Requirements.md)
 
 [Installation](Installation.md)
@@ -34,7 +33,6 @@ The main tasks that can be solved using the report server:
 [Structure](Structure.md)
 
 ## Getting Started
-
 
 [Sign Up](Sign_In.md)
 
@@ -44,7 +42,6 @@ The main tasks that can be solved using the report server:
 
 ## Scheduler
 
-
 [Type](../Toolbar/Menu_Create/Scheduler/index.md)
 
 [Settings](../Toolbar/Menu_Create/Scheduler/Settings.md)
@@ -53,7 +50,6 @@ The main tasks that can be solved using the report server:
 
 ## Basic Items
 
-
 [Report](../Toolbar/Menu_Create/Report.md)
 
 [Dashboard](../Toolbar/Menu_Create/Dashboard.md)
@@ -61,7 +57,6 @@ The main tasks that can be solved using the report server:
 [Data Source](../Toolbar/Menu_Create/Data_Source/index.md)
 
 ## Other Items
-
 
 [Folder](../Toolbar/Menu_Create/Folder.md)
 
@@ -77,7 +72,6 @@ The main tasks that can be solved using the report server:
 
 ## Workspace
 
-
 [Users Tab](../Tabs/Users/index.md)
 
 [New Role](../Tabs/Users/Add_Role.md)
@@ -85,7 +79,6 @@ The main tasks that can be solved using the report server:
 [New User](../Tabs/Users/Add_User.md)
 
 ## Additional Options
-
 
 [Share](../Toolbar/Share.md)
 
@@ -95,7 +88,6 @@ The main tasks that can be solved using the report server:
 
 ## Another Features
 
-
 [Designer](https://www.stimulsoft.com/ru/documentation/online/user-manual/index.html?reports_designer.htm)
 
 [Viewer](https://www.stimulsoft.com/ru/documentation/online/user-manual/index.html?viewer.htm)
@@ -103,7 +95,6 @@ The main tasks that can be solved using the report server:
 [Export](https://www.stimulsoft.com/ru/documentation/online/user-manual/index.html?exports.htm)
 
 ## Information for Creators
-
 
 [Report Internals](https://www.stimulsoft.com/ru/documentation/online/user-manual/index.html?report_internals.htm)
 

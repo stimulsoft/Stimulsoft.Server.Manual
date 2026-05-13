@@ -6,6 +6,7 @@ The report designer supports many keyboard shortcuts. Using them can speed up th
 
 ![](../images/cross12.png)
 
+
 | **Buttons** | **Description** |
 | --- | --- |
 | **Ctrl+B** | Makes letters **bold** |

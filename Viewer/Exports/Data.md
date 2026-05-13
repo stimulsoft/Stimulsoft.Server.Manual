@@ -42,6 +42,7 @@ This is a group of file formats which are used to store table data. Export optio
 
 ![](../../images/cross12.png)
 
+
 **CSV** (Comma Separated Values) is a text format that is used to represent table data. Each string of the file is one row of the table. The values of each column are separated by the delimiter that depends on regional settings. The values that contain reserved characters (such as a comma or a new string) are framed with the double quotes ( ") symbol; if double quotes are found in the value they are represented as two double quotes in the file.
 
 
@@ -72,7 +73,9 @@ The "**Column**" element indicates that additional field is added to exported da
 
 `Column: "SortField" "{Products.Categories.CategoryName}"`
 
+
 ![](../../images/cross12.png)
+
 
 **DBF** (DataBase File) is the format to store data and it is used as the standard way to store and pass information. The DBF file consist of a header section for describing the structure of the data in the file. There are several variations on the .dbf file structure.
 
@@ -134,7 +137,9 @@ The "**Column**" element indicates that the additional field is added to the exp
 
 `Column: "SortField" "{Products.Categories.CategoryName}"`
 
+
 ![](../../images/cross12.png)
+
 
 **XML** (eXtensible Markup Language) is a text format that is used to store structured data (in exchange for existed files of data bases), for exchange of information between programs and also to create on its base the special markup languages (for example, XHTML), sometimes called dictionaries. XML is the hierarchical structure that is used to store any data. Visually this structure can be represented as the tree. XML supports Unicode and other encoding.
 
@@ -180,11 +185,15 @@ The "**Column**" element indicates that additional field is added to the exporte
 
 `Column: "SortField" "{Products.Categories.CategoryName}"`
 
+
 ![](../../images/cross12.png)
+
 
 **DIF** (Data Interchange Format) is a text format that is used to exchange sheets between spreadsheets processors  (Microsoft Excel, OpenOffice.org Calc, Gnumeric, StarCalc, Lotus 1-2-3, FileMaker, dBase, Framework, Multiplan, etc). The only limitation of this format is that the DIF format may contain only one sheet in one book.
 
+
 ![](../../images/cross12.png)
+
 
 **SYLK** (Symbolic Link) format- this text format is used to exchange data between applications, specifically spreadsheets. Files of **SYLK** have «.slk» extension. Microsoft does not publish a SYLK specification, therefore work with this format in different applications can be different.
 

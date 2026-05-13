@@ -8,8 +8,10 @@ To generate a local .pfx certificate in .NET, run the following command:
 
 **terminal**
 
+```
 
-`dotnet dev-certs https -ep d:/aspnetapp.pfx -p 123456`
+dotnet dev-certs https -ep d:/aspnetapp.pfx -p 123456
+```
 
 This command specifies the certificate’s output path and password. Note that such a certificate is suitable for development and testing purposes only. For production environments, a certificate from a trusted certification authority should be used.
 
@@ -49,8 +51,10 @@ Launch the container using the following command:
 
 **terminal**
 
+```
 
-`docker-compose up`
+docker-compose up
+```
 
 Now, Stimulsoft Server will be available via HTTPS at port 8081 using the address: http://localhost:8081. The server will still be accessible via HTTP at: http://localhost:8080.
 
