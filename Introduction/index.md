@@ -88,16 +88,16 @@ The main tasks that can be solved using the report server:
 
 ## Another Features
 
-[Designer](https://www.stimulsoft.com/ru/documentation/online/user-manual/index.html?reports_designer.htm)
+[Designer](https://www.stimulsoft.com/en/documentation/online/user-manual/index.html?reports_designer.htm)
 
-[Viewer](https://www.stimulsoft.com/ru/documentation/online/user-manual/index.html?viewer.htm)
+[Viewer](https://www.stimulsoft.com/en/documentation/online/user-manual/index.html?viewer.htm)
 
-[Export](https://www.stimulsoft.com/ru/documentation/online/user-manual/index.html?exports.htm)
+[Export](https://www.stimulsoft.com/en/documentation/online/user-manual/index.html?exports.htm)
 
 ## Information for Creators
 
-[Report Internals](https://www.stimulsoft.com/ru/documentation/online/user-manual/index.html?report_internals.htm)
+[Report Internals](https://www.stimulsoft.com/en/documentation/online/user-manual/index.html?report_internals.htm)
 
-[Dashboards](https://www.stimulsoft.com/ru/documentation/online/user-manual/index.html?dashboards.htm)
+[Dashboards](https://www.stimulsoft.com/en/documentation/online/user-manual/index.html?dashboards.htm)
 
-[Quick Start](https://www.stimulsoft.com/ru/documentation/online/user-manual/index.html?getting_started.htm)
+[Quick Start](https://www.stimulsoft.com/en/documentation/online/user-manual/index.html?getting_started.htm)

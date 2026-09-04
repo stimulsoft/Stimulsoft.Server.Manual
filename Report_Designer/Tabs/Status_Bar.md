@@ -19,6 +19,6 @@ The bar contains 4 sections:
 
 ![](../../images/img_3.png) Name of Selected Component.
 
-![](../../images/img_4.png) Shows cursor coordinates on a page of a report template. (Х:0,0 ; Y:0,0) coordinates corresponds to the top left corner of a page of a report template.
+![](../../images/img_4.png) Shows cursor coordinates on a page of a report template. (X:0,0 ; Y:0,0) coordinates corresponds to the top left corner of a page of a report template.
 
 ![](../../images/img_5.png) The slider to zoom reports.

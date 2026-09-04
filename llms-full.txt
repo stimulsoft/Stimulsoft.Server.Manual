@@ -96,19 +96,19 @@ The main tasks that can be solved using the report server:
 
 ## Another Features
 
-[Designer](https://www.stimulsoft.com/ru/documentation/online/user-manual/index.html?reports_designer.htm)
+[Designer](https://www.stimulsoft.com/en/documentation/online/user-manual/index.html?reports_designer.htm)
 
-[Viewer](https://www.stimulsoft.com/ru/documentation/online/user-manual/index.html?viewer.htm)
+[Viewer](https://www.stimulsoft.com/en/documentation/online/user-manual/index.html?viewer.htm)
 
-[Export](https://www.stimulsoft.com/ru/documentation/online/user-manual/index.html?exports.htm)
+[Export](https://www.stimulsoft.com/en/documentation/online/user-manual/index.html?exports.htm)
 
 ## Information for Creators
 
-[Report Internals](https://www.stimulsoft.com/ru/documentation/online/user-manual/index.html?report_internals.htm)
+[Report Internals](https://www.stimulsoft.com/en/documentation/online/user-manual/index.html?report_internals.htm)
 
-[Dashboards](https://www.stimulsoft.com/ru/documentation/online/user-manual/index.html?dashboards.htm)
+[Dashboards](https://www.stimulsoft.com/en/documentation/online/user-manual/index.html?dashboards.htm)
 
-[Quick Start](https://www.stimulsoft.com/ru/documentation/online/user-manual/index.html?getting_started.htm)
+[Quick Start](https://www.stimulsoft.com/en/documentation/online/user-manual/index.html?getting_started.htm)
 
 ---
 
@@ -139,7 +139,7 @@ Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Introduction/Insta
 > This chapter provides a step-by-step guide on how to install Stimulsoft Server on a Windows operating system. [For information on using Stimulsoft Server in a Docker container, please refer to the corresponding section](Docker/index.md).
 
 To install **Stimulsoft Server**, follow these steps:
-**Step 1**: Download the **Stimulsoft Server** distribution package, for example from the official website - [https://www.stimulsoft.com/ru/downloads/business](https://www.stimulsoft.com/ru/downloads);
+**Step 1**: Download the **Stimulsoft Server** distribution package, for example from the official website - [https://www.stimulsoft.com/downloads/business](https://www.stimulsoft.com/downloads);
 
 
 **Step 2**: Run the downloaded installer.
@@ -536,6 +536,149 @@ On this tab, you can check for errors, warnings, and information messages in the
 
 ---
 
+# Migration Assistant
+
+Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Introduction/Migration_Assistant.md
+
+The **Migration Assistant** is a specialized tool for transferring Stimulsoft Server service data from one Stimulsoft Server instance to another. The tool allows you to transfer data between different storage systems without manually copying and configuring service tables. For example, the Assistant can be used to transfer data between test and production Stimulsoft Server instances, when migrating to a new server, or when changing the data storage system. You can launch the Migration Assistant from the Server Controller context menu or by directly running the Stimulsoft.Server.MigrationAssistant.exe executable file located in the installed Stimulsoft Server folder. By default, the file is located in the following directory: C:\ProgramData\Stimulsoft-Server\Software-Releases\202*...
+
+
+> **Note**
+>
+> The actual file path may vary depending on the Stimulsoft Server version and installation settings.
+
+**Migrated Data**
+
+The Migration Assistant transfers Stimulsoft Server service data, including:
+
+- Stimulsoft Server navigator items: reports, report snapshots, exported files, folder structures, and other items;
+- connections to data sources and related settings;
+- users and user accounts;
+- administrators and managers;
+- roles and related access settings;
+- workspaces;
+- other service objects and data required for Stimulsoft Server operation.
+
+
+The set of data that can be migrated may depend on the Stimulsoft Server version and the structure of the service tables in the source and target instances.
+
+**Migration Assistant Editor**
+
+The Migration Assistant Editor consists of two main stages:
+
+1. establishing a connection to the source and target Stimulsoft Server instances;
+2. analyzing service tables and transferring data.
+
+**Connecting to Stimulsoft Server Instances**
+
+At the first stage, specify the connection parameters for the source and target Stimulsoft Server instances.
+
+
+![](../images/topics/Introduction.Migration_Assistant_1.png)
+
+
+![](../images/img_1.png) In the Source Stimulsoft Server field group, specify the parameters of the instance from which the data will be transferred:
+
+- URI - the address of the Stimulsoft Server navigator;
+- User Name - the name of a user account with the permissions required to access the data;
+- Password - the password for the specified account.
+
+
+![](../images/img_2.png) In the Target Stimulsoft Server field group, specify the parameters of the instance to which the data will be transferred:
+
+- URI - the address of the Stimulsoft Server navigator;
+- User Name - the name of a user account with the permissions required to perform the operation;
+- Password - the password for the specified account.
+
+
+After successfully establishing a connection to both Stimulsoft Server instances, the Assistant analyzes the structure of the service tables and prepares the data for transfer.
+
+**Analyzing Service Tables and Transferring Data**
+
+At the second stage, information about the service tables of the source and target Stimulsoft Server instances is displayed. The window contains:
+
+
+![](../images/topics/Introduction.Migration_Assistant_2.png)
+
+
+![](../images/img_1.png) a list of the source Stimulsoft Server service tables;
+
+![](../images/img_2.png) a list of the target Stimulsoft Server service tables;
+
+
+Before starting the transfer, it is recommended that you check the connection parameters and make sure that the correct source and target Stimulsoft Server instances are selected. To start the operation, click Transfer. The data from the source Stimulsoft Server service tables will then be transferred to the corresponding tables of the target instance. The duration of the operation depends on the volume of data being transferred and the performance of the storage system in use.
+
+
+> **Information**
+>
+> Note that existing data in the target Stimulsoft Server may be modified or lost during the transfer. Before performing the operation, it is recommended that you [create a backup copy](Backup_And_Restore.md) of the target Stimulsoft Server instance data. It is also recommended that you verify the specified connection settings in advance and make sure that the required servers are selected as the source and target instances.
+
+---
+
+# Backup And Restore
+
+Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Introduction/Backup_And_Restore.md
+
+**Backup and Restore** is a specialized tool designed to create backups of Stimulsoft Server service data and restore data from a backup. You can launch the **Backup and Restore** tool from the Server Controller context menu or by directly running the Stimulsoft.Server.BackupAndRestore.exe executable file located in the installed Stimulsoft Server folder. By default, the file is located in the following directory: C:\ProgramData\Stimulsoft-Server\Software-Releases\202*.*.*\.
+
+
+> **Note**
+>
+> The actual file path may vary depending on the Stimulsoft Server version and installation settings.
+
+**Backup**
+
+A Stimulsoft Server backup is a ZIP archive that includes:
+
+- Stimulsoft Server navigator items: reports, report snapshots, exported files, folder structures, and other items;
+- connections to data sources and related settings;
+- users and user accounts;
+- administrators and managers;
+- roles and related access settings;
+- workspaces;
+- other service objects and data required for Stimulsoft Server operation.
+
+**Backup and Restore Editor**
+
+The editor contains two tabs:
+
+- Stimulsoft Server Backup;
+- Restore from Backup.
+
+**Backup**
+
+Backup is performed without connecting to the navigator. You only need to specify the connection string to the data storage and the path for saving the backup. The backup editor is shown below:
+
+
+![](../images/topics/Introduction.Backup_And_Restore_1.png)
+
+
+![](../images/img_1.png) The data storage settings group, where you need to specify the database type and connection string.
+
+![](../images/img_2.png) In the Binary Storage group, you can change the storage type for the content of server items and specify the path to this storage.
+
+![](../images/img_3.png) Settings for the path to the output backup file.
+
+![](../images/img_4.png) An optional setting available only for PostgreSQL databases. Allows you to specify the path to the backup creation tool.
+
+**Restore**
+
+To perform a restore, you must first create at least one backup. The data storage type must match the type of storage from which the backup was created. The restore editor is shown below:
+
+
+![](../images/topics/Introduction.Backup_And_Restore_2.png)
+
+
+![](../images/img_1.png) The data storage settings group, where you need to specify the database type and connection string.
+
+![](../images/img_2.png) In the Binary Storage group, you can change the storage type for the content of server items and specify the path to this storage.
+
+![](../images/img_3.png) Settings for the path to the backup file from which the restore is performed.
+
+![](../images/img_4.png) An optional setting available only for PostgreSQL databases. Allows you to specify the path to the restore tool.
+
+---
+
 # Server Docker
 
 Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Introduction/Docker/index.md
@@ -709,6 +852,8 @@ Environment:
 
 | **Name** | **Description** |
 | --- | --- |
+| Reports__AllowLoadingCustomFontsToClientSide | Allows sending fonts embedded in the report to the client side in the viewer and designer. Default is false. |
+| Reports__AllowLoadingSystemFontsToClientSide | Allows sending fonts installed on the server to the client side in the viewer and designer. Default is false. |
 | Reports__AllowReportCompilation | Allows report compilation. Default is true. |
 | Reports__AllowReportEngine | Allows switching the report engine version. Default is true. |
 | Reports__ResourcesMaximumSize: 20000000 | Sets the maximum file size for adding to the report resources. The value is specified in bytes. |
@@ -3319,7 +3464,7 @@ Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Viewer/Exports/For
 
 ---
 
-# Wеb Documents
+# Web Documents
 
 Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Viewer/Exports/Web_Documents/index.md
 
@@ -5151,7 +5296,7 @@ The bar contains 4 sections:
 
 ![](../../images/img_3.png) Name of Selected Component.
 
-![](../../images/img_4.png) Shows cursor coordinates on a page of a report template. (Х:0,0 ; Y:0,0) coordinates corresponds to the top left corner of a page of a report template.
+![](../../images/img_4.png) Shows cursor coordinates on a page of a report template. (X:0,0 ; Y:0,0) coordinates corresponds to the top left corner of a page of a report template.
 
 ![](../../images/img_5.png) The slider to zoom reports.
 
@@ -6358,44 +6503,6 @@ This group contains elements to control basic parameters of a page. These are pa
 
 
 * **Notice**: When you add an image to the watermark, the value of parameter **Image Transparency** is set to **0**. So you should set the necessary transparency manually.
-
----
-
-# Обновление_2
-
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Tab_System/Update_2.md
-
-Компания **Stimulsoft** поcтоянно ведет разработку программного обеcпечения **Reports Server**. Для того чтобы уcтановить поcледнюю верcию этого ПО, необходимо быть зарегиcтрированным пользователем, иметь доcтуп в интернет и нажать кнопку **Обновить (Update)** на вкладке **cиcтема (System)**:
-
-
-![](../images/topics/Tab_System.Update_2_1.png)
-
-
-Как видно из риcунка, окно обновления предcтавлено cледующими полями:
-
-![](../images/img_1.png) Поле **Текущая верcия (Current Software)**. Данное поле cодержит информацию о верcии **Stimulsoft Reports Server** и дату поcледнего обновления.
-
-![](../images/img_2.png) При наличии новой верcии, будет доcтупно данное поле. Здеcь cодержитcя информация о поcледних изменениях в программном обеcпечении **Stimulsoft Reports Server**, а также дата поcледнего релиза.
-
-
-При наличии новой верcии, для продолжения обновления ПО, cледует в данном окне нажать кнопку **Обновление (Update)**. Поcле этого, пользователю будет отображено окно **Лицензия (License)**:
-
-
-![](../images/topics/Tab_System.Update_2_2.png)
-
-
-* **ОБРАТИТЕ ВНИМАНИЕ:** ПОЖАЛУЙcТА, ВНИМАТЕЛЬНО ПРОЧИТАЙТЕ ТЕКcТ ЛИЦЕНЗИОННОГО cОГЛАШЕНИЯ.
-
-
-Для продолжения обновления ПО необходимо принять лицензионное cоглашение. В противном cлучае, обновление будет прервано. Поcле нажатия кнопки **Я cоглаcен (I Agree)**, обновления ПО **Stimulsoft Reports Server** будут уcтановлены автоматичеcки.
-
----
-
-# Резервное копирование
-
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Tab_System/Backup_and_Restore.md
-
-## Резервное копирование
 
 ---
 

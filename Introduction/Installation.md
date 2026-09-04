@@ -5,7 +5,7 @@
 > This chapter provides a step-by-step guide on how to install Stimulsoft Server on a Windows operating system. [For information on using Stimulsoft Server in a Docker container, please refer to the corresponding section](Docker/index.md).
 
 To install **Stimulsoft Server**, follow these steps:
-**Step 1**: Download the **Stimulsoft Server** distribution package, for example from the official website - [https://www.stimulsoft.com/ru/downloads/business](https://www.stimulsoft.com/ru/downloads);
+**Step 1**: Download the **Stimulsoft Server** distribution package, for example from the official website - [https://www.stimulsoft.com/downloads/business](https://www.stimulsoft.com/downloads);
 
 
 **Step 2**: Run the downloaded installer.

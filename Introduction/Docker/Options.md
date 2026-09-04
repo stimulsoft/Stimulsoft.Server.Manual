@@ -100,6 +100,8 @@ Environment:
 
 | **Name** | **Description** |
 | --- | --- |
+| Reports__AllowLoadingCustomFontsToClientSide | Allows sending fonts embedded in the report to the client side in the viewer and designer. Default is false. |
+| Reports__AllowLoadingSystemFontsToClientSide | Allows sending fonts installed on the server to the client side in the viewer and designer. Default is false. |
 | Reports__AllowReportCompilation | Allows report compilation. Default is true. |
 | Reports__AllowReportEngine | Allows switching the report engine version. Default is true. |
 | Reports__ResourcesMaximumSize: 20000000 | Sets the maximum file size for adding to the report resources. The value is specified in bytes. |
