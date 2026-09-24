@@ -751,6 +751,12 @@ Environment:
 | Reports__QRCodeECIMode | Sets the encoding value for byte mode. Default encoding is "Windows_1251". |
 | Reports__ViewMode | Sets the viewer display mode. Default mode is "SinglePage". |
 
+**Web Server Settings**
+
+| **Name** | **Description** |
+| --- | --- |
+| Web__AllowGCCollect | Enables forced garbage collection after processing viewer and designer requests. Allows memory to be released faster after rendering large reports. It is recommended to enable it when the container memory is limited. Default is false. |
+
 Additionally, it is recommended to mount a folder with server working files and logs in the virtual machine settings. This can be done in the docker-compose.yml file using the following command:
 
 **docker-compose.yml**
