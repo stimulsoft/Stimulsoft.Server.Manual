@@ -1,4 +1,4 @@
-## Image
+# Image
 
 
 Sometimes you need to add an image to the report. It can be photos of goods, workers, statistics, etc. Images can be added from different sources. The component **Image** is used for this purpose. The Image component can be placed on a report page, data band, header, footer band etc.). When you put this component on the report page the form **Image** will be called.

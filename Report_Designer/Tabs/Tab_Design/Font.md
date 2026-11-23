@@ -1,4 +1,4 @@
-## Font
+# Font
 
 
 This group is used to output text with the specified font type, color etc.

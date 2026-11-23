@@ -1,4 +1,4 @@
-## Borders
+# Borders
 
 
 This group contains the commands to setup border components.

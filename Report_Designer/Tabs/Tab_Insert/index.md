@@ -1,4 +1,4 @@
-## Tab Insert
+# Tab Insert
 
 
 The tab **Insert** contains the main components for creating reports.

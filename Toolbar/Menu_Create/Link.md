@@ -1,4 +1,4 @@
-## Link
+# Link
 
 The **Link** element is a shortcut-like object designed to launch a specific report or dashboard directly. This element is useful when you need to provide users from child workspaces with access to a report or dashboard located in a parent workspace.
 

@@ -1,4 +1,4 @@
-## Log
+# Log
 
 
 Each time when you edit and save an item, a copy of that item with the new changes is created. Thus, a history for this item is created . This history items can be viewed. To do this, select **Log** on the Toolbar.

@@ -1,4 +1,4 @@
-## Alignment
+# Alignment
 
 
 The group is used to align the content of components horizontally and vertically. Also it is possible to set the angle of the text rotation and control the WordWrap property.

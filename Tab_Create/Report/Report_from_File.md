@@ -1,4 +1,4 @@
-## Report from File
+# Report from File
 
 
 Another way to add a list of items in the report server is to load a report from the file. The file may be located either in the item list or any other place. Below is the menu to load a report from the file:

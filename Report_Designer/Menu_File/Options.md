@@ -1,4 +1,4 @@
-## Options
+# Options
 
 
 In the **Options** menu you can find advanced settings of the report designer. These settings are located on the following tabs:

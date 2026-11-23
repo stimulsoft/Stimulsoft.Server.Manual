@@ -1,4 +1,4 @@
-## Tab Home
+# Tab Home
 
 
 This is a basic tab of the report designer. Main commands for customizing report components are placed on this tab.

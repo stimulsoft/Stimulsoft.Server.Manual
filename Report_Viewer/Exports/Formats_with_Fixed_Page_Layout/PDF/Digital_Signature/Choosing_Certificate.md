@@ -1,4 +1,4 @@
-## Choosing Certificate
+# Choosing Certificate
 
 
 There are two ways to create the digital signature:

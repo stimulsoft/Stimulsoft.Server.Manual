@@ -1,4 +1,4 @@
-## Recycle Bin
+# Recycle Bin
 
 When you delete items, you can move them to the trash or completely remove them from the server.
 

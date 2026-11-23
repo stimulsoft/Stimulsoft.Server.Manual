@@ -1,4 +1,4 @@
-## Standard Report
+# Standard Report
 
 
 When you create a report using the **Standard Report** wizard, the report will contain one **Data Band** or one **Data Table**. Creating a report using the wizard includes 11 steps. Not all of them are mandatory.

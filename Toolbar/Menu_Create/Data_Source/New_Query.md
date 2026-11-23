@@ -1,4 +1,4 @@
-## New Query
+# New Query
 
 The second way to obtain data from the storage is a method of retrieving data from the query to the repository. **Queries** are script-like texts in one of the dialects of SQL that is used to extract data from tables and to make them available to the report server. Queries get the data from database tables and, on their basis, create temporary tables. The data in the temporary table will be filtered, grouped, sorted, and arranged according to the query parameters. Then, the temporary table is passed to the report server. Applying requests provides an opportunity to avoid duplication of data in the tables, minimizes the amount of data traffic between the database and the client-side, and also provides maximum flexibility for searching and displaying data in a database. Below is the **New Query** dialog.
 

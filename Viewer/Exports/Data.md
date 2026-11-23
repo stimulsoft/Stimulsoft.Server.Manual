@@ -1,4 +1,4 @@
-## Data
+# Data
 
 
 This is a group of file formats which are used to store table data. Export options in **Data**:

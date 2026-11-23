@@ -1,4 +1,4 @@
-## Using HTTPS
+# Using HTTPS
 
 An HTTPS certificate (SSL/TLS) provides a secure connection between the client and the server by verifying the website’s authenticity and encrypting transmitted data. In .NET development, you can use either a locally generated self-signed certificate or one purchased from a certification authority. A certificate is essential for ensuring security (data protection), building user trust (browser padlock icon), and complying with standards. During development, local certificates are often used.
 

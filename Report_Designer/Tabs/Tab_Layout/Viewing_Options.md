@@ -1,4 +1,4 @@
-## Viewing Options
+# Viewing Options
 
 
 The group contains items to configure various settings of displaying some staff on the page in the report template.

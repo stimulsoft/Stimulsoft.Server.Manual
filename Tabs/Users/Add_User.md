@@ -1,4 +1,4 @@
-## Add User
+# Add User
 
 You can add other user accounts to the workspace. Before you add a new user, you should define its role, i.e., select one of the predefined roles or create a new one. Then, click Add User in the Users tab and fill out the form shown below.
 

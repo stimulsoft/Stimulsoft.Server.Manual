@@ -1,4 +1,4 @@
-## Dashboard
+# Dashboard
 
 You can add the dashboard to the list of items. Select the **New Dashboard** panel command in the **Create** menu. In the menu that pops up, you can attach various server elements to the new dashboard or upload files from the local storage.
 

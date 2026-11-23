@@ -1,4 +1,4 @@
-## Calendar
+# Calendar
 
 In addition to the direct scheduler settings, you can create a launch schedule, designate weekends, holidays and other exception dates using the **Calendar** element. To create a calendar, select the **Calendar** command in the **Create** menu on the server toolbar.
 

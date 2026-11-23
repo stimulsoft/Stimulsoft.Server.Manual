@@ -1,4 +1,4 @@
-## Server in Docker
+# Server in Docker
 
 This chapter covers launching **Stimulsoft Server** in a Docker container. The product is built on the .NET 8 platform, which ensures cross-platform compatibility and allows it to run on various operating systems. The primary requirement is that **Docker** must be installed and functioning correctly on the system in use. We also recommend reviewing the following chapters:
 

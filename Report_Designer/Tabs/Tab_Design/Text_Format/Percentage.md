@@ -1,4 +1,4 @@
-## Percentage
+# Percentage
 
 
 This format is used to show percent values. When formatting, the value is multiplied by 100 and is output with the percent symbol.

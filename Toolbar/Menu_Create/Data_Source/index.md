@@ -1,4 +1,4 @@
-## Data Source
+# Data Source
 
 The **data source** is a structural representation of data that is used to generate reports. Each data source belongs to a particular type of connection and may vary depending on the type of data source parameters. Creating a data source can be done in several steps:
 

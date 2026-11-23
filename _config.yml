@@ -1,9 +1,12 @@
-title: Stimulsoft Reports Documentation
-description:
+title: "Stimulsoft Server User Manual"
+description: "User manual for Stimulsoft Server, an on-premise reporting server. Covers installation, Docker deployment, SSO, user and role management, schedulers, cloud storage, the built-in report designer and viewer, and system administration."
 baseurl: "/Stimulsoft.Server.Manual"
-url: "https://stimulsoft.github.io"
+url: "https://docs.stimulsoft.com"
 sidebar_title: "Stimulsoft Server User Manual"
 exclude_from_menu: ["Out_Of_Date", "Extra Text"]
+product_name: "Stimulsoft Server"
+product_url: "https://www.stimulsoft.com/en/products/server"
+designer_url: "https://designer.stimulsoft.com/"
 
 plugins:
   - jekyll-relative-links

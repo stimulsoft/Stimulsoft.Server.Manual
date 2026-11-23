@@ -1,4 +1,4 @@
-## Structure
+# Structure
 
 **Stimulsoft Server** is a sophisticated software that has a client-server architecture. Data of different users are separated by different workspaces. The picture below shows a system with three **workspaces**:
 

@@ -1,4 +1,4 @@
-## Report with Chart
+# Report with Chart
 
 
 Creating a report with chart using the wizard includes 8 steps. Not all of them are mandatory.

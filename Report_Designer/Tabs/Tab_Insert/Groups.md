@@ -1,4 +1,4 @@
-## Groups
+# Groups
 
 
 This group contains report components.

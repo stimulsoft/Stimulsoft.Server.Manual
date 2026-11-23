@@ -1,4 +1,4 @@
-## Tab Series
+# Tab Series
 
 
 Series of the chart component are the main element of the diagram. Series are important to visualize data. It should be understood that construction is not possible without series of the diagram.

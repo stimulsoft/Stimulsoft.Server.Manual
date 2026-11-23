@@ -1,4 +1,4 @@
-## Currency
+# Currency
 
 
 It is used to output values as currency. The format **Currency** can be used to output other numbers.

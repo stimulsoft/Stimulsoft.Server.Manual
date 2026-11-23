@@ -1,4 +1,4 @@
-## Tab Styles
+# Tab Styles
 
 
 You can completely change the design of charts, ranging from basic colors and ending with shadows, borders, and so on. You can do this in the tab **Styles**.

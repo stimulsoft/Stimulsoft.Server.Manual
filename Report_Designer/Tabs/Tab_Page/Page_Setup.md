@@ -1,4 +1,4 @@
-## Page Setup
+# Page Setup
 
 
 This group contains elements to control basic parameters of a page. These are page margins, orientation, page size, columns.

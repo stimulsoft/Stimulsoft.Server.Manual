@@ -1,4 +1,4 @@
-## Compatibility of Different Versions
+# Compatibility of Different Versions
 
 
 The information below shows the compatibility of Adobe Acrobat versions.

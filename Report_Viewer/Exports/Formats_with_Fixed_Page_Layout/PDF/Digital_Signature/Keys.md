@@ -1,4 +1,4 @@
-## Keys
+# Keys
 
 
 Key is secret information is the secret information that is used by the cryptographic algorithm when creating and checking the digital signature. Usually for digital signature the pair of keys is used:

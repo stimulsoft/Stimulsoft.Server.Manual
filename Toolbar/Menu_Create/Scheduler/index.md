@@ -1,4 +1,4 @@
-## Scheduler
+# Scheduler
 
 The **scheduler** is one of the main tools of the report server, using which you can plan specific actions at a particular time. To do this, you need to create a scheduler and specify the time and actions that you must perform. For example, at the beginning of each hour (at a specific minute), the report will be rendered, exported to **PDF** format and sent via email to particular persons. The picture below shows a window to create a new scheduler:
 

@@ -1,4 +1,4 @@
-## File Storage
+# File Storage
 
 The **File Storage** item is used to save another element outside the server. To do this, create a file repository and specify this item as a **Destination** when performing actions with other items. For example, when copying items using the **Scheduler**, or when you run the report without previewing.
 

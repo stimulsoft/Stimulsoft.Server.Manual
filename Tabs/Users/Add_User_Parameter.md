@@ -1,4 +1,4 @@
-## Add User Parameter
+# Add User Parameter
 
 **User Parameter** is a local variable that is automatically added to the report template when the user opens it.
 

@@ -1,4 +1,4 @@
-## Cross-Tab Tab
+# Cross-Tab Tab
 
 
 The Cross-Tab tab contains options to define the structure of a cross-tab component, the column indicates the data for the rows, columns, summary cells.

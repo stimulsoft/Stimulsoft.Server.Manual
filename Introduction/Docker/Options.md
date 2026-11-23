@@ -1,4 +1,4 @@
-## Main Options
+# Main Options
 
 All necessary configurations can be specified in the docker-compose.yml file using environment variables. For convenience, all settings are grouped, and each group name is separated from the setting name by a double underscore. Example of passing server settings:
 

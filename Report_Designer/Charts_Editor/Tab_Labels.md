@@ -1,4 +1,4 @@
-## Tab Labels
+# Tab Labels
 
 
 On this tab you can set the type of labels in the chart. The selected appearance of the title will be applied to all rows that have the mode **Show Series** **Labels: From Series** disabled.

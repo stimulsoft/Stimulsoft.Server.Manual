@@ -1,4 +1,4 @@
-## System Tab
+# System Tab
 
 On the **System** tab, you can edit the Email Stimulsoft Server templates.
 

@@ -1,4 +1,4 @@
-## System Requirements
+# System Requirements
 
 Minimum system requirements are:
 

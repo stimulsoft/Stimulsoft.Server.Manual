@@ -1,4 +1,4 @@
-## File
+# File
 
 
 In the **File** menu the key commands for working with reports in Report Designer are present:

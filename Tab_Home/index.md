@@ -1,4 +1,4 @@
-## Tab Home
+# Tab Home
 
 
 Toolbar contains the basic commands of the report server and its elements. At the same time, depending on the selected element, the list of commands may be different. For example, if you select the Excel item, then the Import Data command will be available. The picture below shows the Home tab, with the commands for the **Report** item.

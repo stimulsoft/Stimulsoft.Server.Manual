@@ -1,4 +1,4 @@
-## Toolbar
+# Toolbar
 
 
 The main toolbar locates commands to control the report. Below is the structure of the toolbar with the description of each command:

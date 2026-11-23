@@ -1,4 +1,4 @@
-## Actions
+# Actions
 
 The scheduler in the active (running) state performs a specific list of actions on schedule. Actions performed by the scheduler:
 

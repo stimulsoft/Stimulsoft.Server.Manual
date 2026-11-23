@@ -1,4 +1,4 @@
-## Custom
+# Custom
 
 
 This type is used to show values according to custom requirements. This type allows data formatting in the **Format Mask**.

@@ -1,4 +1,4 @@
-## Arrange
+# Arrange
 
 
 The group contains a large number of commands used to change the position of components on a page.

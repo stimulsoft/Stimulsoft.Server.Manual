@@ -1,4 +1,4 @@
-## Profile
+# Profile
 
 In the menu **Settings** menu, you can change your account settings. You can find Parameters in the following tabs:
 

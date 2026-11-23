@@ -1,4 +1,4 @@
-## How to Create Report for Export?
+# How to Create Report for Export?
 
 
 Many exports have the table mode. In this mode the whole report is converted into one table. Creating correct templates from the source code allows making the table look much better, decrease the size of the file, increase the speed of working with export. Therefore, when using the table mode of export it is important to follow some recommendations:

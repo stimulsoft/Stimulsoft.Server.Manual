@@ -1,4 +1,4 @@
-## Tab Preview
+# Tab Preview
 
 
 With the tab **Preview**, you can preview the report before printing, exporting, sending, or any other action. You can also see a preview of the report can be in a separate window of the viewer.

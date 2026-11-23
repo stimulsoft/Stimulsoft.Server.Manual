@@ -1,4 +1,4 @@
-## Reports
+# Reports
 
 On the **Reports** tab, report templates, folders of the **Common** type and folders of the **Reports** type will be displayed:
 

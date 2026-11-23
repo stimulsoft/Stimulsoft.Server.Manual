@@ -1,4 +1,4 @@
-## Display panel
+# Display panel
 
 The display panel includes commands to control modes of displaying server items:
 

@@ -1,4 +1,4 @@
-## Color Collection Editor
+# Color Collection Editor
 
 
 **Color Collection Editor** provides an opportunity to create a certain collection of colors for the style:

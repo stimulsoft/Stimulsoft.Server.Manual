@@ -1,4 +1,4 @@
-## Encryption
+# Encryption
 
 
 The **PDF** document can be encrypted to protect the content from illegal access. The user can set the following encryption patameters:

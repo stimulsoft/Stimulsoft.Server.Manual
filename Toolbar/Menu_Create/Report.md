@@ -1,4 +1,4 @@
-## Report
+# Report
 
 You can add the report to the list of items. Select the **New Report** panel command in the **Create** menu. In the menu that pops up, you can attach various server elements to the new report or upload files from the local storage.
 

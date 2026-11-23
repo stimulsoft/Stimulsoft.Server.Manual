@@ -1,4 +1,4 @@
-## TXT
+# TXT
 
 
 **Text file (TXT)** is a kind of computer file that is structured as a sequence of lines. A text file exists within a computer file system. The end of a text file is often denoted by placing one or more special characters, known as an end-of-file marker, after the last line in a text file. Text files are commonly used for storage of information. Export options in TXT:

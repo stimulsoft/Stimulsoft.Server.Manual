@@ -1,4 +1,4 @@
-## Clipboard
+# Clipboard
 
 
 This group allows working with the Clipboard of the report designer.

@@ -1,0 +1,89 @@
+{%- comment -%}
+  Sets seo_title, seo_description, seo_canonical and seo_markdown for the layout.
+  Pages carry no front matter (it would break the raw .md copies), so the title and
+  the description are taken from the rendered content. Needs "crumbs" from breadcrumbs.html.
+{%- endcomment -%}
+
+{%- assign seo_is_root = false -%}
+{%- if page.url == "/" or page.url == "/index.html" -%}{%- assign seo_is_root = true -%}{%- endif -%}
+
+{%- assign seo_heading = "" -%}
+{%- assign seo_h1_parts = content | split: "<h1" -%}
+{%- if seo_h1_parts.size > 1 -%}
+  {%- assign seo_heading = seo_h1_parts[1] | split: "</h1>" | first | prepend: "<h1" | strip_html | strip -%}
+{%- endif -%}
+
+{%- comment -%}
+  The ancestors come from the breadcrumbs. Pages deeper than the breadcrumbs go have none,
+  so their ancestors are taken from the folders of the URL.
+{%- endcomment -%}
+{%- assign seo_ancestors = "" -%}
+{%- assign seo_crumb_parts = crumbs | split: "::" -%}
+{%- if seo_heading == "" and seo_crumb_parts.size > 0 -%}
+  {%- assign seo_heading = seo_crumb_parts.last | split: "||" | first | strip -%}
+{%- endif -%}
+{%- if seo_crumb_parts.size > 1 -%}
+  {%- assign seo_ancestor_count = seo_crumb_parts.size | minus: 1 -%}
+  {%- for seo_part in seo_crumb_parts limit: seo_ancestor_count -%}
+    {%- assign seo_name = seo_part | split: "||" | first | strip -%}
+    {%- assign seo_ancestors = seo_ancestors | append: seo_name | append: "::" -%}
+  {%- endfor -%}
+{%- elsif seo_crumb_parts.size == 0 and seo_is_root == false -%}
+  {%- assign seo_folders = page.url | remove: ".html" | split: "/" -%}
+  {%- for seo_folder in seo_folders -%}
+    {%- if seo_folder != "" and forloop.last == false -%}
+      {%- assign seo_name = seo_folder | replace: "_", " " -%}
+      {%- assign seo_ancestors = seo_ancestors | append: seo_name | append: "::" -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- if seo_heading == "" -%}{%- assign seo_heading = seo_folders.last | replace: "_", " " -%}{%- endif -%}
+{%- endif -%}
+{%- assign seo_ancestor_list = seo_ancestors | split: "::" -%}
+
+{%- comment -%}
+  The parent and the top section keep the title unique: the same topic often repeats
+  under several platforms, such as "HTML5 Viewer > Viewer Settings" for PHP and for Python.
+{%- endcomment -%}
+{%- assign seo_parent = "" -%}
+{%- assign seo_top = "" -%}
+{%- if seo_ancestor_list.size > 0 -%}{%- assign seo_parent = seo_ancestor_list.last -%}{%- endif -%}
+{%- if seo_ancestor_list.size > 1 -%}{%- assign seo_top = seo_ancestor_list.first -%}{%- endif -%}
+{%- if seo_parent == seo_heading -%}{%- assign seo_parent = "" -%}{%- endif -%}
+{%- if seo_top == seo_heading or seo_top == seo_parent -%}{%- assign seo_top = "" -%}{%- endif -%}
+{%- if seo_top != "" and site.title contains seo_top -%}{%- assign seo_top = "" -%}{%- endif -%}
+
+{%- if seo_is_root or seo_heading == "" -%}
+  {%- assign seo_title = site.title -%}
+{%- else -%}
+  {%- assign seo_title = seo_heading -%}
+  {%- if seo_parent != "" -%}{%- assign seo_title = seo_title | append: " - " | append: seo_parent -%}{%- endif -%}
+  {%- if seo_top != "" -%}{%- assign seo_title = seo_title | append: " - " | append: seo_top -%}{%- endif -%}
+  {%- assign seo_title = seo_title | append: " - " | append: site.title -%}
+{%- endif -%}
+
+{%- assign seo_description = "" -%}
+{%- unless seo_is_root -%}
+  {%- assign seo_paragraphs = content | split: "<p>" -%}
+  {%- for seo_paragraph in seo_paragraphs offset: 1 limit: 8 -%}
+    {%- assign seo_text = seo_paragraph | split: "</p>" | first | strip_html | normalize_whitespace | strip -%}
+    {%- if seo_text.size > 50 -%}
+      {%- assign seo_description = seo_text | truncate: 160 -%}
+      {%- break -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endunless -%}
+{%- if seo_description == "" -%}
+  {%- if seo_is_root or seo_heading == "" -%}
+    {%- assign seo_description = site.description | truncate: 160 -%}
+  {%- else -%}
+    {%- assign seo_description = seo_heading | append: ". " | append: site.description | truncate: 160 -%}
+  {%- endif -%}
+{%- endif -%}
+
+{%- comment -%} The root page only redirects to the first topic, so that topic is its canonical. {%- endcomment -%}
+{%- assign seo_path = page.url | remove: ".html" -%}
+{%- if seo_is_root and site.data.sidebar.first -%}
+  {%- assign seo_path = site.data.sidebar.first.url -%}
+{%- endif -%}
+{%- assign seo_canonical = seo_path | prepend: site.baseurl | prepend: site.url -%}
+{%- assign seo_markdown = page.path | prepend: "/" | prepend: site.baseurl | prepend: site.url -%}

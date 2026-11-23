@@ -1,4 +1,4 @@
-## Clone
+# Clone
 
 
 Components of Stimulsoft Reports include a unique one - **Clone**. This component is designed to continue a report in a certain location of a report.

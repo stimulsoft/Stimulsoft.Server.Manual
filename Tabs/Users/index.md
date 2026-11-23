@@ -1,4 +1,4 @@
-## Users Tab
+# Users Tab
 
 All tools to control workspaces, accounts, and a system of the report server are located on the Users Tab.
 

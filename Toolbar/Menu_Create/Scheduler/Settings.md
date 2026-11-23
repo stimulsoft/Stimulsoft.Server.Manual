@@ -1,4 +1,4 @@
-## Settings
+# Settings
 
 On the **Settings** tab, you can define scheduling parameters. Depending on the selected type, the number and names of the parameters may vary.
 

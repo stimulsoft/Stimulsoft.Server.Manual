@@ -1,4 +1,4 @@
-## Report Checker
+# Report Checker
 
 
 In order to check the report for errors you should use the **Report Checker**. The Report Checker will analyze the report, resulting in an error message, comments, or inaccuracies found in this report. The picture below shows the Report Checker:

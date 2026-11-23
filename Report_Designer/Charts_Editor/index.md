@@ -1,4 +1,4 @@
-## Charts Editor
+# Charts Editor
 
 
 When you add the component Chart in the report template, the chart editor is called. This editor is used to create the chart: defining the types of rows, data sources, styles, and other settings. A chart can be created using the wizard or manually. Below is a diagram editor.

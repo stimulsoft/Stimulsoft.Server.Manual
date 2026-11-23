@@ -1,12 +1,12 @@
 # Stimulsoft Server User Manual
 
-> User manual for Stimulsoft Server — an on-premise reporting server. Covers installation, Docker deployment, SSO, user and role management, schedulers, cloud storage, the built-in report designer and viewer, and system administration.
+> User manual for Stimulsoft Server, an on-premise reporting server. Covers installation, Docker deployment, SSO, user and role management, schedulers, cloud storage, the built-in report designer and viewer, and system administration.
 
 ---
 
 # Introduction
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Introduction/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Introduction/index.md
 
 > **YouTube**
 >
@@ -112,7 +112,7 @@ The main tasks that can be solved using the report server:
 
 # System Requirements
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Introduction/System_Requirements.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Introduction/System_Requirements.md
 
 Minimum system requirements are:
 
@@ -130,7 +130,7 @@ Minimum system requirements are:
 
 # Installation
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Introduction/Installation.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Introduction/Installation.md
 
 > **Information**
 >
@@ -183,7 +183,7 @@ More information about IIS can be found on the [official website of Microsoft](h
 
 # Login Dialog
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Introduction/Sign_In.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Introduction/Sign_In.md
 
 When you run **Stimulsoft Server**, the first menu displayed is user authentication. Here you must specify the username and password of an account to get to the workspace. Below is the login dialog:
 
@@ -233,7 +233,7 @@ Sometimes you need to log in to your account but forgot your password. To recove
 
 # SSO Authentication
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Introduction/SSO_Authentication.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Introduction/SSO_Authentication.md
 
 The SSO (Single Sign-On) technology allows users to securely authenticate across multiple applications using a single set of credentials. After linking one or more supported providers to the Server account, the user can use any of these providers for quick and secure access to their account.
 
@@ -303,7 +303,7 @@ Accounts
 
 # Structure
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Introduction/Structure.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Introduction/Structure.md
 
 **Stimulsoft Server** is a sophisticated software that has a client-server architecture. Data of different users are separated by different workspaces. The picture below shows a system with three **workspaces**:
 
@@ -337,7 +337,7 @@ These operations can be performed in the background. The background mode provide
 
 # Server Controller
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Introduction/Server_Controller.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Introduction/Server_Controller.md
 
 The server controller can control **Stimulsoft Server**. This utility is installed with the server and folded into a tray on the taskbar. With this utility, you can delete, stop, start, and restart the report server, change the database used by the server, check for server issues. All commands to control the server are separated into tabs: [Service](#Service), [Storage](#Storage), [SMTP](#SMTP), [Check](#Check). Consider these tabs in more detail.
 
@@ -463,7 +463,7 @@ On this tab, you can check for errors, warnings, and information messages in the
 
 # Migration Assistant
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Introduction/Migration_Assistant.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Introduction/Migration_Assistant.md
 
 The **Migration Assistant** is a specialized tool for transferring Stimulsoft Server service data from one Stimulsoft Server instance to another. The tool allows you to transfer data between different storage systems without manually copying and configuring service tables. For example, the Assistant can be used to transfer data between test and production Stimulsoft Server instances, when migrating to a new server, or when changing the data storage system. You can launch the Migration Assistant from the Server Controller context menu or by directly running the Stimulsoft.Server.MigrationAssistant.exe executable file located in the installed Stimulsoft Server folder. By default, the file is located in the following directory: C:\ProgramData\Stimulsoft-Server\Software-Releases\202*...
 
@@ -528,7 +528,7 @@ Before starting the transfer, it is recommended that you check the connection pa
 
 # Backup And Restore
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Introduction/Backup_And_Restore.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Introduction/Backup_And_Restore.md
 
 **Backup and Restore** is a specialized tool designed to create backups of Stimulsoft Server service data and restore data from a backup. You can launch the **Backup and Restore** tool from the Server Controller context menu or by directly running the Stimulsoft.Server.BackupAndRestore.exe executable file located in the installed Stimulsoft Server folder. By default, the file is located in the following directory: C:\ProgramData\Stimulsoft-Server\Software-Releases\202*.*.*\.
 
@@ -583,7 +583,7 @@ To perform a restore, you must first create at least one backup. The data storag
 
 # Server Docker
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Introduction/Docker/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Introduction/Docker/index.md
 
 This chapter covers launching **Stimulsoft Server** in a Docker container. The product is built on the .NET 8 platform, which ensures cross-platform compatibility and allows it to run on various operating systems. The primary requirement is that **Docker** must be installed and functioning correctly on the system in use. We also recommend reviewing the following chapters:
 
@@ -650,7 +650,7 @@ After that, open a browser and navigate to: http://localhost:8080.
 
 # Main options
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Introduction/Docker/Options.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Introduction/Docker/Options.md
 
 All necessary configurations can be specified in the docker-compose.yml file using environment variables. For convenience, all settings are grouped, and each group name is separated from the setting name by a double underscore. Example of passing server settings:
 
@@ -772,7 +772,7 @@ volumes:
 
 # Using HTTPS
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Introduction/Docker/Https.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Introduction/Docker/Https.md
 
 An HTTPS certificate (SSL/TLS) provides a secure connection between the client and the server by verifying the website’s authenticity and encrypting transmitted data. In .NET development, you can use either a locally generated self-signed certificate or one purchased from a certification authority. A certificate is essential for ensuring security (data protection), building user trust (browser padlock icon), and complying with standards. During development, local certificates are often used.
 
@@ -866,7 +866,7 @@ services:
 
 # Menu Account
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Menu_Account/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Menu_Account/index.md
 
 From the **Account** menu, you can set up a user profile. The menu is located in the upper right corner of the Navigator, under the window control buttons.
 
@@ -884,7 +884,7 @@ From the **Account** menu, you can set up a user profile. The menu is located in
 
 # Subscriptions
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Menu_Account/Subscriptions.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Menu_Account/Subscriptions.md
 
 When you click **Subscriptions**, the **Subscriptions** window will pop up. Here you can find information about the current version of the report server and activate it.
 
@@ -912,7 +912,7 @@ There are also buttons **Refresh License** and **Deactivate**. When clicked, the
 
 # Profile
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Menu_Account/Profile.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Menu_Account/Profile.md
 
 In the menu **Settings** menu, you can change your account settings. You can find Parameters in the following tabs:
 
@@ -933,7 +933,7 @@ In this tab, you can change the color scheme of the UI, as well as its style.
 
 # Toolbar
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Toolbar/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Toolbar/index.md
 
 The toolbar contains the basic commands of the report server and its elements. At the same time, depending on the selected element, the list of commands may be different. The picture below shows the toolbar, with the commands for the **Report** and **Dashboards** item.
 
@@ -987,7 +987,7 @@ The toolbar contains [New Query](Menu_Create/Data_Source/New_Query.md), and [Imp
 
 # Menu Create
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Toolbar/Menu_Create/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Toolbar/Menu_Create/index.md
 
 The tab **Create** contains commands with which new items are added to the list of items.
 
@@ -1017,7 +1017,7 @@ The tab **Create** contains commands with which new items are added to the list 
 
 # Dashboard
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Toolbar/Menu_Create/Dashboard.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Toolbar/Menu_Create/Dashboard.md
 
 You can add the dashboard to the list of items. Select the **New Dashboard** panel command in the **Create** menu. In the menu that pops up, you can attach various server elements to the new dashboard or upload files from the local storage.
 
@@ -1037,7 +1037,7 @@ You can add the dashboard to the list of items. Select the **New Dashboard** pan
 
 # Report
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Toolbar/Menu_Create/Report.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Toolbar/Menu_Create/Report.md
 
 You can add the report to the list of items. Select the **New Report** panel command in the **Create** menu. In the menu that pops up, you can attach various server elements to the new report or upload files from the local storage.
 
@@ -1057,7 +1057,7 @@ You can add the report to the list of items. Select the **New Report** panel com
 
 # Data Source
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Toolbar/Menu_Create/Data_Source/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Toolbar/Menu_Create/Data_Source/index.md
 
 The **data source** is a structural representation of data that is used to generate reports. Each data source belongs to a particular type of connection and may vary depending on the type of data source parameters. Creating a data source can be done in several steps:
 
@@ -1077,7 +1077,7 @@ Below is the menu of selecting the connection type:
 
 # Connection
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Toolbar/Menu_Create/Data_Source/Connection.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Toolbar/Menu_Create/Data_Source/Connection.md
 
 To create a description of the data source and retrieve the data itself from storage, you should create a connection to this storage. Some parameters of the connection may vary depending on the type of the data source. The picture below shows the menu, which specifies the connection parameters to the data storage:
 
@@ -1107,7 +1107,7 @@ Once the connection is created, you should retrieve data from the data source. Y
 
 # Import Data
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Toolbar/Menu_Create/Data_Source/Import_Data.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Toolbar/Menu_Create/Data_Source/Import_Data.md
 
 After creating a [connection to the data storage](Connection.md), you need to get data from it (as tables, views, stored procedures, etc.). Data can be obtained from any [created sources](#ImportData), as well as from [data files](#SampleImportDataFromFiles). Files from which data import is possible are:
 
@@ -1209,7 +1209,7 @@ After you click the **Ok** button, the selected tables will be displayed in the 
 
 # New Query
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Toolbar/Menu_Create/Data_Source/New_Query.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Toolbar/Menu_Create/Data_Source/New_Query.md
 
 The second way to obtain data from the storage is a method of retrieving data from the query to the repository. **Queries** are script-like texts in one of the dialects of SQL that is used to extract data from tables and to make them available to the report server. Queries get the data from database tables and, on their basis, create temporary tables. The data in the temporary table will be filtered, grouped, sorted, and arranged according to the query parameters. Then, the temporary table is passed to the report server. Applying requests provides an opportunity to avoid duplication of data in the tables, minimizes the amount of data traffic between the database and the client-side, and also provides maximum flexibility for searching and displaying data in a database. Below is the **New Query** dialog.
 
@@ -1305,7 +1305,7 @@ Moreover, the parameters used in this example must have names, but when using th
 
 # Scheduler
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Toolbar/Menu_Create/Scheduler/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Toolbar/Menu_Create/Scheduler/index.md
 
 The **scheduler** is one of the main tools of the report server, using which you can plan specific actions at a particular time. To do this, you need to create a scheduler and specify the time and actions that you must perform. For example, at the beginning of each hour (at a specific minute), the report will be rendered, exported to **PDF** format and sent via email to particular persons. The picture below shows a window to create a new scheduler:
 
@@ -1356,7 +1356,7 @@ On the **Type** tab, you can set up when the scheduler should run, when the sche
 
 # Settings
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Toolbar/Menu_Create/Scheduler/Settings.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Toolbar/Menu_Create/Scheduler/Settings.md
 
 On the **Settings** tab, you can define scheduling parameters. Depending on the selected type, the number and names of the parameters may vary.
 
@@ -1551,7 +1551,7 @@ In this group of parameters, it is possible to set up a list of users who will g
 
 # Actions
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Toolbar/Menu_Create/Scheduler/Actions.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Toolbar/Menu_Create/Scheduler/Actions.md
 
 The scheduler in the active (running) state performs a specific list of actions on schedule. Actions performed by the scheduler:
 
@@ -1670,7 +1670,7 @@ One of the actions that can be performed by a scheduler is sending emails. To do
 
 # Folder
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Toolbar/Menu_Create/Folder.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Toolbar/Menu_Create/Folder.md
 
 Folders in the list of elements are necessary for organizing and storing other server elements and folders in them. Also, using folders, you can create hierarchies in the list of **Stimulsoft Server** elements. In addition, a folder can be the beginning of the list of elements for certain users, i.e. be the [root folder for a certain user](../../Tabs/Users/Add_User.md#RootFolder).
 
@@ -1694,7 +1694,7 @@ To create a folder, select the **Folder** command in the **Create** menu on the 
 
 # Calendar
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Toolbar/Menu_Create/Calendar.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Toolbar/Menu_Create/Calendar.md
 
 In addition to the direct scheduler settings, you can create a launch schedule, designate weekends, holidays and other exception dates using the **Calendar** element. To create a calendar, select the **Calendar** command in the **Create** menu on the server toolbar.
 
@@ -1748,7 +1748,7 @@ Depending on the selected type, different parameters can be shown.
 
 # File
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Toolbar/Menu_Create/File.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Toolbar/Menu_Create/File.md
 
 You should call the **File** menu to add the required file from the storage to the list of server items or **Create** a new file based on an existing item. This command creates an object, which can contain any types of files.
 
@@ -1776,7 +1776,7 @@ Select File in the items list and click the **Edit** button on the server toolba
 
 # File Storage
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Toolbar/Menu_Create/File_Storage.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Toolbar/Menu_Create/File_Storage.md
 
 The **File Storage** item is used to save another element outside the server. To do this, create a file repository and specify this item as a **Destination** when performing actions with other items. For example, when copying items using the **Scheduler**, or when you run the report without previewing.
 
@@ -1792,7 +1792,7 @@ To create a **File Storage**, select the appropriate command from the **Create**
 
 # Contact List
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Toolbar/Menu_Create/Contact_List.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Toolbar/Menu_Create/Contact_List.md
 
 The Contact List is used to send reports by groups of email. Here you need to specify a list of email addresses through a separator "," or space. It should be noted that the list of contacts can be used as the destination in the following actions of a scheduler:
 
@@ -1814,7 +1814,7 @@ Below is the menu **New Contact List**.
 
 # Result Name
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Toolbar/Menu_Create/Result_Name.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Toolbar/Menu_Create/Result_Name.md
 
 By default, when you convert (export) the report, the result name is generated automatically. It will consist of the report name before the conversion date plus the conversion date-time. For example, there is the .**mrt** report, "**Report1**". Let's convert the report to PDF document using the command **Run**. This will create a **PDF** document with the name **Report1-10/4/2020 2:26:55 PM**, where **10/4/2020 2:26:55 PM** is the start time (conversion) of the report. Sometimes it is necessary to set a mask (template). This can be done in the window **Result Name**.
 
@@ -1834,7 +1834,7 @@ For example, there is a report, the name of which is formed according to the fol
 
 # Mailing
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Toolbar/Menu_Create/Mailing.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Toolbar/Menu_Create/Mailing.md
 
 The **Mailing** element is used to automate email distribution. It allows you to send reports, dashboards, or other files as attachments to specific users — either manually or on a schedule using the Scheduler.
 
@@ -1852,7 +1852,7 @@ The **Mailing** element is used to automate email distribution. It allows you to
 
 # Link
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Toolbar/Menu_Create/Link.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Toolbar/Menu_Create/Link.md
 
 The **Link** element is a shortcut-like object designed to launch a specific report or dashboard directly. This element is useful when you need to provide users from child workspaces with access to a report or dashboard located in a parent workspace.
 
@@ -1866,7 +1866,7 @@ The **Link** element is a shortcut-like object designed to launch a specific rep
 
 # Sharing Settings
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Toolbar/Share.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Toolbar/Share.md
 
 In **Stimulsoft Server**, you can provide remote access to view a report or dashboard, and download them after converting them to other file types. This can be done using the Share command. Access settings are configured in the **Access** menu.
 
@@ -1956,7 +1956,7 @@ Then the URL with parameters will look like this [http://localhost:40010/s/5fc3c
 
 # Using
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Toolbar/Using.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Toolbar/Using.md
 
 Items in the report server can be used by other elements or can be attached to them. For example, the data source may be attached to the report, and the folder can be used as the destination source in the scheduler. In this case, it is impossible to remove used or attached items. At the same time, the same item can be attached (used) by an unlimited number of other items. In other words, the corresponding data source can be attached to various reports, and the same folder can be used in multiple schedulers.
 
@@ -1978,7 +1978,7 @@ As can be seen from the picture above, the **Using** menu shows the following in
 
 # Versions
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Toolbar/Versions.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Toolbar/Versions.md
 
 Sometimes, when editing items, especially when multiple users can modify the same items, some issues may occur. As a consequence, it is necessary to cancel the last, previous, and other changes, go back to the previous version of this item. It should be known that for each item change, a copy of this item state is created. And this state does not overwrite its previous state. Therefore, you can always refer to any copy of an item. This can be accomplished in the menu **Versions** of a selected item. This menu contains commands, as well as all versions' history of the item.
 
@@ -2006,7 +2006,7 @@ In the above example, you can see versions of the item [Report](Menu_Create/Repo
 
 # Display panel
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Display_Panel/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Display_Panel/index.md
 
 The display panel includes commands to control modes of displaying server items:
 
@@ -2030,7 +2030,7 @@ The display panel includes commands to control modes of displaying server items:
 
 # Recycle Bin
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Display_Panel/Recycle_Bin.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Display_Panel/Recycle_Bin.md
 
 When you delete items, you can move them to the trash or completely remove them from the server.
 
@@ -2070,7 +2070,7 @@ There are no special commands to empty the recycle bin. You can remove items fro
 
 # Tabs
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Tabs/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Tabs/index.md
 
 The tabs are used to display the items of a particular type. Also, the [Users](Users/index.md) and [System](System.md) tabs contain system commands to control users and server system, respectively:
 
@@ -2099,7 +2099,7 @@ The tabs are used to display the items of a particular type. Also, the [Users](U
 
 # New
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Tabs/New.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Tabs/New.md
 
 The **New** tab provides the ability to create a new report or dashboard.
 
@@ -2107,7 +2107,7 @@ The **New** tab provides the ability to create a new report or dashboard.
 
 # All Elements
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Tabs/All_Elements.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Tabs/All_Elements.md
 
 The **All Elements** tab provides the ability to display all the elements and all the [folders](../Toolbar/Menu_Create/Folder.md) in the current working server space:
 
@@ -2121,7 +2121,7 @@ At the same time, in the [Create menu](../Toolbar/Menu_Create/index.md), the com
 
 # Reports
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Tabs/Reports.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Tabs/Reports.md
 
 On the **Reports** tab, report templates, folders of the **Common** type and folders of the **Reports** type will be displayed:
 
@@ -2135,7 +2135,7 @@ At the same time, in the [Create menu](../Toolbar/Menu_Create/index.md), the com
 
 # Dashboards
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Tabs/Dashboards.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Tabs/Dashboards.md
 
 On the **Dashboards** tab, report templates, folders of the **Common** type and folders of the **Dashboards** type will be displayed:
 
@@ -2149,7 +2149,7 @@ At the same time, in the [Create menu](../Toolbar/Menu_Create/index.md), the com
 
 # Data
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Tabs/Data.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Tabs/Data.md
 
 On the **Data** tab, all data sources, files (Excel, JSON, CSV, XML, DBF), which contain information such as data, **Common** and **Data** folders, will be displayed:
 
@@ -2163,7 +2163,7 @@ At the same time, in the [Create menu](../Toolbar/Menu_Create/index.md), command
 
 # Schedulers
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Tabs/Schedulers.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Tabs/Schedulers.md
 
 The **Schedulers** tab will display schedulers **Common** and **Schedulers** folders:
 
@@ -2177,7 +2177,7 @@ At the same time, in the [Create menu](../Toolbar/Menu_Create/index.md), the com
 
 # Users Tab
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Tabs/Users/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Tabs/Users/index.md
 
 All tools to control workspaces, accounts, and a system of the report server are located on the Users Tab.
 
@@ -2205,7 +2205,7 @@ On the **Users tab**, you can control workspaces, roles, and accounts of other u
 
 # Add Role
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Tabs/Users/Add_Role.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Tabs/Users/Add_Role.md
 
 The **Role** is a category of users with specific rights and restrictions in the workspace. In other words, each user is assigned to a particular role, has certain rights. By default, the workspace is created with system roles:
 
@@ -2270,7 +2270,7 @@ In this table, you will find items (rows) and rights (columns) and short descrip
 
 # Add User
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Tabs/Users/Add_User.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Tabs/Users/Add_User.md
 
 You can add other user accounts to the workspace. Before you add a new user, you should define its role, i.e., select one of the predefined roles or create a new one. Then, click Add User in the Users tab and fill out the form shown below.
 
@@ -2312,7 +2312,7 @@ All elements in the workspace located in folders of a higher level will not be d
 
 # Add User Parameter
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Tabs/Users/Add_User_Parameter.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Tabs/Users/Add_User_Parameter.md
 
 **User Parameter** is a local variable that is automatically added to the report template when the user opens it.
 
@@ -2348,7 +2348,7 @@ The created parameter will appear in the user hierarchy. It can later be edited 
 
 # System Tab
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Tabs/System.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Tabs/System.md
 
 On the **System** tab, you can edit the Email Stimulsoft Server templates.
 
@@ -2400,7 +2400,7 @@ You can edit a letter template. Moreover, editing can be done both in visual mod
 
 # About
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Tabs/About.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Tabs/About.md
 
 The window **About** contains information about the product, its version. Also, this screen has a link to the official site of the developer.
 
@@ -2408,7 +2408,7 @@ The window **About** contains information about the product, its version. Also, 
 
 # Extra Text
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Extra_text/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Extra_text/index.md
 
 Enter topic text here.
 
@@ -2416,7 +2416,7 @@ Enter topic text here.
 
 # Report Viewer
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Viewer/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Viewer/index.md
 
 **Stimulsoft Reports.Server** has a report viewer that is used to view, print, export, send reports by e-mail. The report viewer can be found on a separate tab that opens when the action is associated with **report** items, for example, by the action of **View**. The picture below shows the tab **Viewer** with the report displayed in it:
 
@@ -2424,7 +2424,7 @@ Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Viewer/index.md
 
 # Toolbar
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Viewer/Toolbar.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Viewer/Toolbar.md
 
 The main toolbar locates commands to control the report. Below is the structure of the toolbar with the description of each command:
 
@@ -2478,7 +2478,7 @@ The search panel is used to search some text in the report. On the main toolbar 
 
 # Exports
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Viewer/Exports/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Viewer/Exports/index.md
 
 > **YouTube**
 >
@@ -2490,7 +2490,7 @@ This section describes principles of saving rendered reports to different format
 
 # Available File Formats
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Viewer/Exports/Available_File_Formats.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Viewer/Exports/Available_File_Formats.md
 
 A list of supported file formats is represented in the table below. All exports are joined into groups.
 
@@ -2521,7 +2521,7 @@ A list of supported file formats is represented in the table below. All exports 
 
 # Common Export Settings
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Viewer/Exports/Common_Export_Settings.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Viewer/Exports/Common_Export_Settings.md
 
 These chapters describe export settings which are not unique and are met in a few exports. Therefore, to prevent describing them again and again, they are joined in this section.
 
@@ -2555,7 +2555,7 @@ When exporting to Excel then all report is converted in one table. Headers and f
 
 # Formats with Fixed Page Layout
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Viewer/Exports/Formats_with_Fixed_Page_Layout/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Viewer/Exports/Formats_with_Fixed_Page_Layout/index.md
 
 **Stimulsoft Reports.Server** supports three exports with fixed page layout. This means that all elements of a page can be placed at any part of a page. In this case, if to change a position of one element then other components position will not be changed. These are formats to [PDF](PDF/index.md) (Portable Document Format), [Microsoft Power Point File](Microsoft_Power_Point_File.md) and [XPS](XPS.md) (XML Paper Specification).
 
@@ -2563,7 +2563,7 @@ Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Viewer/Exports/For
 
 # PDF
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Viewer/Exports/Formats_with_Fixed_Page_Layout/PDF/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Viewer/Exports/Formats_with_Fixed_Page_Layout/PDF/index.md
 
 **PDF** (Portable Document Format) – is a file format created by Adobe Systems for document exchange used to create electronic editions using the Adobe Acrobat package. The PDF format is a file text format that is used to publish documents on any platform and OS. The PDF document contains one or more pages. Each page may contain any components: text, graphic and illustrations, information, that provides navigation across the document.
 
@@ -2629,7 +2629,7 @@ FloydSt. - the most precise monochrome mode with dithering.
 
 # Embedded Fonts
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Viewer/Exports/Formats_with_Fixed_Page_Layout/PDF/Embedded_Fonts.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Viewer/Exports/Formats_with_Fixed_Page_Layout/PDF/Embedded_Fonts.md
 
 By default all embedded fonts are optimized. Characters which are not used in a report are excluded. It allows decreasing the size of a file. But, for correct work of the editable field, the font should be complete. Therefore, for fonts, which are used in editable fields, optimization is not done. This increases the output file size. If Asian languages are used, the file size can be 15-20mb.
 
@@ -2653,7 +2653,7 @@ The Lucida Console font is usually represented with one file that contains the r
 
 # Encryption
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Viewer/Exports/Formats_with_Fixed_Page_Layout/PDF/Encryption.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Viewer/Exports/Formats_with_Fixed_Page_Layout/PDF/Encryption.md
 
 The **PDF** document can be encrypted to protect the content from illegal access. The user can set the following encryption patameters:
 
@@ -2697,7 +2697,7 @@ The PDF Reference defines both 40-bit, 128-bit, 256-bit encryption. By default 1
 
 # Compatibility of Different Versions
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Viewer/Exports/Formats_with_Fixed_Page_Layout/PDF/Compatibility_of_Different_Versions.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Viewer/Exports/Formats_with_Fixed_Page_Layout/PDF/Compatibility_of_Different_Versions.md
 
 The information below shows the compatibility of Adobe Acrobat versions.
 
@@ -2723,7 +2723,7 @@ The information below shows the compatibility of Adobe Acrobat versions.
 
 # XPS
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Viewer/Exports/Formats_with_Fixed_Page_Layout/XPS.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Viewer/Exports/Formats_with_Fixed_Page_Layout/XPS.md
 
 **XPS** (XML Paper Specification) is the open graphic format of fixed page layout on the base XML (more precisely XAML-based) used to store printed output as electronic documents. This format was developed by Microsoft as alternative to the PDF format.The XPS document format consists of structured XML markup that defines the layout of a document and the visual appearance of each page, along with rendering rules for distributing, archiving, rendering, processing and printing the documents. The markup language for XPS is a subset of XAML that allows including vector graphic elements, using XAML to mark up the WPF-primitives. The XPS is a ZIP-archive that contains the files which make up the document. The archive includes page mark up (one file per each page of a document), text, embedded fonts, raster images, 2D vector graphics and other information.
 
@@ -2747,7 +2747,7 @@ Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Viewer/Exports/For
 
 # Microsoft Power Point File
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Viewer/Exports/Formats_with_Fixed_Page_Layout/Microsoft_Power_Point_File.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Viewer/Exports/Formats_with_Fixed_Page_Layout/Microsoft_Power_Point_File.md
 
 **Microsoft PowerPoint** is a presentation program developed by Microsoft. It is a part of the Microsoft Office suite. PowerPoint presentations consist of a number of individual pages or "slides". Slides may contain text, graphics, movies, and other objects, which may be arranged on the slide. The presentation can be printed, displayed on a PC, or navigated through at the command of the presenter. In Stimulsoft Reports each report page corresponds to one slide.
 
@@ -2771,7 +2771,7 @@ Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Viewer/Exports/For
 
 # Web Documents
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Viewer/Exports/Web_Documents/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Viewer/Exports/Web_Documents/index.md
 
 There are two formats [HTML](HTML.md) (HyperText Markup Language), [HTML5](HTML5.md) and [MHTML](MHT.md) (MIME HTML) are described in this chapter. The first and second formats are used for web page layout. The second format is a web page archive format used to bind resources together with the HTML code into a single file.
 
@@ -2809,7 +2809,7 @@ There are two formats [HTML](HTML.md) (HyperText Markup Language), [HTML5](HTML5
 
 # HTML
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Viewer/Exports/Web_Documents/HTML.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Viewer/Exports/Web_Documents/HTML.md
 
 **HTML** (HyperText Markup Language) is the predominant markup language for Web pages. The majority of web pages are created using the HTML language. The HTML language is interpreted by browser and shown as a document. HTML is a tag language of the document layout. It provides a means to describe the structure of text-based information in a document by denoting certain text as links, headings, paragraphs, lists, etc. Elements are the basic structure for HTML markup. Elements have two basic properties: attributes and content. Each attribute and each element's content has certain restrictions that must be followed for a HTML document to be considered valid. An element usually has a start tag (e.g. **&lt;element-name&gt;**) and an end tag (e.g. **&lt;/element-name&gt;**).
 
@@ -2851,7 +2851,7 @@ If to set the Can Grow properties of these texts components to true, then the re
 
 # HTML5
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Viewer/Exports/Web_Documents/HTML5.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Viewer/Exports/Web_Documents/HTML5.md
 
 **HTML5** is a language for structuring and presenting content for the World Wide Web, and is a core technology of the Internet originally proposed by Opera Software.[1] It is the fifth revision of the HTML standard (created in 1990 and standardized as HTML4 as of 1997)[2] and as of December 2011 is still under development. Its core aims have been to improve the language with support for the latest multimedia while keeping it easily readable by humans and consistently understood by computers and devices (web browsers, parsers, etc.). HTML5 is intended to subsume not only HTML 4, but XHTML 1 and DOM Level 2 HTML as well.
 
@@ -2859,7 +2859,7 @@ Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Viewer/Exports/Web
 
 # MHT
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Viewer/Exports/Web_Documents/MHT.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Viewer/Exports/Web_Documents/MHT.md
 
 **MHTML** (MIME HTML) is a web page archive format used to bind resources which are typically represented by external links (such as images, Flash animations, Java applets, audio files) together with HTML code into a single file. This file is a web archive and has the «.mht» extension. The content of a file is written as an Email message using the MIME standard: in the beginning of a file the HTML file is written. Then all resources in the base64 encoding with headers are written. Internet Explorer, Opera, Microsoft Word can work with the MHTML format.
 
@@ -2867,7 +2867,7 @@ Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Viewer/Exports/Web
 
 # Text Formats
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Viewer/Exports/Text_Formats/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Viewer/Exports/Text_Formats/index.md
 
 This chapter describes exports formats of text files. In other words the files which are used to create text documents.
 
@@ -2883,7 +2883,7 @@ This chapter describes exports formats of text files. In other words the files w
 
 # TXT
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Viewer/Exports/Text_Formats/TXT.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Viewer/Exports/Text_Formats/TXT.md
 
 **Text file (TXT)** is a kind of computer file that is structured as a sequence of lines. A text file exists within a computer file system. The end of a text file is often denoted by placing one or more special characters, known as an end-of-file marker, after the last line in a text file. Text files are commonly used for storage of information. Export options in TXT:
 
@@ -2935,7 +2935,7 @@ The old/new export mode is set using the **UseOldExportMode** property. The new 
 
 # RTF
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Viewer/Exports/Text_Formats/RTF.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Viewer/Exports/Text_Formats/RTF.md
 
 **Rich Text Format (RTF)** is a free document file format developed by Microsoft for cross-platform document interchange. The first version of the RTF standard appeared in 1987. Since that time format specification was changed and added. RTF-documents are supported by many text editors. Export options in RTF:
 
@@ -3024,7 +3024,7 @@ some colors and not shown correctly.
 
 # Word 2007/2010
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Viewer/Exports/Text_Formats/Word2007_2010.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Viewer/Exports/Text_Formats/Word2007_2010.md
 
 **Microsoft Word** is a text processing software produces by Microsoft. It is a component of the Microsoft Office system. The first version was released for  IBM PC's running DOS in 1983. Later there was a release for Apple Macintosh (1984), SCO UNIX, and Microsoft Windows (1989). Microsoft Word is the most popular text processors. Starting with first versions MS Word could write files in binary code with the «.doc» extension. The Word specification was secret and only in 2008 was published. The latest version of Word 2007/2010 "uses by default" the XML based format: Microsoft Office Open XML. For a new format the **«.docx»** file extension is used. This format is a zip-archive that contains a text as XML, graphics, and other data. When exporting, a report is converted into one table. Such a document is easy to edit. Export options in Word
 
@@ -3084,7 +3084,7 @@ When exporting **#PageNumber#** and **#TotalPageCount#** will be replaced on "Pa
 
 # ODT
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Viewer/Exports/Text_Formats/ODT.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Viewer/Exports/Text_Formats/ODT.md
 
 **Open Document Text (ODT)** is the open document for storing documents of the OpenOffice Writer, which is included into the OpenOffice.org package. OpenOffice.org is the open package of office applications created as alternative to Microsoft Office. OpenOffice.org was one of the first what supported the new open OpenDocument. Works on Microsoft Windows and UNIX systems: GNU/Linux, Mac OS X, FreeBSD, Solaris, Irix. OpenDocument Format (ODF) is the open file format for storing office documents, including text documents, spreadsheets, images, data bases, presentations. This format is based on the XML format.
 
@@ -3112,7 +3112,7 @@ OpenOffice Writer is the text processor and visual HTML editor, included into th
 
 # Spreadsheets
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Viewer/Exports/Spreadsheets/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Viewer/Exports/Spreadsheets/index.md
 
 This group of exports create spreadsheets. They are exports to both different formats of Microsoft Excel ([Excel](Excel.md), [Excel XML](Excel_XML.md), [Excel 2007/2010](Excel_2007_2010.md)) and to [OpenOffice Calc. Export](ODS.md) options in Excel
 
@@ -3146,7 +3146,7 @@ This group of exports create spreadsheets. They are exports to both different fo
 
 # Excel
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Viewer/Exports/Spreadsheets/Excel.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Viewer/Exports/Spreadsheets/Excel.md
 
 **Microsoft Excel** is a spreadsheet application written and distributed by Microsoft for Microsoft Windows. It allows using calculation, graphing tools, pivot tables and a macro programming language called VBA. So, it is the most popular table processor available for these platforms since version 5 in 1993. Microsoft Excel up until Excel 2007 version used a proprietary binary file format called Binary Interchange File Format (BIFF) and **.xls** file extension. Specification was closed but since 2008 it was published. Besides, most of Microsoft Excel can read CSV, DBF, SYLK, DIF, and other formats.
 
@@ -3176,7 +3176,7 @@ does not support some other parameters.
 
 # Excel XML
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Viewer/Exports/Spreadsheets/Excel_XML.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Viewer/Exports/Spreadsheets/Excel_XML.md
 
 For storing documents as the basic Microsoft Excel format, right up to the Excel 2007 version, used its own binary format of files (BIFF) and the file extension was «**.xls**». In Excel 2003 additionally, a new format based on XML (XMLSS) was used. This opened format is convenient for developers and is data oriented. The basic disadvantage of the format is impossibility to embed raster images.
 
@@ -3184,7 +3184,7 @@ For storing documents as the basic Microsoft Excel format, right up to the Excel
 
 # Excel 2007/2010
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Viewer/Exports/Spreadsheets/Excel_2007_2010.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Viewer/Exports/Spreadsheets/Excel_2007_2010.md
 
 For storing documents as the basic **Microsoft Excel** format, right up to the Excel 2007 version, used its own binary format of files (BIFF) and the file extension was «.xls». In Excel 2007/2010, the basic format is the Microsoft Office Open XML format and stores document in files with the «.xlsx» extension. The Excel 2007 is compatible with binary formats such as CSV, DBF, SYLK, DIF, and others.
 
@@ -3196,7 +3196,7 @@ Each page of a report has the **ExcelSheet** report property to what any express
 
 # ODS
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Viewer/Exports/Spreadsheets/ODS.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Viewer/Exports/Spreadsheets/ODS.md
 
 **Open Document Spreadsheet (ODS)** is the opened format to store OpenOffice Calc spreadsheet documents, that is included into the OpenOffice.org package.
 
@@ -3220,7 +3220,7 @@ Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Viewer/Exports/Spr
 
 # Data
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Viewer/Exports/Data.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Viewer/Exports/Data.md
 
 This is a group of file formats which are used to store table data. Export options in **Data**:
 
@@ -3378,7 +3378,7 @@ The "**Column**" element indicates that additional field is added to the exporte
 
 # Images
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Viewer/Exports/Images.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Viewer/Exports/Images.md
 
 Export groups to graphic formats. All graphic formats can be divided in to types: bitmapped images and vector formats. Notice. On the current moment the export of a monochrome image is supported only to **BMP**, **GIF**, **PCX**, **PNG**, **TIFF**, **JPEG**, **EMF**, **SVG**, **SVGZ** format. So the **DitheringType** property works only for these exports.
 
@@ -3452,7 +3452,7 @@ Dither is an intentionally applied form of noise, when processing digit signals.
 
 # How to Create Report for Export?
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Viewer/Exports/How_To_Create_Report_for_Export.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Viewer/Exports/How_To_Create_Report_for_Export.md
 
 Many exports have the table mode. In this mode the whole report is converted into one table. Creating correct templates from the source code allows making the table look much better, decrease the size of the file, increase the speed of working with export. Therefore, when using the table mode of export it is important to follow some recommendations:
 
@@ -3488,7 +3488,7 @@ On the left picture the number of columns is 14, and this case is equal in numbe
 
 # Report Designer
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/index.md
 
 The report designer is used to create and edit reports. The interface of the designer provides the user with a broad set of tools, components and tools to create reports, their visual design and preview.
 
@@ -3496,7 +3496,7 @@ The report designer is used to create and edit reports. The interface of the des
 
 # File
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Menu_File/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Menu_File/index.md
 
 In the **File** menu the key commands for working with reports in Report Designer are present:
 
@@ -3530,7 +3530,7 @@ In the **File** menu the key commands for working with reports in Report Designe
 
 # Info
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Menu_File/Info.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Menu_File/Info.md
 
 This menu contains commands for working with the report template:
 
@@ -3560,7 +3560,7 @@ Click the **Check for Issues** button  in the report checker to verify the repor
 
 # New
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Menu_File/New.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Menu_File/New.md
 
 > **YouTube**
 >
@@ -3618,7 +3618,7 @@ Creating a master-detail report using the wizard includes 8 steps. Not all of th
 
 # Options
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Menu_File/Options.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Menu_File/Options.md
 
 In the **Options** menu you can find advanced settings of the report designer. These settings are located on the following tabs:
 
@@ -3644,7 +3644,7 @@ To enable the **Auto Save mode**, you should check the box for the **Enable Auto
 
 # Tabs
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Tabs/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Tabs/index.md
 
 A tab is a part of the interface on the toolbar. The report designer has the following tabs: [Home](Tab_Design/index.md), [Insert](Tab_Insert/index.md), [Layout](Tab_Layout/index.md), [Preview](Tab_Preview/index.md).
 
@@ -3652,7 +3652,7 @@ A tab is a part of the interface on the toolbar. The report designer has the fol
 
 # Tab Home
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Design/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Design/index.md
 
 This is a basic tab of the report designer. Main commands for customizing report components are placed on this tab.
 
@@ -3660,7 +3660,7 @@ This is a basic tab of the report designer. Main commands for customizing report
 
 # Clipboard
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Design/Clipboard.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Design/Clipboard.md
 
 This group allows working with the Clipboard of the report designer.
 
@@ -3676,7 +3676,7 @@ This group allows working with the Clipboard of the report designer.
 
 # Font
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Design/Font.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Design/Font.md
 
 This group is used to output text with the specified font type, color etc.
 
@@ -3692,7 +3692,7 @@ This group is used to output text with the specified font type, color etc.
 
 # Borders
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Design/Borders.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Design/Borders.md
 
 This group contains the commands to setup border components.
 
@@ -3726,7 +3726,7 @@ This group contains the commands to setup border components.
 
 # Alignment
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Design/Alignment.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Design/Alignment.md
 
 The group is used to align the content of components horizontally and vertically. Also it is possible to set the angle of the text rotation and control the WordWrap property.
 
@@ -3740,7 +3740,7 @@ The group is used to align the content of components horizontally and vertically
 
 # Text Formats
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Design/Text_Formats/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Design/Text_Formats/index.md
 
 The tool **Text Format** allows formatting values in the special form. Formatting affects on the text object entirely. For example, if the text component is used to display the date, the formatting is very easy. If you want to format only a specific value of the expression, or to format multiple values ​​in a single expression, it is recommended to use the method **string.Format**. Using this method you can perform almost all the types of formatting that you can do with the tool **Text Format**. The group of controls to format text is shown on the picture below.
 
@@ -3752,7 +3752,7 @@ The tool **Text Format** allows formatting values in the special form. Formattin
 
 # General
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Design/Text_Format/General.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Design/Text_Format/General.md
 
 The **General** format is used to show text and numerical values of any type. No formatting is done in this case.
 
@@ -3760,7 +3760,7 @@ The **General** format is used to show text and numerical values of any type. No
 
 # Number
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Design/Text_Format/Number.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Design/Text_Format/Number.md
 
 It is recommended to use the format **Number** to show numerical values.
 
@@ -3796,7 +3796,7 @@ This pattern is used to format negative values.
 
 # Currency
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Design/Text_Format/Currency.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Design/Text_Format/Currency.md
 
 It is used to output values as currency. The format **Currency** can be used to output other numbers.
 
@@ -3840,7 +3840,7 @@ This symbol is used to define the currency name.
 
 # Date
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Design/Text_Format/Date.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Design/Text_Format/Date.md
 
 The format **Date** is used to show a date. The format has different output options - short date format, extended date format etc. In all formats, except the ones which are marked with the (*) symbol, the order of elements is not changed.
 
@@ -3852,7 +3852,7 @@ The list of formatting types.
 
 # Time
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Design/Text_Format/Time.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Design/Text_Format/Time.md
 
 The format **Time** is used to show time. The format has different output options - short date format and extended date format (with seconds).
 
@@ -3864,7 +3864,7 @@ The list of formatting types
 
 # Percentage
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Design/Text_Format/Percentage.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Design/Text_Format/Percentage.md
 
 This format is used to show percent values. When formatting, the value is multiplied by 100 and is output with the percent symbol.
 
@@ -3908,7 +3908,7 @@ The symbol will used as a percent symbol.
 
 # Boolean
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Design/Text_Format/Boolean.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Design/Text_Format/Boolean.md
 
 This format is used to format values of the Boolean type.
 
@@ -3924,7 +3924,7 @@ This format is used to format values of the Boolean type.
 
 # Custom
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Design/Text_Format/Custom.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Design/Text_Format/Custom.md
 
 This type is used to show values according to custom requirements. This type allows data formatting in the **Format Mask**.
 
@@ -3940,7 +3940,7 @@ The list of predefined values to format a string.
 
 # Styles
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Design/Styles/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Design/Styles/index.md
 
 Group controls the styles and conditions, which are used for the automatic registration of the components in the report.
 
@@ -3964,7 +3964,7 @@ Group controls the styles and conditions, which are used for the automatic regis
 
 # Color Collection Editor
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Design/Styles/Color_Collection_Editor.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Design/Styles/Color_Collection_Editor.md
 
 **Color Collection Editor** provides an opportunity to create a certain collection of colors for the style:
 
@@ -3982,7 +3982,7 @@ and select the desired color.
 
 # Tab Insert
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Insert/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Insert/index.md
 
 The tab **Insert** contains the main components for creating reports.
 
@@ -3990,7 +3990,7 @@ The tab **Insert** contains the main components for creating reports.
 
 # Groups
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Insert/Groups.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Insert/Groups.md
 
 This group contains report components.
 
@@ -4008,7 +4008,7 @@ This group contains report components.
 
 # Components
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Insert/Components.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Insert/Components.md
 
 The toolbox is a group of components for easy access. Accordingly, this group is customizable, i.e. required components can be added to the group or removed from it. Below is the default state of a Toolbox group.
 
@@ -4016,7 +4016,7 @@ The toolbox is a group of components for easy access. Accordingly, this group is
 
 # Tab Layout
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Layout/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Layout/index.md
 
 This tab is used to control placing different components on a page and also to specify styles of docking components.
 
@@ -4024,7 +4024,7 @@ This tab is used to control placing different components on a page and also to s
 
 # Arrange
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Layout/Arrange.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Layout/Arrange.md
 
 The group contains a large number of commands used to change the position of components on a page.
 
@@ -4080,7 +4080,7 @@ The group contains a large number of commands used to change the position of com
 
 # Tab Preview
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Preview/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Preview/index.md
 
 With the tab **Preview**, you can preview the report before printing, exporting, sending, or any other action. You can also see a preview of the report can be in a separate window of the viewer.
 
@@ -4098,7 +4098,7 @@ With the tab **Preview**, you can preview the report before printing, exporting,
 
 # File
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Preview/File.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Preview/File.md
 
 In the group **File** of the tab Preview you can find commands for further actions in the report.
 
@@ -4112,7 +4112,7 @@ It is necessary to determine where the report will be saved - on a **computer** 
 
 # Panels
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Preview/Panels.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Preview/Panels.md
 
 In the **Preview** window you can include additional panels.
 
@@ -4124,7 +4124,7 @@ In the **Preview** window you can include additional panels.
 
 # Tools
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Preview/Tools.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Preview/Tools.md
 
 In this group you can find tools for searching, editing information, as well as closing a tab preview.
 
@@ -4134,7 +4134,7 @@ In this group you can find tools for searching, editing information, as well as 
 
 # Status Bar
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Tabs/Status_Bar.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Tabs/Status_Bar.md
 
 The status bar is placed under the designer window. The picture below shows a status bar of the Standard UI.
 
@@ -4154,7 +4154,7 @@ The bar contains 4 sections:
 
 # Panels
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Panels/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Panels/index.md
 
 In this section you will find a description of the main panel of the designer, such as: [Dictionary](Data_Dictionary/index.md), [Report Tree](Report_Tree.md), and [Properties](Properties_Panel.md). These panels contain functions and commands to control the various components of the report. They also contain in the fields for the notification and tooltips.
 
@@ -4162,7 +4162,7 @@ In this section you will find a description of the main panel of the designer, s
 
 # Properties
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Panels/Properties_Panel.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Panels/Properties_Panel.md
 
 The **Properties Panel** displays all the properties of the selected component and its events. The picture below shows the Properties Panel, showing the properties of the component (left) and the events of the component (right).
 
@@ -4184,7 +4184,7 @@ The **Properties Panel** includes: the **Drop-Down List of Components**, **Prope
 
 # Dictionary
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Panels/Data_Dictionary/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Panels/Data_Dictionary/index.md
 
 The panel **Dictionary** displays attached data, available data sources, system variables and functions. In addition, the dictionary can create a new connection and connect data sources to set up new connections between data sources.
 
@@ -4210,7 +4210,7 @@ The panel **Dictionary** displays attached data, available data sources, system 
 
 # New Data Source
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Panels/Data_Dictionary/New_Data_Source.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Panels/Data_Dictionary/New_Data_Source.md
 
 > **YouTube**
 >
@@ -4272,7 +4272,7 @@ Now, on the basis of these data descriptions you can create report templates.
 
 # Report Tree
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Panels/Report_Tree.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Panels/Report_Tree.md
 
 The panel **Report Tree** panel shows the hierarchy of the report, i.e. represents all the components of the report in the form of a tree. In addition, if an event handler is added to the component, it will also be displayed in the hierarchy of the report. The picture below shows an example of the panel **Report Tree**.
 
@@ -4282,7 +4282,7 @@ As can be seen on the picture above, hierarchy is represented on the principle o
 
 # Keyboard Shortcuts
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Keyboard_Shortcuts.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Keyboard_Shortcuts.md
 
 The report designer supports many keyboard shortcuts. Using them can speed up the effectiveness of work in creating reports.
 
@@ -4338,7 +4338,7 @@ The report designer supports many keyboard shortcuts. Using them can speed up th
 
 # Context Menu
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Context_Menu.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Context_Menu.md
 
 The **Context Menu** is a menu in a graphical user interface that appears upon user interaction (a right mouse click). A context menu offers a set of choices that are available in the current state of the component.
 
@@ -4396,7 +4396,7 @@ The component properties below are displayed depending on the type of the select
 
 # Charts Editor
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Charts_Editor/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Charts_Editor/index.md
 
 When you add the component Chart in the report template, the chart editor is called. This editor is used to create the chart: defining the types of rows, data sources, styles, and other settings. A chart can be created using the wizard or manually. Below is a diagram editor.
 
@@ -4422,7 +4422,7 @@ As can be seen from the picture above, the chart editor contains the following t
 
 # Tab Chart
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Charts_Editor/Tab_Chart.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Charts_Editor/Tab_Chart.md
 
 The tab **Chart** defines the parameters relating to the diagrams. These parameters are grouped depending on the selected group on the property panel.
 
@@ -4456,7 +4456,7 @@ It should be noted that in some groups you can add elements to the chart. In thi
 
 # Tab Series
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Charts_Editor/Tab_Series.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Charts_Editor/Tab_Series.md
 
 Series of the chart component are the main element of the diagram. Series are important to visualize data. It should be understood that construction is not possible without series of the diagram.
 
@@ -4496,7 +4496,7 @@ Series of the chart component are the main element of the diagram. Series are im
 
 # Tab Area
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Charts_Editor/Tab_Area.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Charts_Editor/Tab_Area.md
 
 The **Area** is a space that includes the basic chart items: rendered data series, axes, chart title and legend. The management of this space is carried out on the tab **Area**, in the editor **Diagram**.
 
@@ -4528,7 +4528,7 @@ The **Area** is a space that includes the basic chart items: rendered data serie
 
 # Tab Labels
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Charts_Editor/Tab_Labels.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Charts_Editor/Tab_Labels.md
 
 On this tab you can set the type of labels in the chart. The selected appearance of the title will be applied to all rows that have the mode **Show Series** **Labels: From Series** disabled.
 
@@ -4556,7 +4556,7 @@ The picture below shows the tab Labels.
 
 # Tab Styles
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Charts_Editor/Tab_Styles.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Charts_Editor/Tab_Styles.md
 
 You can completely change the design of charts, ranging from basic colors and ending with shadows, borders, and so on. You can do this in the tab **Styles**.
 
@@ -4576,7 +4576,7 @@ You can completely change the design of charts, ranging from basic colors and en
 
 # Wizard
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Charts_Editor/Wizard.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Charts_Editor/Wizard.md
 
 The Chart wizard provides an opportunity to create a chart in a few simple steps. To start the wizard, you should the button Chart Wizard in the chart editor. The wizard provides a step-by-step procedure to create a chart. By default, the first type (Clustered Column) is selected in the list.
 
@@ -4660,7 +4660,7 @@ Click the button **Finish** and the chart will be created.
 
 # Image
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Image.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Image.md
 
 Sometimes you need to add an image to the report. It can be photos of goods, workers, statistics, etc. Images can be added from different sources. The component **Image** is used for this purpose. The Image component can be placed on a report page, data band, header, footer band etc.). When you put this component on the report page the form **Image** will be called.
 
@@ -4706,7 +4706,7 @@ If the image will be attached to the report, they will be displayed in this sour
 
 # Sub-Report
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Sub_Report.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Sub_Report.md
 
 The **Sub-Report** is a report component that can be placed on a band, page, panel or any other component that can be a container for the sub-report. When placing this component, the reporting tool will add nested page into the report and bind it with the Sub-Report. When rendering a report, the reporting tool will build all sub-reports and place them in this container. On the nested page a report that has any structure can be created. Also the **Sub-Report** component can be placed on the nested page, so the nested page of the second level will be created. In other words it is possible to create complex hierarchy in a report.
 
@@ -4763,7 +4763,7 @@ The picture below shows the editor **Sub-Report** on the tab **Parameters**.
 
 # Cross-Tab Editor
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Cross-Tab_Editor/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Cross-Tab_Editor/index.md
 
 When creating a cross-tab component or when editing this component, a special editor will be called. The editor has **Data**, [Cross-Tab](Cross_Tab.md), and [Styles](Styles.md) tabs which contain settings of the **Cross-Tab**. In addition, settings and parameters are grouped in tabs.
 
@@ -4795,7 +4795,7 @@ In this group you can specify filtering parameters, add a new filter, set filter
 
 # Cross-Tab Tab
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Cross-Tab_Editor/Cross_Tab.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Cross-Tab_Editor/Cross_Tab.md
 
 The Cross-Tab tab contains options to define the structure of a cross-tab component, the column indicates the data for the rows, columns, summary cells.
 
@@ -4819,7 +4819,7 @@ The Cross-Tab tab contains options to define the structure of a cross-tab compon
 
 # Styles Tab
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Cross-Tab_Editor/Styles.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Cross-Tab_Editor/Styles.md
 
 The final stage of the creating a cross-tab is to define its style.
 
@@ -4833,7 +4833,7 @@ The final stage of the creating a cross-tab is to define its style.
 
 # Clone
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Clone.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Clone.md
 
 Components of Stimulsoft Reports include a unique one - **Clone**. This component is designed to continue a report in a certain location of a report.
 
@@ -4857,7 +4857,7 @@ When rendering a report, a list of products will be displayed in the component P
 
 # Log
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Toolbar/Log.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Toolbar/Log.md
 
 Each time when you edit and save an item, a copy of that item with the new changes is created. Thus, a history for this item is created . This history items can be viewed. To do this, select **Log** on the Toolbar.
 
@@ -4873,7 +4873,7 @@ As can be seen in the picture above, the history displays:
 
 # Report
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Design/Report.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Design/Report.md
 
 A group to control the report template.
 
@@ -4903,7 +4903,7 @@ A group to control the report template.
 
 # Digital Signature
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Viewer/Exports/Formats_with_Fixed_Page_Layout/PDF/Digital_Signature/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Viewer/Exports/Formats_with_Fixed_Page_Layout/PDF/Digital_Signature/index.md
 
 **Digital signature** is a requisite of an electronic document used to protect this document from falsification. This document is a result of cryptographic conversion of information using the **closed key** of the electronic signature and allows identifying the owner of the certificate of the key of the signature. Digital signatures are often used to implement electronic signatures.
 
@@ -4911,7 +4911,7 @@ Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Viewer/Expo
 
 # Keys
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Viewer/Exports/Formats_with_Fixed_Page_Layout/PDF/Digital_Signature/Keys.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Viewer/Exports/Formats_with_Fixed_Page_Layout/PDF/Digital_Signature/Keys.md
 
 Key is secret information is the secret information that is used by the cryptographic algorithm when creating and checking the digital signature. Usually for digital signature the pair of keys is used:
 
@@ -4925,7 +4925,7 @@ In Digital Signature algorithms the signature is signed on the secret key of a u
 
 # Public Key Certificate
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Viewer/Exports/Formats_with_Fixed_Page_Layout/PDF/Digital_Signature/Public_Key_Certificate.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Viewer/Exports/Formats_with_Fixed_Page_Layout/PDF/Digital_Signature/Public_Key_Certificate.md
 
 Public key certificate EDS is a digital document confirming the correspondence between a public key and information identifying the owner of the key. It contains information about the owner of the key information about the public key, its purpose and scope, the name of the certification authority and so on. Each certificate can be also connected with a private key. Storage of certificates is called a certificate authority. Certificate store often contains numerous certificates, possibly derived from different CAs. Certificates in the repository into folders (categories) that have their own hierarchy. To access any certificate must specify the name of the repository (category), in which it is located. To create a digital signature private key is required. Certificates that contain private keys that are usually located in the two repositories - the repository of the current user or local computer store. To select the storage you want to use the property **Use Local Machine Certificates**. By default it is set to **false**, and the search is made in the certificate store of the current user (CERT_SYSTEM_STORE_CURRENT_USER). If it is set to **true**, the search will be made in the local computer store (CERT_SYSTEM_STORE_LOCAL_MACHINE).
 
@@ -4933,7 +4933,7 @@ Public key certificate EDS is a digital document confirming the correspondence b
 
 # Choosing Certificate
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Viewer/Exports/Formats_with_Fixed_Page_Layout/PDF/Digital_Signature/Choosing_Certificate.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Viewer/Exports/Formats_with_Fixed_Page_Layout/PDF/Digital_Signature/Choosing_Certificate.md
 
 There are two ways to create the digital signature:
 
@@ -4953,7 +4953,7 @@ In the second way, it is necessary to use the **SubjectNameString** property and
 
 # Placing Digital Signature Identifier
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Viewer/Exports/Formats_with_Fixed_Page_Layout/PDF/Digital_Signature/Placing_Digital_Signature_Identifier.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Viewer/Exports/Formats_with_Fixed_Page_Layout/PDF/Digital_Signature/Placing_Digital_Signature_Identifier.md
 
 By default the digital signature identifier is placed on the top of the first page of a document in the right corner, on margins. If it is required to set another position of the digital signature identifier, then it is necessary to place the text box with the description of the digital signature, and to set the **Tag** property to "**PdfDigitalSignature**".
 
@@ -4961,7 +4961,7 @@ By default the digital signature identifier is placed on the top of the first pa
 
 # Report Checker
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Report_Checker.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Report_Checker.md
 
 In order to check the report for errors you should use the **Report Checker**. The Report Checker will analyze the report, resulting in an error message, comments, or inaccuracies found in this report. The picture below shows the Report Checker:
 
@@ -4985,7 +4985,7 @@ In this window, you can mark messages and warnings you want notifications to be 
 
 # Parameters
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Layout/Options.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Layout/Options.md
 
 In the **Options** menu you can find advanced settings of the report designer. These settings are located on the following tabs:
 
@@ -4999,7 +4999,7 @@ In the **Options** menu you can find advanced settings of the report designer. T
 
 # Viewing Options
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Layout/Viewing_Options.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Layout/Viewing_Options.md
 
 The group contains items to configure various settings of displaying some staff on the page in the report template.
 
@@ -5021,7 +5021,7 @@ The group contains items to configure various settings of displaying some staff 
 
 # Tab Page
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Page/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Page/index.md
 
 On the tab **Page** you can find tools to control the parameters of pages in the report template.
 
@@ -5057,7 +5057,7 @@ On the tab **Page** you can find tools to control the parameters of pages in the
 
 # Page Setup
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Page/Page_Setup.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Report_Designer/Tabs/Tab_Page/Page_Setup.md
 
 This group contains elements to control basic parameters of a page. These are page margins, orientation, page size, columns.
 
@@ -5093,7 +5093,7 @@ This group contains elements to control basic parameters of a page. These are pa
 
 # SMTP Server Settings
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Administration/Tab_System/SMTP_Server_Settings.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Administration/Tab_System/SMTP_Server_Settings.md
 
 For sending emails you need to use a SMTP server. In order to bring up the SMTP server settings, press the Settings button of the **SMTP server (SMTP Server Settings)** the **System** tab.
 
@@ -5113,7 +5113,7 @@ For sending emails you need to use a SMTP server. In order to bring up the SMTP 
 
 # Tab Home
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Tab_Home/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Tab_Home/index.md
 
 Toolbar contains the basic commands of the report server and its elements. At the same time, depending on the selected element, the list of commands may be different. For example, if you select the Excel item, then the Import Data command will be available. The picture below shows the Home tab, with the commands for the **Report** item.
 
@@ -5156,7 +5156,7 @@ In this window, you need to define the Move to Recycle Bin parameter, and confir
 
 # Tab Tools
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Tab_Tools/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Tab_Tools/index.md
 
 On this tab you can find the following elements.
 
@@ -5176,7 +5176,7 @@ On this tab you can find the following elements.
 
 # Excel Files
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Menu_Create/Data_Source/Import_Data_from_Files/Excel.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Menu_Create/Data_Source/Import_Data_from_Files/Excel.md
 
 Consider obtaining data from the Excel file. First you need to load the Excel file into the item tree:
 
@@ -5226,7 +5226,7 @@ Now, based on these tables, you can build reports.
 
 # Blank Report
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Tab_Create/Report/Blank_Report.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Tab_Create/Report/Blank_Report.md
 
 In order to create a report without structure, but which may contain data or files, use the command Blank Report.
 
@@ -5254,7 +5254,7 @@ In order to create a report without structure, but which may contain data or fil
 
 # Report from File
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Tab_Create/Report/Report_from_File.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Tab_Create/Report/Report_from_File.md
 
 Another way to add a list of items in the report server is to load a report from the file. The file may be located either in the item list or any other place. Below is the menu to load a report from the file:
 
@@ -5274,7 +5274,7 @@ Another way to add a list of items in the report server is to load a report from
 
 # Standard Report
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Menu_Create/Report/Standard_Wizard.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Menu_Create/Report/Standard_Wizard.md
 
 When you create a report using the **Standard Report** wizard, the report will contain one **Data Band** or one **Data Table**. Creating a report using the wizard includes 11 steps. Not all of them are mandatory.
 
@@ -5304,7 +5304,7 @@ When you create a report using the **Standard Report** wizard, the report will c
 
 # Master-Detail Report
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Menu_Create/Report/Master_Detail_Wizard.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Menu_Create/Report/Master_Detail_Wizard.md
 
 Creating a master-detail report using the wizard includes 12 steps. Not all of them are mandatory.
 
@@ -5344,7 +5344,7 @@ Creating a master-detail report using the wizard includes 12 steps. Not all of t
 
 # Report with Chart
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Menu_Create/Report/Chart_Wizard.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Menu_Create/Report/Chart_Wizard.md
 
 Creating a report with chart using the wizard includes 8 steps. Not all of them are mandatory.
 
@@ -5368,7 +5368,7 @@ Creating a report with chart using the wizard includes 8 steps. Not all of them 
 
 # Report with Label
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Menu_Create/Report/Label_Report_Wizard.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Menu_Create/Report/Label_Report_Wizard.md
 
 Creating a report with label using the wizard includes 12 steps. Not all of them are mandatory.
 
@@ -5394,7 +5394,7 @@ Creating a report with label using the wizard includes 12 steps. Not all of them
 
 # Cloud Storage
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Tab_Create/Cloud_Storage/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Tab_Create/Cloud_Storage/index.md
 
 The report server has the ability to import files from an online (cloud) storage. In addition, the cloud storage can be a destination for the result of actions of the scheduler. Access to the online store can be organized using the item **Cloud Storage**. Depending on the type of the online storage it is necessary to determine the item type of the **Cloud Storage**.
 
@@ -5404,7 +5404,7 @@ After selecting the type, click the tab **Settings** to define the settings for 
 
 # Settings
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Tab_Create/Cloud_Storage/Settings.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Tab_Create/Cloud_Storage/Settings.md
 
 This tab defines the parameters of the Cloud Storage items, and configure access to the online storage of a definite type. Consider the parameters that do not depend on the type and are always present when creating a new item.
 
@@ -5446,7 +5446,7 @@ Now consider the parameters for each type of a cloud storage.
 
 # Context Menu of Navigator
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Context_Menu_of_Navigator/index.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Context_Menu_of_Navigator/index.md
 
 The main commands of the report server are duplicated in the context menu. This menu will appear when you right-click a mouse (or holding your finger on mobile devices or other alternative action) in the toolbox. Below is the context menu:
 
@@ -5494,7 +5494,7 @@ Also you should consider that in the context menu of the **Scheduler** the comma
 
 # Menu Actions
 
-Source: https://stimulsoft.github.io/Stimulsoft.Server.Manual/Context_Menu_of_Navigator/Menu_Actions.md
+Source: https://docs.stimulsoft.com/Stimulsoft.Server.Manual/Context_Menu_of_Navigator/Menu_Actions.md
 
 The menu **Actions** contains commands used for possible actions with the selected item. Depending on the type of an item, the number of steps may vary. Consider the example of the menu **Actions** of the item **Report**, because you can perform the greatest number of actions with this item. Below is the menu.
 

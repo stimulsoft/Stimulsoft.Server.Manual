@@ -1,4 +1,4 @@
-## Result Name
+# Result Name
 
 By default, when you convert (export) the report, the result name is generated automatically. It will consist of the report name before the conversion date plus the conversion date-time. For example, there is the .**mrt** report, "**Report1**". Let's convert the report to PDF document using the command **Run**. This will create a **PDF** document with the name **Report1-10/4/2020 2:26:55 PM**, where **10/4/2020 2:26:55 PM** is the start time (conversion) of the report. Sometimes it is necessary to set a mask (template). This can be done in the window **Result Name**.
 

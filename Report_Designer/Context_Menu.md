@@ -1,4 +1,4 @@
-## Context Menu
+# Context Menu
 
 
 The **Context Menu** is a menu in a graphical user interface that appears upon user interaction (a right mouse click). A context menu offers a set of choices that are available in the current state of the component.

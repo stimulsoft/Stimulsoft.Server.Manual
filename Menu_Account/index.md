@@ -1,4 +1,4 @@
-## Menu Account
+# Menu Account
 
 From the **Account** menu, you can set up a user profile. The menu is located in the upper right corner of the Navigator, under the window control buttons.
 

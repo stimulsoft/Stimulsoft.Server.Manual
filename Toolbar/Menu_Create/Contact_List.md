@@ -1,4 +1,4 @@
-## Contact List
+# Contact List
 
 The Contact List is used to send reports by groups of email. Here you need to specify a list of email addresses through a separator "," or space. It should be noted that the list of contacts can be used as the destination in the following actions of a scheduler:
 

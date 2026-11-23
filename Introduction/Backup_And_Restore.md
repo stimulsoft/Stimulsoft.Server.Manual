@@ -1,4 +1,4 @@
-## Backup and Restore
+# Backup and Restore
 
 **Backup and Restore** is a specialized tool designed to create backups of Stimulsoft Server service data and restore data from a backup. You can launch the **Backup and Restore** tool from the Server Controller context menu or by directly running the Stimulsoft.Server.BackupAndRestore.exe executable file located in the installed Stimulsoft Server folder. By default, the file is located in the following directory: C:\ProgramData\Stimulsoft-Server\Software-Releases\202*.*.*\.
 

@@ -1,4 +1,4 @@
-## Server Controller
+# Server Controller
 
 The server controller can control **Stimulsoft Server**. This utility is installed with the server and folded into a tray on the taskbar. With this utility, you can delete, stop, start, and restart the report server, change the database used by the server, check for server issues. All commands to control the server are separated into tabs: [Service](#Service), [Storage](#Storage), [SMTP](#SMTP), [Check](#Check). Consider these tabs in more detail.
 

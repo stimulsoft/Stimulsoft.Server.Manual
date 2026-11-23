@@ -1,3 +1,3 @@
-## Extra Text
+# Extra Text
 
 Enter topic text here.

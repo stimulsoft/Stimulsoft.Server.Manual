@@ -1,4 +1,4 @@
-## Cross-Tab Editor
+# Cross-Tab Editor
 
 
 When creating a cross-tab component or when editing this component, a special editor will be called. The editor has **Data**, [Cross-Tab](Cross_Tab.md), and [Styles](Styles.md) tabs which contain settings of the **Cross-Tab**. In addition, settings and parameters are grouped in tabs.

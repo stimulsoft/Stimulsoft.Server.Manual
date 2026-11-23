@@ -1,4 +1,4 @@
-## Report with Label
+# Report with Label
 
 
 Creating a report with label using the wizard includes 12 steps. Not all of them are mandatory.

@@ -1,4 +1,4 @@
-## Subscriptions
+# Subscriptions
 
 When you click **Subscriptions**, the **Subscriptions** window will pop up. Here you can find information about the current version of the report server and activate it.
 

@@ -1,4 +1,4 @@
-## Keyboard Shortcuts
+# Keyboard Shortcuts
 
 
 The report designer supports many keyboard shortcuts. Using them can speed up the effectiveness of work in creating reports.

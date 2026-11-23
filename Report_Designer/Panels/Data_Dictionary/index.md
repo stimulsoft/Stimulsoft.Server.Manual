@@ -1,4 +1,4 @@
-## Dictionary
+# Dictionary
 
 
 The panel **Dictionary** displays attached data, available data sources, system variables and functions. In addition, the dictionary can create a new connection and connect data sources to set up new connections between data sources.

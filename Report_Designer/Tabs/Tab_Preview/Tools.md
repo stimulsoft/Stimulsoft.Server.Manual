@@ -1,4 +1,4 @@
-## Tools
+# Tools
 
 
 In this group you can find tools for searching, editing information, as well as closing a tab preview.

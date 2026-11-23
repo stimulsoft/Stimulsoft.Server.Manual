@@ -1,4 +1,4 @@
-## Status Bar
+# Status Bar
 
 
 The status bar is placed under the designer window. The picture below shows a status bar of the Standard UI.

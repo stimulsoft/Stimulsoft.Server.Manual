@@ -1,4 +1,4 @@
-## Toolbar
+# Toolbar
 
 The toolbar contains the basic commands of the report server and its elements. At the same time, depending on the selected element, the list of commands may be different. The picture below shows the toolbar, with the commands for the **Report** and **Dashboards** item.
 

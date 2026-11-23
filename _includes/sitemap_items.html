@@ -1,0 +1,4 @@
+{%- for item in include.items -%}
+<url><loc>{{ item.url | prepend: site.baseurl | prepend: site.url | xml_escape }}</loc></url>
+{% if item.children %}{% include sitemap_items.html items=item.children %}{% endif -%}
+{%- endfor -%}

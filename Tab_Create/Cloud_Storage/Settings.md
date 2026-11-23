@@ -1,4 +1,4 @@
-## Dropbox
+# Dropbox
 
 
 This tab defines the parameters of the Cloud Storage items, and configure access to the online storage of a definite type. Consider the parameters that do not depend on the type and are always present when creating a new item.

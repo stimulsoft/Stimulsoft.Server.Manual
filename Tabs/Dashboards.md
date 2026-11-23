@@ -1,4 +1,4 @@
-## Dashboards
+# Dashboards
 
 On the **Dashboards** tab, report templates, folders of the **Common** type and folders of the **Dashboards** type will be displayed:
 

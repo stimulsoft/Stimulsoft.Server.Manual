@@ -1,4 +1,4 @@
-## File
+# File
 
 You should call the **File** menu to add the required file from the storage to the list of server items or **Create** a new file based on an existing item. This command creates an object, which can contain any types of files.
 

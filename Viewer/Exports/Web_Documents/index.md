@@ -1,4 +1,4 @@
-## Web Documents
+# Web Documents
 
 
 There are two formats [HTML](HTML.md) (HyperText Markup Language), [HTML5](HTML5.md) and [MHTML](MHT.md) (MIME HTML) are described in this chapter. The first and second formats are used for web page layout. The second format is a web page archive format used to bind resources together with the HTML code into a single file.

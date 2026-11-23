@@ -1,9 +1,19 @@
+{%- capture breadcrumbs_html -%}{% include breadcrumbs.html %}{%- endcapture -%}
+{%- include seo.html -%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}</title>
+  <title>{{ seo_title | escape_once }}</title>
+  <meta name="description" content="{{ seo_description | escape_once }}">
+  <link rel="canonical" href="{{ seo_canonical }}">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="{{ site.title | escape_once }}">
+  <meta property="og:title" content="{{ seo_title | escape_once }}">
+  <meta property="og:description" content="{{ seo_description | escape_once }}">
+  <meta property="og:url" content="{{ seo_canonical }}">
+  <link rel="alternate" type="text/markdown" href="{{ seo_markdown }}">
   <link rel="icon" href="{{ site.baseurl }}/favicon.ico" type="image/x-icon">
   <script>
     (function() {
@@ -559,6 +569,42 @@
       .copy-md-label { display: none; }
     }
 
+    /* ── Product block ── */
+    #product-cta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin: 0 56px 64px;
+      padding: 20px 24px;
+      border: 1px solid var(--color-border);
+      border-radius: 8px;
+      background: var(--color-accent-bg);
+    }
+
+    #product-cta-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+    #product-cta-text strong { font-weight: 600; color: var(--color-text); }
+    #product-cta-text span { font-size: 14px; color: var(--color-text-secondary); }
+
+    #product-cta-links { display: flex; align-items: center; flex-wrap: wrap; gap: 16px; }
+    #product-cta-links a { font-size: 14px; color: var(--color-accent); text-decoration: none; }
+    #product-cta-links a:hover { text-decoration: underline; }
+
+    #product-cta-links a.cta-primary {
+      padding: 7px 16px;
+      border-radius: 6px;
+      background: var(--color-accent);
+      color: var(--color-bg);
+      font-weight: 500;
+    }
+
+    #product-cta-links a.cta-primary:hover { text-decoration: none; opacity: 0.9; }
+
+    @media (max-width: 768px) {
+      #product-cta { margin: 0 20px 48px; }
+    }
+
     /* ── Tables ── */
     #content table {
       border-collapse: collapse;
@@ -810,7 +856,7 @@
     <div id="main">
       <article id="content">
         <div id="content-header">
-          <div id="content-header-crumbs">{% include breadcrumbs.html %}</div>
+          <div id="content-header-crumbs">{{ breadcrumbs_html }}</div>
           <button id="copy-md-btn" title="Copy page as Markdown">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
@@ -821,6 +867,18 @@
         </div>
         {{ content }}
       </article>
+      {% if site.product_url and site.product_url != "" %}
+      <aside id="product-cta" data-pagefind-ignore>
+        <div id="product-cta-text">
+          <strong>{{ site.product_name }}</strong>
+          <span>Build reports and dashboards in the browser, no installation required.</span>
+        </div>
+        <div id="product-cta-links">
+          <a class="cta-primary" href="{{ site.designer_url }}">Try the online designer</a>
+          <a href="{{ site.product_url }}">About {{ site.product_name }}</a>
+        </div>
+      </aside>
+      {% endif %}
     </div>
 
   </div>

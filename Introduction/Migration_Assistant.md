@@ -1,4 +1,4 @@
-## Migration Assistant
+# Migration Assistant
 
 The **Migration Assistant** is a specialized tool for transferring Stimulsoft Server service data from one Stimulsoft Server instance to another. The tool allows you to transfer data between different storage systems without manually copying and configuring service tables. For example, the Assistant can be used to transfer data between test and production Stimulsoft Server instances, when migrating to a new server, or when changing the data storage system. You can launch the Migration Assistant from the Server Controller context menu or by directly running the Stimulsoft.Server.MigrationAssistant.exe executable file located in the installed Stimulsoft Server folder. By default, the file is located in the following directory: C:\ProgramData\Stimulsoft-Server\Software-Releases\202*...
 

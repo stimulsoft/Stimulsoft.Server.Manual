@@ -1,4 +1,4 @@
-## Styles
+# Styles
 
 
 Group controls the styles and conditions, which are used for the automatic registration of the components in the report.

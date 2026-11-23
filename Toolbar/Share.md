@@ -1,4 +1,4 @@
-## Sharing Settings
+# Sharing Settings
 
 In **Stimulsoft Server**, you can provide remote access to view a report or dashboard, and download them after converting them to other file types. This can be done using the Share command. Access settings are configured in the **Access** menu.
 

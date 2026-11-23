@@ -1,4 +1,4 @@
-## Add Role
+# Add Role
 
 The **Role** is a category of users with specific rights and restrictions in the workspace. In other words, each user is assigned to a particular role, has certain rights. By default, the workspace is created with system roles:
 

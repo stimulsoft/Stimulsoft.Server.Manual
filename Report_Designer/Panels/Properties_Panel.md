@@ -1,4 +1,4 @@
-## Properties
+# Properties
 
 
 The **Properties Panel** displays all the properties of the selected component and its events. The picture below shows the Properties Panel, showing the properties of the component (left) and the events of the component (right).

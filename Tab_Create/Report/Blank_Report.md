@@ -1,4 +1,4 @@
-## Blank Report
+# Blank Report
 
 
 In order to create a report without structure, but which may contain data or files, use the command Blank Report.

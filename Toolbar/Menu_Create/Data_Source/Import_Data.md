@@ -1,4 +1,4 @@
-## Import Data
+# Import Data
 
 After creating a [connection to the data storage](Connection.md), you need to get data from it (as tables, views, stored procedures, etc.). Data can be obtained from any [created sources](#ImportData), as well as from [data files](#SampleImportDataFromFiles). Files from which data import is possible are:
 

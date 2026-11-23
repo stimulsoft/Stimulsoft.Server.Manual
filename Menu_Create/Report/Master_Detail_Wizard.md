@@ -1,4 +1,4 @@
-## Master-Detail Report
+# Master-Detail Report
 
 
 Creating a master-detail report using the wizard includes 12 steps. Not all of them are mandatory.

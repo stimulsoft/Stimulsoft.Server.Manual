@@ -1,4 +1,4 @@
-## Context Menu of Navigator
+# Context Menu of Navigator
 
 
 The main commands of the report server are duplicated in the context menu. This menu will appear when you right-click a mouse (or holding your finger on mobile devices or other alternative action) in the toolbox. Below is the context menu:

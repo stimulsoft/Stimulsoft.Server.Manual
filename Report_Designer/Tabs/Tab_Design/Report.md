@@ -1,4 +1,4 @@
-## Report
+# Report
 
 
 A group to control the report template.

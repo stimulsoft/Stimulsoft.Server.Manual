@@ -1,4 +1,4 @@
-## Info
+# Info
 
 
 This menu contains commands for working with the report template:

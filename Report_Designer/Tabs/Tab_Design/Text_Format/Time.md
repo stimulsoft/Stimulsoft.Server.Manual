@@ -1,4 +1,4 @@
-## Time
+# Time
 
 
 The format **Time** is used to show time. The format has different output options - short date format and extended date format (with seconds).

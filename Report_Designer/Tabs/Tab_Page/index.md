@@ -1,4 +1,4 @@
-## Tab Page
+# Tab Page
 
 
 On the tab **Page** you can find tools to control the parameters of pages in the report template.

@@ -1,4 +1,4 @@
-## Tab Area
+# Tab Area
 
 
 The **Area** is a space that includes the basic chart items: rendered data series, axes, chart title and legend. The management of this space is carried out on the tab **Area**, in the editor **Diagram**.

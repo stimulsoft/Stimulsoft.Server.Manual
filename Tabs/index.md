@@ -1,4 +1,4 @@
-## Tabs
+# Tabs
 
 The tabs are used to display the items of a particular type. Also, the [Users](Users/index.md) and [System](System.md) tabs contain system commands to control users and server system, respectively:
 

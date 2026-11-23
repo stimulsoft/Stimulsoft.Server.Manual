@@ -1,4 +1,4 @@
-## Menu Actions
+# Menu Actions
 
 
 The menu **Actions** contains commands used for possible actions with the selected item. Depending on the type of an item, the number of steps may vary. Consider the example of the menu **Actions** of the item **Report**, because you can perform the greatest number of actions with this item. Below is the menu.

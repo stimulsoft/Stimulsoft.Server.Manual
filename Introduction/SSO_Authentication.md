@@ -1,4 +1,4 @@
-## SSO Authentication
+# SSO Authentication
 
 The SSO (Single Sign-On) technology allows users to securely authenticate across multiple applications using a single set of credentials. After linking one or more supported providers to the Server account, the user can use any of these providers for quick and secure access to their account.
 

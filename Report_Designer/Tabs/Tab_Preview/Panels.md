@@ -1,4 +1,4 @@
-## Panels
+# Panels
 
 
 In the **Preview** window you can include additional panels.

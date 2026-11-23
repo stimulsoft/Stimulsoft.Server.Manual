@@ -1,4 +1,4 @@
-## Mailing
+# Mailing
 
 The **Mailing** element is used to automate email distribution. It allows you to send reports, dashboards, or other files as attachments to specific users — either manually or on a schedule using the Scheduler.
 

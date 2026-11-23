@@ -1,4 +1,4 @@
-## Sub-Report
+# Sub-Report
 
 
 The **Sub-Report** is a report component that can be placed on a band, page, panel or any other component that can be a container for the sub-report. When placing this component, the reporting tool will add nested page into the report and bind it with the Sub-Report. When rendering a report, the reporting tool will build all sub-reports and place them in this container. On the nested page a report that has any structure can be created. Also the **Sub-Report** component can be placed on the nested page, so the nested page of the second level will be created. In other words it is possible to create complex hierarchy in a report.

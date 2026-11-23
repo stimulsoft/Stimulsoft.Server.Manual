@@ -1,4 +1,4 @@
-## SMTP Server Settings
+# SMTP Server Settings
 
 
 For sending emails you need to use a SMTP server. In order to bring up the SMTP server settings, press the Settings button of the **SMTP server (SMTP Server Settings)** the **System** tab.

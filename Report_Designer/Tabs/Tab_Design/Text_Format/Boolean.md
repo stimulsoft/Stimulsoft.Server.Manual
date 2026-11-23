@@ -1,4 +1,4 @@
-## Boolean
+# Boolean
 
 
 This format is used to format values of the Boolean type.

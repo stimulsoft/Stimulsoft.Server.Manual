@@ -1,4 +1,4 @@
-## General
+# General
 
 
 The **General** format is used to show text and numerical values of any type. No formatting is done in this case.

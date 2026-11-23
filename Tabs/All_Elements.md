@@ -1,4 +1,4 @@
-## All Elements
+# All Elements
 
 The **All Elements** tab provides the ability to display all the elements and all the [folders](../Toolbar/Menu_Create/Folder.md) in the current working server space:
 

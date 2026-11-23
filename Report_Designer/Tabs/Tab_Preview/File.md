@@ -1,4 +1,4 @@
-## File
+# File
 
 
 In the group **File** of the tab Preview you can find commands for further actions in the report.

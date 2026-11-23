@@ -1,4 +1,4 @@
-## Tab Chart
+# Tab Chart
 
 
 The tab **Chart** defines the parameters relating to the diagrams. These parameters are grouped depending on the selected group on the property panel.

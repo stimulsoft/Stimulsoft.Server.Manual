@@ -1,4 +1,4 @@
-## Number
+# Number
 
 
 It is recommended to use the format **Number** to show numerical values.

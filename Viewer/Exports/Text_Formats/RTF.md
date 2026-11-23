@@ -1,4 +1,4 @@
-## RTF
+# RTF
 
 
 **Rich Text Format (RTF)** is a free document file format developed by Microsoft for cross-platform document interchange. The first version of the RTF standard appeared in 1987. Since that time format specification was changed and added. RTF-documents are supported by many text editors. Export options in RTF:

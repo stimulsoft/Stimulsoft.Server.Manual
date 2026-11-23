@@ -1,4 +1,4 @@
-## Login Dialog
+# Login Dialog
 
 When you run **Stimulsoft Server**, the first menu displayed is user authentication. Here you must specify the username and password of an account to get to the workspace. Below is the login dialog:
 

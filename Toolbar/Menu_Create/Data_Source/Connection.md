@@ -1,4 +1,4 @@
-## Connection
+# Connection
 
 To create a description of the data source and retrieve the data itself from storage, you should create a connection to this storage. Some parameters of the connection may vary depending on the type of the data source. The picture below shows the menu, which specifies the connection parameters to the data storage:
 
